@@ -197,8 +197,7 @@
                   <img alt="Image placeholder" src="../../assets/img/theme/team-4.jpg">
                 </span>
                 <div class="media-body ml-2 d-none d-lg-block">
-                  <span class="mb-0 text-sm  font-weight-bold">{{ Auth::user()->name }}</span>
-                  <span class="caret"></span>
+                  <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
                 </div>
               </div>
             </a>
@@ -223,7 +222,19 @@
                 <span>Support</span>
               </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="{{ route('logout') }}"
+              <a href="dashboard.html#!" class="dropdown-item">
+                <i class="ni ni-user-run"></i>
+                <span>Logout</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                {{ Auth::user()->name }} <span class="caret"></span>
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ route('logout') }}"
                    onclick="event.preventDefault();
                                  document.getElementById('logout-form').submit();">
                     {{ __('Logout') }}
@@ -232,9 +243,8 @@
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
                 </form>
-              </a>
             </div>
-          </li>
+        </li>
         </ul>
       </div>
     </div>

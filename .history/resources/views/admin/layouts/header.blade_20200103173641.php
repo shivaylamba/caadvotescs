@@ -44,7 +44,7 @@
       <!-- Brand -->
       <div class="sidenav-header d-flex align-items-center">
         <a class="navbar-brand" href="dashboard.html">
-          <img src="../../assets/img/brand/logo-black.jpg" style="width:250px; height:150px;" class="navbar-brand-img" alt="...">
+          <img src="../../assets/img/brand/logo-black.jpg" style="width:250px;" class="navbar-brand-img" alt="...">
         </a>
         <div class="ml-auto">
           <!-- Sidenav toggler -->
@@ -63,15 +63,25 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="/admin"  role="button" aria-expanded="true" aria-controls="navbar-dashboards">
+              <a class="nav-link active" href="dashboard.html#navbar-dashboards" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-dashboards">
                 <i class="ni ni-shop text-primary"></i>
-                <span class="nav-link-text">Home</span>
+                <span class="nav-link-text">Dashboards</span>
               </a>
+              <div class="collapse show" id="navbar-dashboards">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="alternative.html" class="nav-link">Alternative</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/users" role="button" aria-expanded="false" aria-controls="navbar-examples">
+              <a class="nav-link" href="dashboard.html" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                 <i class="ni ni-ungroup text-orange"></i>
-                <span class="nav-link-text">Registered Users</span>
+                <span class="nav-link-text">Examples</span>
               </a>
               <div class="collapse" id="navbar-examples">
                 <ul class="nav nav-sm flex-column">

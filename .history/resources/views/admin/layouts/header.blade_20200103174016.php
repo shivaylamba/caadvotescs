@@ -63,15 +63,15 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="/admin"  role="button" aria-expanded="true" aria-controls="navbar-dashboards">
+              <a class="nav-link active" href="dashboard.html#navbar-dashboards"  role="button" aria-expanded="true" aria-controls="navbar-dashboards">
                 <i class="ni ni-shop text-primary"></i>
-                <span class="nav-link-text">Home</span>
+                <span class="nav-link-text">Dashboards</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/users" role="button" aria-expanded="false" aria-controls="navbar-examples">
+              <a class="nav-link" href="dashboard.html" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                 <i class="ni ni-ungroup text-orange"></i>
-                <span class="nav-link-text">Registered Users</span>
+                <span class="nav-link-text">Examples</span>
               </a>
               <div class="collapse" id="navbar-examples">
                 <ul class="nav nav-sm flex-column">

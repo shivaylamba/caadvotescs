@@ -63,7 +63,7 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="/admin"  role="button" aria-expanded="true" aria-controls="navbar-dashboards">
+              <a class="nav-link active" href="/"  role="button" aria-expanded="true" aria-controls="navbar-dashboards">
                 <i class="ni ni-shop text-primary"></i>
                 <span class="nav-link-text">Home</span>
               </a>

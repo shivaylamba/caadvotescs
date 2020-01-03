@@ -63,13 +63,13 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="/admin"  role="button" aria-expanded="true" aria-controls="navbar-dashboards">
+              <a class="nav-link active" href="/"  role="button" aria-expanded="true" aria-controls="navbar-dashboards">
                 <i class="ni ni-shop text-primary"></i>
                 <span class="nav-link-text">Home</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/users" role="button" aria-expanded="false" aria-controls="navbar-examples">
+              <a class="nav-link" href="dashboard.html" role="button" aria-expanded="false" aria-controls="navbar-examples">
                 <i class="ni ni-ungroup text-orange"></i>
                 <span class="nav-link-text">Registered Users</span>
               </a>

@@ -15,8 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/users', function () {
-    return view('admin.users');
+
+Route::get('/admin', function () {
+    return view('admin.dashboard');
 });
 
 Route::get('/db', function() {
@@ -25,12 +26,6 @@ Route::get('/db', function() {
        echo "conncted sucessfully to database ".DB::connection()->getDatabaseName();
     }
  });
-
-Route::group(['middleware' => ['auth','admin']], function () {
-    Route::get('/admin', function () {
-        return view('admin.dashboard');
-    });
-}); 
 
 Auth::routes();
 

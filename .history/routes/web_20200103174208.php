@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/users', function () {
-    return view('admin.users');
+    return view('welcome');
 });
 
 Route::get('/db', function() {
