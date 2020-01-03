@@ -18,12 +18,6 @@
                <p class="text-sm mb-0">
                  All the Registered Users to the website will be seen here!
                </p>
-               <br>
-                @if (session('status'))
-                <div class="alert alert-success" role="alert">
-                    {{ session('status') }}
-                </div>
-                @endif
              </div>
              <div class="table-responsive py-4">
                <table class="table table-flush" id="datatable-basic">

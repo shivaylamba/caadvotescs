@@ -20,14 +20,4 @@ class DashboardController extends Controller
         return view('admin.user-edit')->with('users',$users);
 
     }
-
-    public function userupdate(Request $request, $id)
-    {   
-        $users = User::find($id);
-        $users->usertype = $request->input('usertype');
-        $users->update();
-
-        return redirect('/users')->with('status','User Data is Updated');
-
-    }
 }

@@ -32,8 +32,8 @@ Route::group(['middleware' => ['auth','admin']], function () {
     Route::get('/users', 'Admin\DashboardController@registered');
 
     Route::get('/user-edit/{id}', 'Admin\DashboardController@useredit');
-
-    Route::put('/user-profile-update/{id}', 'Admin\DashboardController@userupdate');
+    
+    Route::put('/user-profile-update/{id}', 'Admin\DashboardController@useredit');
 
     
 }); 

@@ -27,7 +27,7 @@ class DashboardController extends Controller
         $users->usertype = $request->input('usertype');
         $users->update();
 
-        return redirect('/users')->with('status','User Data is Updated');
+        return redirect('/users');
 
     }
 }

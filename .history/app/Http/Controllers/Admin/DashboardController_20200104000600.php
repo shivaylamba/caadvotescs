@@ -23,11 +23,8 @@ class DashboardController extends Controller
 
     public function userupdate(Request $request, $id)
     {   
-        $users = User::find($id);
-        $users->usertype = $request->input('usertype');
-        $users->update();
-
-        return redirect('/users')->with('status','User Data is Updated');
+        $users = User::findOrFail($id);
+        return view('admin.user-edit')->with('users',$users);
 
     }
 }

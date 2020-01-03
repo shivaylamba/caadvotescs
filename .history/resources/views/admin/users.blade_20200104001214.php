@@ -18,7 +18,6 @@
                <p class="text-sm mb-0">
                  All the Registered Users to the website will be seen here!
                </p>
-               <br>
                 @if (session('status'))
                 <div class="alert alert-success" role="alert">
                     {{ session('status') }}
