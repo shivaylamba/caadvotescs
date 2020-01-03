@@ -48,12 +48,12 @@
                  <tbody>
                      @foreach ($users as $row)
                     <tr>
-                        <td> {{ $row->id }} </td> 
-                        <td>{{ $row->name }}</td>
-                        <td>{{ $row->phone }}</td>
-                        <td>{{ $row->email }}</td>
-                        <td>{{ $row->usertype }}</td>
-                        <td>{{ $row->created_at }}</td>
+                        <td>{{$row->id}}</td> 
+                        <td>{{$row->name}}</td>
+                        <td>{{$row->phone}}</td>
+                        <td>{{$row->email}}</td>
+                        <td>{{$row->usertype}}</td>
+                        <td>{{$row->usertype}}</td>
                         <td>
                             <button type="button" class="btn btn-slack btn-icon-only rounded-circle">
                                 <span class="btn-inner--icon"><i class="ni ni-settings-gear-65"></i></span>

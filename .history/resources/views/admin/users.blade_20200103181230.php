@@ -14,9 +14,9 @@
            <div class="card">
              <!-- Card header -->
              <div class="card-header">
-               <h3 class="mb-0">Registered Users</h3>
+               <h3 class="mb-0">Datatable</h3>
                <p class="text-sm mb-0">
-                 All the Registered Users to the website will be seen here!
+                 This is an exmaple of datatable using the well known datatables.net plugin. This is a minimal setup in order to get started fast.
                </p>
              </div>
              <div class="table-responsive py-4">
@@ -46,26 +46,24 @@
                       </tr>
                  </tfoot>
                  <tbody>
-                     @foreach ($users as $row)
-                    <tr>
-                        <td> {{ $row->id }} </td> 
-                        <td>{{ $row->name }}</td>
-                        <td>{{ $row->phone }}</td>
-                        <td>{{ $row->email }}</td>
-                        <td>{{ $row->usertype }}</td>
-                        <td>{{ $row->created_at }}</td>
-                        <td>
-                            <button type="button" class="btn btn-slack btn-icon-only rounded-circle">
-                                <span class="btn-inner--icon"><i class="ni ni-settings-gear-65"></i></span>
-                            </button>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-youtube btn-icon-only rounded-circle">
-                                <span class="btn-inner--icon"><i class="ni ni-fat-delete"></i></span>
-                            </button>
-                        </td>
-                    </tr>
-                    @endforeach
+                   <tr>
+                    <td>001</td> 
+                     <td>Tiger Nixon</td>
+                     <td>System Architect</td>
+                     <td>Edinburgh</td>
+                     <td>61</td>
+                     <td>2011/04/25</td>
+                     <td>
+                        <button type="button" class="btn btn-slack btn-icon-only rounded-circle">
+                            <span class="btn-inner--icon"><i class="fab fa-pencil"></i></span>
+                          </button>
+                     </td>
+                     <td>
+                        <button type="button" class="btn btn-youtube btn-icon-only rounded-circle">
+                            <span class="btn-inner--icon"><i class="ni ni-fat-delete"></i></span>
+                          </button>
+                    </td>
+                   </tr>
                  </tbody>
                </table>
              </div>

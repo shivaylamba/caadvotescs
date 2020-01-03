@@ -29,9 +29,11 @@ Route::group(['middleware' => ['auth','admin']], function () {
         return view('admin.dashboard');
     });
 
-    Route::get('/users', 'Admin\DashboardController@registered');
+    Route::get('/admin', 'Admin\DashboardController@Registered');
 
-    
+    Route::get('/users', function () {
+        return view('admin.users');
+    });
 }); 
 
 Auth::routes();

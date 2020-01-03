@@ -46,26 +46,26 @@
                       </tr>
                  </tfoot>
                  <tbody>
-                     @foreach ($users as $row)
-                    <tr>
-                        <td> {{ $row->id }} </td> 
-                        <td>{{ $row->name }}</td>
-                        <td>{{ $row->phone }}</td>
-                        <td>{{ $row->email }}</td>
-                        <td>{{ $row->usertype }}</td>
-                        <td>{{ $row->created_at }}</td>
-                        <td>
-                            <button type="button" class="btn btn-slack btn-icon-only rounded-circle">
-                                <span class="btn-inner--icon"><i class="ni ni-settings-gear-65"></i></span>
-                            </button>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-youtube btn-icon-only rounded-circle">
-                                <span class="btn-inner--icon"><i class="ni ni-fat-delete"></i></span>
-                            </button>
-                        </td>
-                    </tr>
-                    @endforeach
+                     @foreach ($collection as $item)
+                     @endforeach
+                   <tr>
+                    <td>001</td> 
+                     <td>Tiger Nixon</td>
+                     <td>System Architect</td>
+                     <td>Edinburgh</td>
+                     <td>61</td>
+                     <td>2011/04/25</td>
+                     <td>
+                        <button type="button" class="btn btn-slack btn-icon-only rounded-circle">
+                            <span class="btn-inner--icon"><i class="ni ni-settings-gear-65"></i></span>
+                          </button>
+                     </td>
+                     <td>
+                        <button type="button" class="btn btn-youtube btn-icon-only rounded-circle">
+                            <span class="btn-inner--icon"><i class="ni ni-fat-delete"></i></span>
+                          </button>
+                    </td>
+                   </tr>
                  </tbody>
                </table>
              </div>
