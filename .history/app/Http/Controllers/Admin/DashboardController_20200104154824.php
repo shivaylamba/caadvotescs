@@ -33,8 +33,7 @@ class DashboardController extends Controller
 
     public function deleteuser(Request $request, $id)
     {   
-        $users = User::findOrFail($id);
-        $users->delete();
+        $users = User::find($id);
 
         return redirect('/users')->with('status','User Deleted Sucessfully');
 

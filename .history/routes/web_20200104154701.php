@@ -34,8 +34,8 @@ Route::group(['middleware' => ['auth','admin']], function () {
     Route::get('/user-edit/{id}', 'Admin\DashboardController@useredit');
 
     Route::put('/user-profile-update/{id}', 'Admin\DashboardController@userupdate');
-
-    Route::delete('/delete-user/{id}', 'Admin\DashboardController@deleteuser');
+    
+    Route::delete('/user-profile-update/{id}', 'Admin\DashboardController@userupdate');
 
     
 }); 

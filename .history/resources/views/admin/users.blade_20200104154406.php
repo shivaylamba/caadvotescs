@@ -66,14 +66,9 @@
                         </a>
                         </td>
                         <td>
-                          <form action="/delete-user/{{ $row->id }}" method="post">
-                            {{ csrf_field() }}
-                            {{ method_field('DELETE') }}
-                              <button  type="submit" class="btn btn-youtube btn-icon-only rounded-circle">
-                              <span class="btn-inner--icon"><i class="ni ni-fat-delete"></i></span>
-                              </button>
-                          </a>
-                          </form>
+                            <a href="/delete-user/{{ $row->id }}" type="button" class="btn btn-youtube btn-icon-only rounded-circle">
+                                <span class="btn-inner--icon"><i class="ni ni-fat-delete"></i></span>
+                            </a>
                         </td>
                     </tr>
                     @endforeach
