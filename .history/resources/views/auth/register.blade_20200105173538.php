@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Login</title>
+  <title></title>
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->
@@ -45,22 +44,66 @@
         </div>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a href="/" class="nav-link">
-              <span class="nav-link-inner--text">Home</span>
+            <a href="../dashboards/dashboard.html" class="nav-link">
+              <span class="nav-link-inner--text">Dashboard</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="/login" class="nav-link">
+            <a href="pricing.html" class="nav-link">
+              <span class="nav-link-inner--text">Pricing</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
               <span class="nav-link-inner--text">Login</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="/register" class="nav-link">
+            <a href="register.html" class="nav-link">
               <span class="nav-link-inner--text">Register</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="lock.html" class="nav-link">
+              <span class="nav-link-inner--text">Lock</span>
             </a>
           </li>
         </ul>
         <hr class="d-lg-none" />
+        <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" data-original-title="Like us on Facebook">
+              <i class="fab fa-facebook-square"></i>
+              <span class="nav-link-inner--text d-lg-none">Facebook</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" data-original-title="Follow us on Instagram">
+              <i class="fab fa-instagram"></i>
+              <span class="nav-link-inner--text d-lg-none">Instagram</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" data-toggle="tooltip" data-original-title="Follow us on Twitter">
+              <i class="fab fa-twitter-square"></i>
+              <span class="nav-link-inner--text d-lg-none">Twitter</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial" target="_blank" data-toggle="tooltip" data-original-title="Star us on Github">
+              <i class="fab fa-github"></i>
+              <span class="nav-link-inner--text d-lg-none">Github</span>
+            </a>
+          </li>
+          <li class="nav-item d-none d-lg-block ml-lg-4">
+            <a href="https://www.creative-tim.com/product/argon-dashboard-pro" target="_blank" class="btn btn-neutral btn-icon">
+              <span class="btn-inner--icon">
+                <i class="fas fa-shopping-cart mr-2"></i>
+              </span>
+              <span class="nav-link-inner--text">Purchase now</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -73,7 +116,7 @@
           <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-6 col-md-8 px-5">
               <h1 class="text-white">Create an account</h1>
-              <p class="text-lead text-white">Create your Account and get Updates.</p>
+              <p class="text-lead text-white">Use these awesome forms to login or create new account in your project for free.</p>
             </div>
           </div>
         </div>

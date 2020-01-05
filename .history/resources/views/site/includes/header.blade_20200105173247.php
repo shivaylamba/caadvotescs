@@ -99,7 +99,7 @@
                                     <a href="/register">Register</a>
                                 </li>
                                 <li>
-                                    <a href="/associate-reg">Associate Registration</a>
+                                    <a href="index.html">Associate Registration</a>
                                 </li>
                             </ul>
                     </li>

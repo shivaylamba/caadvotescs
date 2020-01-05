@@ -93,13 +93,13 @@
                         <a href="index.html#" class="submenu dropdown-toggle active" data-toggle="dropdown">Join Us</a>
                         <ul class="dropdown-menu">
                                 <li>
-                                    <a href="/login">login</a>
+                                    <a href="index-slider-corporate.html">Sign In</a>
                                 </li>
                                 <li>
-                                    <a href="/register">Register</a>
+                                    <a href="index-business.html">Register</a>
                                 </li>
                                 <li>
-                                    <a href="/associate-reg">Associate Registration</a>
+                                    <a class="active" href="index.html">Associate Registration</a>
                                 </li>
                             </ul>
                     </li>

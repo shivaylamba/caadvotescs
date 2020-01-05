@@ -96,10 +96,10 @@
                                     <a href="/login">login</a>
                                 </li>
                                 <li>
-                                    <a href="/register">Register</a>
+                                    <a href="index-business.html">Register</a>
                                 </li>
                                 <li>
-                                    <a href="/associate-reg">Associate Registration</a>
+                                    <a href="index.html">Associate Registration</a>
                                 </li>
                             </ul>
                     </li>
