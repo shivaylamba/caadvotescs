@@ -16,6 +16,9 @@ Route::get('/', function () {
 });
 
 
+Route::get('/'{{ Auth::user()->name}}, function () {
+    return view('welcome');
+});
 
 
 Route::get('/db', function() {
