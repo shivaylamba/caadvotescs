@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/post', 'Admin\PageController@pageContent');
+Route::get('/post', 'Admin\PageController@pageContent')->name('post');
 
 
 

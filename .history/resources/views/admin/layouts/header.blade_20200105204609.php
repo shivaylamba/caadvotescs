@@ -84,10 +84,23 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{'pages-list' == request()->path() ? 'active' : ''}}" href="/pages-list"  role="button" aria-expanded="false" aria-controls="navbar-forms">
+              <a class="nav-link" href="dashboard.html#navbar-forms" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-forms">
                 <i class="ni ni-single-copy-04 text-pink"></i>
-                <span class="nav-link-text">Pages</span>
+                <span class="nav-link-text">Forms</span>
               </a>
+              <div class="collapse" id="navbar-forms">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="../forms/elements.html" class="nav-link">Elements</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../forms/components.html" class="nav-link">Components</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../forms/validation.html" class="nav-link">Validation</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="dashboard.html#navbar-tables" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">

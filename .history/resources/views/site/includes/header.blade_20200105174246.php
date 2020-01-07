@@ -84,7 +84,7 @@
                     </li>
 
                     <li class="dropdown megamenu-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">TRENDING
+                        <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">TRENDING
                         </a>
                              @include('site.includes.megamenu');
                     </li>

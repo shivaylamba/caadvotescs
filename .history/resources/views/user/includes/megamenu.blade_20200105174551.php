@@ -3,6 +3,34 @@
                             <li>
                                 <div class="row">
                                     <!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Elements</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li>
+                                                    <a href="/accordions">Accordions</a>
+                                                </li>
+                                                <li>
+                                                    <a href="stats.html">Animation Stats</a>
+                                                </li>
+                                                <li>
+                                                    <a href="buttons.html">Buttons</a>
+                                                </li>
+                                                <li>
+                                                    <a href="boxes.html">Box Containers</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="bg-image.html">Background Images</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="call-action.html">Call to Action</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- end col-3 -->
                                     <!-- end col-3 -->
                                     <div class="col-menu col-md-3">
                                         <h6 class="title">Elements</h6>

@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/post', 'Admin\PageController@pageContent');
+Route::get('/posts', 'Admin\PageController@pageContent')->name('post');
 
 
 
@@ -42,7 +42,7 @@ Route::group(['middleware' => ['auth','admin']], function () {
     Route::delete('/delete-user/{id}', 'Admin\DashboardController@deleteuser');
 
     Route::get('/add-page-content', 'Admin\PageController@index');
-    Route::get('/pages-list', 'Admin\PageController@pageList');
+    Route::get('/page-list', 'Admin\PageController@pageList');
 
     Route::post('/save-page', 'Admin\PageController@savePage');
 

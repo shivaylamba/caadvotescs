@@ -78,16 +78,67 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{'add-page-content' == request()->path() ? 'active' : ''}}" href="/add-page-content"  role="button" aria-expanded="false" aria-controls="navbar-components">
+              <a class="nav-link" href="dashboard.html#navbar-components" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-components">
                 <i class="ni ni-ui-04 text-info"></i>
                 <span class="nav-link-text">Add Page Content</span>
               </a>
+              <div class="collapse" id="navbar-components">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="../components/buttons.html" class="nav-link">Buttons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../components/cards.html" class="nav-link">Cards</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../components/grid.html" class="nav-link">Grid</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../components/notifications.html" class="nav-link">Notifications</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../components/icons.html" class="nav-link">Icons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../components/typography.html" class="nav-link">Typography</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="dashboard.html#navbar-multilevel" class="nav-link" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-multilevel">Multi level</a>
+                    <div class="collapse show" id="navbar-multilevel" style="">
+                      <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                          <a href="dashboard.html#!" class="nav-link ">Third level menu</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="dashboard.html#!" class="nav-link ">Just another link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="dashboard.html#!" class="nav-link ">One last link</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{'pages-list' == request()->path() ? 'active' : ''}}" href="/pages-list"  role="button" aria-expanded="false" aria-controls="navbar-forms">
+              <a class="nav-link" href="dashboard.html#navbar-forms" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-forms">
                 <i class="ni ni-single-copy-04 text-pink"></i>
-                <span class="nav-link-text">Pages</span>
+                <span class="nav-link-text">Forms</span>
               </a>
+              <div class="collapse" id="navbar-forms">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="../forms/elements.html" class="nav-link">Elements</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../forms/components.html" class="nav-link">Components</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../forms/validation.html" class="nav-link">Validation</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="dashboard.html#navbar-tables" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">

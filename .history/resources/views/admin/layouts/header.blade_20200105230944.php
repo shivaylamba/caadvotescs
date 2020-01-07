@@ -84,7 +84,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{'pages-list' == request()->path() ? 'active' : ''}}" href="/pages-list"  role="button" aria-expanded="false" aria-controls="navbar-forms">
+              <a class="nav-link {{'pages-list' == request()->path() ? 'active' : ''}}" href="/pages-List" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-forms">
                 <i class="ni ni-single-copy-04 text-pink"></i>
                 <span class="nav-link-text">Pages</span>
               </a>
