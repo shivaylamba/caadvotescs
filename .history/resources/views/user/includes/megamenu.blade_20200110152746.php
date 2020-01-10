@@ -5,7 +5,7 @@
                                     <!-- end col-3 -->
                                     <!-- end col-3 -->
                                     <div class="col-menu col-md-3">
-                                        <h6 class="title">test</h6>
+                                        <h6 class="title">{{$row->title}}</h6>
                                         <div class="content">
                                             <ul class="menu-col">
                                                 <li>
