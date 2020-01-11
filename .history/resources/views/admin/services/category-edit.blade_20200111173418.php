@@ -15,11 +15,11 @@
             <div class="card">
               <!-- Card header -->
               <div class="card-header">
-                <h3 class="mb-0">Create Service Category</h3>
+                <h3 class="mb-0">Edit Services Category</h3>
               </div>
               <!-- Card body -->
               <div class="card-body">
-                <form action="/save-category" method="POST">
+              <form action="/update-category/{{$category[0]->id}}" method="POST">
                     @if (session('status'))
                     <div class="alert alert-success" role="alert">
                         {{ session('status') }}
@@ -35,7 +35,7 @@
                           <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                           </div>
-                          <input name="categoryname" class="form-control" placeholder="Category Name" type="text">
+                        <input name="categoryname" class="form-control" placeholder="Category Name" value="{{$category[0]->categoryname}}" type="text">
                         </div>
                       </div>
                     </div>
@@ -48,7 +48,7 @@
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                           </div>
                           <select class="form-control" placeholder="Status" name="status">
-                            <option value="#">Status</option>
+                            <option value="{{$category[0]->status}}">{{ucfirst($category[0]->status)}}(Current Status)</option>
                             <option value="active">Active</option>
                             <option value="inactive">Inactive</option>
                         </select>
@@ -56,7 +56,7 @@
                       </div>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-success">Submit</button>
+                  <button type="submit" class="btn btn-success">Update Category</button>
                 </form>
               </div>
             </div>

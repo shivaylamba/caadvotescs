@@ -90,33 +90,6 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-menu col-md-3">
-                                        <h6 class="title">Sub Menu Heading 2</h6>
-                                        <div class="content">
-                                            <ul class="menu-col">
-                                                <li>
-                                                    <a href="/post">Service 1</a>
-                                                </li>
-                                                <li>
-                                                <a href="/post">Service 2</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/post">Service 3</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/post">Service 4</a>
-                                                </li>
-                                                <li>
-
-                                                    <a href="/post">Service 5</a>
-                                                </li>
-                                                <li>
-
-                                                    <a href="/post">Service 6</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                    
                                     <div class="col-menu col-md-3 nav-offer">
                                         <h3><span class="red-color">Great</span> Offer</h3>

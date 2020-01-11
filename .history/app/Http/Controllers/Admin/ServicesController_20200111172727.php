@@ -59,8 +59,7 @@ class ServicesController extends Controller
 
     public function createsubcategory() 
     {
-        $category = DB::select('select * from servisecategories');
-        return view('admin.services.create-subcategory' ,['category'=>$category]);
+        return view('admin.services.create-subcategory');
     }
 
     public function savesubcategory(Request $request) 

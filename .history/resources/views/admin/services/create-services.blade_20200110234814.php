@@ -92,14 +92,24 @@
                     </div>
                     <!-- Card body -->
                     <div class="card-body">
-                      <textarea id="froala-editor" name="content">Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
+                        <div data-toggle="quill" data-quill-placeholder="Quill WYSIWYG"><input name="content" type="hidden">
+                        </div>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-success">Submit</button>
+                  <button type="submit">Submit</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <script>
+        var form = document.querySelector('form');
+        form.onsubmit = function() {
+          // Populate hidden form on submit
+          var about = document.querySelector('input[name=content]');
+          about.value = JSON.stringify(quill.getContents());
+          return false;
+        };
+      </script>
       @include('admin.layouts.footer')

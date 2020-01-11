@@ -5,7 +5,6 @@
     @include('admin.layouts.topmenu')
     <!-- Header -->
     <!-- Header -->
-    @include('admin.layouts.topBar')
     <!-- Page content -->
     <div class="container-fluid mt--6">
       <div class="row">

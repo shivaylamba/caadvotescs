@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 use DB;
+user app\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -59,18 +60,16 @@ class ServicesController extends Controller
 
     public function createsubcategory() 
     {
-        $category = DB::select('select * from servisecategories');
-        return view('admin.services.create-subcategory' ,['category'=>$category]);
+        return view('admin.services.create-subcategory');
     }
 
     public function savesubcategory(Request $request) 
     {
         $subcategoryname = $request->input('subcategoryname');
-        $parentcategory = $request->input('ParentCategory');
         $status = $request->input('status');
         $created_at = new \DateTime();
         $updated_at = new \DateTime();
-        $data=array('subcategoryname'=>$subcategoryname, 'ParentCategory'=>$parentcategory,'status'=>$status, 'created_at'=>$created_at, 'updated_at'=>$updated_at);
+        $data=array('subcategoryname'=>$subcategoryname,'status'=>$status, 'created_at'=>$created_at, 'updated_at'=>$updated_at);
         DB::table('subcategories')->insert($data);
         return redirect('/create-subcategory')->with('status', 'Sub Category Created Successfully');
     }

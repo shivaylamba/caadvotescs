@@ -46,9 +46,6 @@
 
 <!-- Argon JS -->
 <script src="../../assets/js/argon.min.js"></script>
-<script>
-  new FroalaEditor('textarea#froala-editor')
-</script>
 </body>
 
 </html>

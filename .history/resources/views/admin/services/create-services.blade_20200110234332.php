@@ -85,17 +85,15 @@
                         </select>
                     </div>
                   </div>
-                  <div class="card">
-                    <!-- Card header -->
-                    <div class="card-header">
-                      <h3 class="mb-0">Add Service Page Content</h3>
-                    </div>
-                    <!-- Card body -->
-                    <div class="card-body">
-                      <textarea id="froala-editor" name="content">Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
+                  
+                  <div class="row form-group">
+                    <label for="about">About me</label>
+                    <input name="about" type="hidden">
+                    <div id="editor-container">
+                      <p>A robot who has developed sentience, and is the only robot of his kind shown to be still functioning on Earth.</p>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-success">Submit</button>
+                  <button type="submit">Submit</button>
                 </form>
               </div>
             </div>

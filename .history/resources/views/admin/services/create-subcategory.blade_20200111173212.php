@@ -15,11 +15,11 @@
             <div class="card">
               <!-- Card header -->
               <div class="card-header">
-                <h3 class="mb-0">Create Service Category</h3>
+                <h3 class="mb-0">Create SubCategory for the Services</h3>
               </div>
               <!-- Card body -->
               <div class="card-body">
-                <form action="/save-category" method="POST">
+                <form action="/save-subcategory" method="POST">
                     @if (session('status'))
                     <div class="alert alert-success" role="alert">
                         {{ session('status') }}
@@ -35,7 +35,24 @@
                           <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                           </div>
-                          <input name="categoryname" class="form-control" placeholder="Category Name" type="text">
+                          <input name="subcategoryname" class="form-control" placeholder="Category Name" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <div class="input-group input-group-merge">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                          </div>
+                          <select class="form-control" placeholder="ParentCategory" name="ParentCategory">
+                            @foreach ($category as $row)
+                            <option value="{{$row->categoryname}}">{{ucfirst($row->categoryname)}}</option>
+                            @endforeach
+                        </select>
                         </div>
                       </div>
                     </div>
@@ -56,7 +73,7 @@
                       </div>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-success">Submit</button>
+                  <button type="submit">Submit</button>
                 </form>
               </div>
             </div>

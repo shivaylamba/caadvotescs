@@ -92,14 +92,19 @@
                     </div>
                     <!-- Card body -->
                     <div class="card-body">
-                      <textarea id="froala-editor" name="content">Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
+                      <textarea id="froala-editor">Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-success">Submit</button>
+                  <button type="submit">Submit</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <script>
+        <script>
+  new FroalaEditor('textarea#froala-editor')
+</script>
+      </script>
       @include('admin.layouts.footer')
