@@ -74,7 +74,7 @@
                     </div>
                     <!-- Card body -->
                     <div class="card-body">
-                    <textarea id="froala-editor" name="content" value="{{$service[0]->content}}">{{$service[0]->content}}</textarea>
+                    <textarea id="froala-editor" name="content" value="{{$service[0]->content}}">Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
                     </div>
                   </div>
                   <button type="submit" class="btn btn-success">Submit</button>
