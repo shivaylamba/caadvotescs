@@ -12,8 +12,6 @@
     <title>Kanina - Multipurpose Business And Digital Agency HTML5 Template</title>
 
     <!-- CSS Style -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
     <link rel="stylesheet" href="style/other/bootstrap.min.css">
     <link href="style/other/animate.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -21,15 +19,11 @@
     <link href="style/other/preload.css" rel="stylesheet">
     <link href="style/other/aos.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <script type="text/javascript" src="js/jquery.js"></script> 
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
     
     <!-- Service List -->
 
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
     <script charset="UTF-8" src="https://cdn.sendpulse.com/js/push/a82558b88f6c1657388ba45cf316e9c3_1.js" async></script></head>
 
     
@@ -427,11 +421,11 @@
                       <div class="target">
                       <h3>Price Range</h3>
                       <div class="price-range-box">
-                        <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;font-size:12px;margin-left:30px;" value='₹1999 - ₹6999' readonly>
-                          <div id="slider-container"></div>
-                                        
-                          <div id="slider-range"></div>
-                        </div>
+                      <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;font-size:12px;margin-left:30px;" value='₹999 - ₹15000' readonly>
+                        <div id="slider-container"></div>
+                                      
+                        <div id="slider-range"></div>
+                      </div>
                       <h3>Location</h3>
                       <ul class="sidebar-filter filter-attributes">
                            <li>
@@ -751,7 +745,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script> 
     <link rel="stylesheet" href="css/basic.css">
-    <script type="text/javascript" src="js/jquery.simplemodal.js"></script> 
+    <script type="text/javascript" src="js/jquery.simplemodal.js"></script> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
     
     
@@ -768,7 +762,74 @@
     <script src="js/enquiry.js"></script>
     <script src="js/jquery.combo.select.js"></script>
     <script type="text/javascript" src="js/service.js"></script>
-
+    <script>    
+       $(document).ready(function () {  
+         $("#populer-services").owlCarousel({
+            pagination : false,
+            margin: 10,
+            loop: true,
+            responsive: {
+              0: {
+                items: 1,
+                  nav: true,
+                  stagePadding: 50,
+              },
+              600: {
+                items: 2,
+                  nav: true,
+                  stagePadding: 50,
+              },
+              1000: {
+                items: 4,
+                  nav: true,
+                 
+              }
+            }
+         });
+         $("#owl-buzz").owlCarousel({
+            pagination : false,
+            margin: 20,
+            loop: true,
+            responsive: {
+              0: {
+                items: 1,
+                  nav: true,
+                  stagePadding: 50,
+              },
+              600: {
+                items: 2,
+                  nav: true,
+                  stagePadding: 50,
+              },
+              1000: {
+                items: 3,
+                  nav: true,
+              }
+            }
+         });
+           $("#owl-demo3").owlCarousel({
+            pagination : true,
+            autoHeight:true,
+            margin: 10,
+            loop: true,
+            responsive: {
+              0: {
+                items: 1,
+                  nav: true
+              },
+              600: {
+                items: 1,
+                  nav: true
+              },
+              1000: {
+                items: 1,
+                  nav: true,
+              }
+            }
+         });
+    });
+        </script> 
+    
     
     
     <script>
@@ -879,4 +940,3 @@
         }
         </style>
   
-    @include('site.includes.footer')

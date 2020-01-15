@@ -30,9 +30,6 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     
-    <script charset="UTF-8" src="https://cdn.sendpulse.com/js/push/a82558b88f6c1657388ba45cf316e9c3_1.js" async></script></head>
-
-    
     <!-- main css files -->
     <link href="style/navbar.css" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet">

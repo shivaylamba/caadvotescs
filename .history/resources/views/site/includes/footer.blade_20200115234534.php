@@ -127,12 +127,8 @@
     <!-- footer style 1 -->
 
     <!-- START JAVASCRIPT -->
-    <script src="javascript/jquery.js"></script>
     <script src="javascript/validator.js"></script>
     <script src="javascript/aos.js"></script>
-    <script src="javascript/jquery.waypoints.min.js"></script>
-    <script src="javascript/jquery.counterup.js"></script>
-    <script src="javascript/jquery.magnific-popup.js"></script>
     <script src="javascript/navbar.js"></script>
     <script src="javascript/bootstrap.min.js"></script>
     <script src="javascript/main.js"></script>

@@ -12,24 +12,17 @@
     <title>Kanina - Multipurpose Business And Digital Agency HTML5 Template</title>
 
     <!-- CSS Style -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="style/other/bootstrap.min.css">
+    <link href="style/other/bootstrap.min.css" rel="stylesheet">
     <link href="style/other/animate.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="style/other/magnific-popup.css" rel="stylesheet">
     <link href="style/other/preload.css" rel="stylesheet">
     <link href="style/other/aos.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <script type="text/javascript" src="js/jquery.js"></script> 
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
     
     <!-- Service List -->
 
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
     <script charset="UTF-8" src="https://cdn.sendpulse.com/js/push/a82558b88f6c1657388ba45cf316e9c3_1.js" async></script></head>
 
     
@@ -40,28 +33,6 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        .desktop-bkg
-          {
-            background: url(https://www.support.ezeestartup.com/productImage/service/Banner-PVT-temp-20190821055027-9.jpg) no-repeat  top;
-              }
-          @media screen and (max-width: 580px) {
-            .desktop-bkg
-          {
-            background:url(https://www.support.ezeestartup.com/productImage/service/Banner-PVT-MOB-20190824121326-9.jpg) no-repeat  top;
-            background-repeat: no-repeat;
-            background-size: contain;
-              }  
-          }
-          #slider-container
-        {
-            width:150px;
-            margin-left:0;
-        }
-        .ui-slider .ui-slider-range {
-            background: #e66c00;
-        }
-        </style>
 </head>
 
 <body>
@@ -413,7 +384,6 @@
                 <div class="col-lg-4">
                 </div>
             </div>
-            <div class="bootstrap">
             <div class="pro-con-holder" >
                 <div class="row">
                  <div class="ser-pro-heading">
@@ -427,28 +397,32 @@
                       <div class="target">
                       <h3>Price Range</h3>
                       <div class="price-range-box">
-                        <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;font-size:12px;margin-left:30px;" value='₹1999 - ₹6999' readonly>
-                          <div id="slider-container"></div>
-                                        
-                          <div id="slider-range"></div>
-                        </div>
+                      <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;font-size:12px;margin-left:30px;" value='₹999 - ₹15000' readonly>
+                        <div id="slider-container"></div>
+                                      
+                        <div id="slider-range"></div>
+                      </div>
                       <h3>Location</h3>
                       <ul class="sidebar-filter filter-attributes">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="materialUnchecked">
+                            <label class="form-check-label" for="materialUnchecked">Material unchecked</label>
+                        </div>
                            <li>
-                                <label class="custom-control material-checkbox">
-                                <input type="checkbox" class="material-control-input" name='state' id='Haryana' value='Haryana'>
+                            <label class="custom-control material-checkbox">
+                                <input type="checkbox" class="" name='state' id='Haryana' value='Haryana'>
                                 <span class="material-control-indicator"></span> <span class="material-control-description">Haryana</span> </label>
                             </li>
-                            <li>
-                                <label class="custom-control material-checkbox">
-                                <input type="checkbox" class="material-control-input" name='state' id='Uttar Pradesh' value='Uttar Pradesh'>
-                                <span class="material-control-indicator"></span> <span class="material-control-description">Uttar Pradesh</span> </label>
-                            </li>
-                            <li>
-                                <label class="custom-control material-checkbox">
-                                <input type="checkbox" class="material-control-input" name='state' id='Delhi' value='Delhi'>
-                                <span class="material-control-indicator"></span> <span class="material-control-description">Delhi</span> </label>
-                            </li>
+                                        <li>
+                          <label class="custom-control material-checkbox">
+                            <input type="checkbox" class="material-control-input" name='state' id='Uttar Pradesh' value='Uttar Pradesh'>
+                            <span class="material-control-indicator"></span> <span class="material-control-description">Uttar Pradesh</span> </label>
+                        </li>
+                                        <li>
+                          <label class="custom-control material-checkbox">
+                            <input type="checkbox" class="material-control-input" name='state' id='Delhi' value='Delhi'>
+                            <span class="material-control-indicator"></span> <span class="material-control-description">Delhi</span> </label>
+                        </li>
                         
                       </ul>
                       <h3>Rating</h3>
@@ -742,141 +716,208 @@
                 </div>
               </div>
             </div>
-            </div>
         </div>
     </div>
-    <div class="basic-modal-content" id="popup-data"></div>
-    <script type="text/javascript" src="js/jquery.js"></script> 
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
-    <link rel="stylesheet" href="css/basic.css">
-    <script type="text/javascript" src="js/jquery.simplemodal.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
-    
-    
-    <script src="js/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/jquery.collapsible.min.js"></script> 
-    <script type="text/javascript" src="js/swiper.min.js"></script> 
-    <script type="text/javascript" src="js/jquery.countdown.min.js"></script> 
-    <script type="text/javascript" src="js/circle-progress.min.js"></script> 
-    <script type="text/javascript" src="js/jquery.countTo.min.js"></script> 
-    <script type="text/javascript" src="js/jquery.barfiller.js"></script> 
-    
-    <script type="text/javascript" src="js/custom.js"></script>
-    
-    <script src="js/enquiry.js"></script>
-    <script src="js/jquery.combo.select.js"></script>
-    <script type="text/javascript" src="js/service.js"></script>
+  <!--End of Tawk.to Script-->
 
-    
-    
-    <script>
-        $(function() {
-                            
-            $('#slider-container').slider({
-                range: true,
-                min: 1999,
-                max: 6999,
-                values: [1999, 6999],
-                slide: function(event, ui) {
-                    $( "#amount" ).val( "₹" + ui.values[ 0 ] + " - ₹" + ui.values[ 1 ] );
-                    var mi = ui.values[ 0 ];
-                    var mx = ui.values[ 1 ];
-                    filterSystem(mi, mx);
-                }
-            });
-            setTimeout(function(){
-                var p_1 = $("#slider-range").slider("values", 0);
-                var p_2 = $("#slider-range").slider("values",1);		
-                $("#amount").val( "₹" + p_1 +" - ₹" + p_2 );
-            },200);
-        });
-    
-        function filterSystem(minPrice, maxPrice) {		
-            $("#products-div div.grid-products").hide().filter(function() {			
-                var price = parseInt($(this).data("price"), 10);			
-                return price >= minPrice && price <= maxPrice;
-            }).show();
-            var count_div = $('div.grid-products:hidden').length;
-            var product_div = $("#product_div_count").val();
-            if(count_div==product_div){
-                $("#product-hide").html("No results found. Kindly modify your search to find best suitable professional.");
-                $("#product-hide").show();
-            }else{
-                $("#product-hide").html("");
-                $("#product-hide").hide();
-            }
-            $("input[name='state']").prop('checked', false);
-            $("input[name='rating']").prop('checked', false);
-            $("input[name='experience']").prop('checked', false);
-        }    
-    </script>
-    <script src="js/jquery.morelines.js"></script> 
-    <script defer src="js/product_filter_level2.js"></script>
-    <script>
-        $(function() {
-          $('.js-description_readmore').moreLines({
-            linecount: 15, 
-            baseclass: 'b-description',
-            basejsclass: 'js-description',
-            classspecific: '_readmore',    
-            buttontxtmore: "<i class='fa fa-chevron-down' aria-hidden='true'></i>",               
-            buttontxtless: "<i class='fa fa-chevron-up' aria-hidden='true'></i>",
-            animationspeed: 250 
-          });
-        });
-      </script>
-      <script>
-          document.getElementById('toggle-button').addEventListener('click', function () {
-            toggle(document.querySelectorAll('.target'));
-          });
-        
-        function toggle (elements, specifiedDisplay) {
-          var element, index;
-        
-          elements = elements.length ? elements : [elements];
-          for (index = 0; index < elements.length; index++) {
-            element = elements[index];
-        
-            if (isElementHidden(element)) {
-              element.style.display = '';
-        
-              // If the element is still hidden after removing the inline display
-              if (isElementHidden(element)) {
-                element.style.display = specifiedDisplay || 'block';
-              }
-            } else {
-              element.style.display = 'none';
-            }
-          }
-          function isElementHidden (element) {
-            return window.getComputedStyle(element, null).getPropertyValue('display') === 'none';
+<div class="basic-modal-content" id="popup-data"></div>
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<link rel="stylesheet" href="css/basic.css">
+<script type="text/javascript" src="js/jquery.simplemodal.js"></script> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+
+
+<script src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.collapsible.min.js"></script> 
+<script type="text/javascript" src="js/swiper.min.js"></script> 
+<script type="text/javascript" src="js/jquery.countdown.min.js"></script> 
+<script type="text/javascript" src="js/circle-progress.min.js"></script> 
+<script type="text/javascript" src="js/jquery.countTo.min.js"></script> 
+<script type="text/javascript" src="js/jquery.barfiller.js"></script> 
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script src="js/enquiry.js"></script>
+<script src="js/jquery.combo.select.js"></script>
+<script type="text/javascript" src="js/service.js"></script>
+<script>    
+   $(document).ready(function () {  
+     $("#populer-services").owlCarousel({
+        pagination : false,
+        margin: 10,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1,
+              nav: true,
+              stagePadding: 50,
+          },
+          600: {
+            items: 2,
+              nav: true,
+              stagePadding: 50,
+          },
+          1000: {
+            items: 4,
+              nav: true,
+             
           }
         }
-      </script>
-     
-      <style>
+     });
+     $("#owl-buzz").owlCarousel({
+        pagination : false,
+        margin: 20,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1,
+              nav: true,
+              stagePadding: 50,
+          },
+          600: {
+            items: 2,
+              nav: true,
+              stagePadding: 50,
+          },
+          1000: {
+            items: 3,
+              nav: true,
+          }
+        }
+     });
+       $("#owl-demo3").owlCarousel({
+        pagination : true,
+        autoHeight:true,
+        margin: 10,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1,
+              nav: true
+          },
+          600: {
+            items: 1,
+              nav: true
+          },
+          1000: {
+            items: 1,
+              nav: true,
+          }
+        }
+     });
+});
+    </script> 
+
+
+
+<script>
+    $(function() {
+						
+		$('#slider-container').slider({
+            range: true,
+            min: 999,
+            max: 15000,
+            values: [999, 15000],
+            slide: function(event, ui) {
+                $( "#amount" ).val( "₹" + ui.values[ 0 ] + " - ₹" + ui.values[ 1 ] );
+                var mi = ui.values[ 0 ];
+                var mx = ui.values[ 1 ];
+                filterSystem(mi, mx);
+            }
+        });
+        setTimeout(function(){
+			var p_1 = $("#slider-range").slider("values", 0);
+			var p_2 = $("#slider-range").slider("values",1);		
+			$("#amount").val( "₹" + p_1 +" - ₹" + p_2 );
+		},200);
+	});
+
+    function filterSystem(minPrice, maxPrice) {		
+    	$("#products-div div.grid-products").hide().filter(function() {			
+    		var price = parseInt($(this).data("price"), 10);			
+            return price >= minPrice && price <= maxPrice;
+    	}).show();
+		var count_div = $('div.grid-products:hidden').length;
+		var product_div = $("#product_div_count").val();
+		if(count_div==product_div){
+			$("#product-hide").html("No results found. Kindly modify your search to find best suitable professional.");
+			$("#product-hide").show();
+		}else{
+			$("#product-hide").html("");
+			$("#product-hide").hide();
+		}
+		$("input[name='state']").prop('checked', false);
+		$("input[name='rating']").prop('checked', false);
+		$("input[name='experience']").prop('checked', false);
+    }    
+</script>
+<script src="js/jquery.morelines.js"></script> 
+<script defer src="js/product_filter_level2.js"></script>
+<script>
+    $(function() {
+      $('.js-description_readmore').moreLines({
+        linecount: 15, 
+        baseclass: 'b-description',
+        basejsclass: 'js-description',
+        classspecific: '_readmore',    
+        buttontxtmore: "<i class='fa fa-chevron-down' aria-hidden='true'></i>",               
+        buttontxtless: "<i class='fa fa-chevron-up' aria-hidden='true'></i>",
+        animationspeed: 250 
+      });
+    });
+  </script>
+  <script>
+      document.getElementById('toggle-button').addEventListener('click', function () {
+        toggle(document.querySelectorAll('.target'));
+      });
+    
+    function toggle (elements, specifiedDisplay) {
+      var element, index;
+    
+      elements = elements.length ? elements : [elements];
+      for (index = 0; index < elements.length; index++) {
+        element = elements[index];
+    
+        if (isElementHidden(element)) {
+          element.style.display = '';
+    
+          // If the element is still hidden after removing the inline display
+          if (isElementHidden(element)) {
+            element.style.display = specifiedDisplay || 'block';
+          }
+        } else {
+          element.style.display = 'none';
+        }
+      }
+      function isElementHidden (element) {
+        return window.getComputedStyle(element, null).getPropertyValue('display') === 'none';
+      }
+    }
+  </script>
+ 
+  <style>
+    .desktop-bkg
+      {
+        background: url(https://www.support.ezeestartup.com/productImage/service/Banner-PVT-temp-20190821055027-9.jpg) no-repeat  top;
+          }
+      @media screen and (max-width: 580px) {
         .desktop-bkg
-          {
-            background: url(https://www.support.ezeestartup.com/productImage/service/Banner-PVT-temp-20190821055027-9.jpg) no-repeat  top;
-              }
-          @media screen and (max-width: 580px) {
-            .desktop-bkg
-          {
-            background:url(https://www.support.ezeestartup.com/productImage/service/Banner-PVT-MOB-20190824121326-9.jpg) no-repeat  top;
-            background-repeat: no-repeat;
-            background-size: contain;
-              }  
-          }
-          #slider-container
-        {
-            width:150px;
-            margin-left:0;
-        }
-        .ui-slider .ui-slider-range {
-            background: #e66c00;
-        }
-        </style>
-  
+      {
+        background:url(https://www.support.ezeestartup.com/productImage/service/Banner-PVT-MOB-20190824121326-9.jpg) no-repeat  top;
+        background-repeat: no-repeat;
+        background-size: contain;
+          }  
+      }
+	  #slider-container
+	{
+	    width:150px;
+	    margin-left:0;
+	}
+	.ui-slider .ui-slider-range {
+		background: #e66c00;
+	}
+    </style>
     @include('site.includes.footer')

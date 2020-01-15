@@ -12,8 +12,6 @@
     <title>Kanina - Multipurpose Business And Digital Agency HTML5 Template</title>
 
     <!-- CSS Style -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
     <link rel="stylesheet" href="style/other/bootstrap.min.css">
     <link href="style/other/animate.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">

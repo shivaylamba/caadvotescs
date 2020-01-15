@@ -29,10 +29,7 @@
 
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
-    <script charset="UTF-8" src="https://cdn.sendpulse.com/js/push/a82558b88f6c1657388ba45cf316e9c3_1.js" async></script></head>
 
-    
     <!-- main css files -->
     <link href="style/navbar.css" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet">
@@ -746,14 +743,6 @@
         </div>
     </div>
     <div class="basic-modal-content" id="popup-data"></div>
-    <script type="text/javascript" src="js/jquery.js"></script> 
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
-    <link rel="stylesheet" href="css/basic.css">
-    <script type="text/javascript" src="js/jquery.simplemodal.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
-    
     
     <script src="js/owl.carousel.js"></script>
     <script type="text/javascript" src="js/jquery.collapsible.min.js"></script> 

@@ -12,8 +12,6 @@
     <title>Kanina - Multipurpose Business And Digital Agency HTML5 Template</title>
 
     <!-- CSS Style -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
     <link rel="stylesheet" href="style/other/bootstrap.min.css">
     <link href="style/other/animate.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -21,9 +19,6 @@
     <link href="style/other/preload.css" rel="stylesheet">
     <link href="style/other/aos.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <script type="text/javascript" src="js/jquery.js"></script> 
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
     
     <!-- Service List -->
 
@@ -751,7 +746,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script> 
     <link rel="stylesheet" href="css/basic.css">
-    <script type="text/javascript" src="js/jquery.simplemodal.js"></script> 
+    <script type="text/javascript" src="js/jquery.simplemodal.js"></script> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
     
     

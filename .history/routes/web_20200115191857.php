@@ -19,7 +19,7 @@ Route::get('/service', function () {
 });
 
 Route::get('/test', function () {
-    return view('site.test');
+    return view('site.service');
 });
 
 //Site View
