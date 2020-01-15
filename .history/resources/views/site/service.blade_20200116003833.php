@@ -935,7 +935,7 @@
             var count_div = $('div.grid-products:hidden').length;
             var product_div = $("#product_div_count").val();
             if(count_div==product_div){
-                $("#product-hide").html("");
+                $("#product-hide").html("No results found. Kindly modify your search to find best suitable professional.");
                 $("#product-hide").show();
             }else{
                 $("#product-hide").html("");

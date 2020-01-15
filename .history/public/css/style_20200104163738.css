@@ -3212,7 +3212,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     float: left;
     margin: 0 !important;
     display: inline-block;
-    background: #e66c00 !important;
+    background: #e66c00;
     color: #fff !important;
     
 }

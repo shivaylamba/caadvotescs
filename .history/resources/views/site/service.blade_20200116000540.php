@@ -507,80 +507,7 @@
                         <div class="float-left service-compare-btn"></div>
                       </div>
                       <div id='product-hide' style="display:none;"></div>
-                      <div class="col-md-4 grid-products" data-state='Delhi' data-experience='2 to 5 Year' data-rating='4' data-price="5500">
-                        <div class="grid-products-list ">
-                            <div class="NameHighlights">
-                                <figure class="card-product">
-                                    <div class="on-hover-effect">
-                                        <div class="img-wrap"><img src="https://www.support.ezeestartup.com/productImage/site/Ezee-Associate-Thumbnail-14-20190814124232-45.jpg">
-                                            <h5 class="hidden-lg">View Details</h5>
-                                        </div>
-                                        <figcaption class="info-wrap">
-                                            <h4 class="title">ESI Return Filings</h4>
-                                            <p class="desc">PRAMOD KUMAR&nbsp;&nbsp;<span class='verified-associate'><i class="fa fa-check-square" aria-hidden="true"></i></span></p>
-                                            <div class="rating-wrap">
-                                                <ul class="rating-stars">
-                                                    <li style="width:100%" class="stars-active">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                    </li>
-                                                    <li>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                    </li>
-                                                </ul>
-                                                <div class="label-rating">4 <span>(Review 10)</span></div>
-                                            </div>
-                                        </figcaption>
-                                        <div class="after-hover"></div>
-                                    </div>
-                    
-                                    <div class="on-mouse-hover-popup tooltip-even arrow_box">
-                                        <h3>Requirements</h3>
-                                        <ul>
-                                            <li>ESI Website Login Credentials</li>
-                                            <li>Salary Data with ESI Contribution in specified format</li>
-                    
-                                        </ul>
-                                        <a class="pop-orange-text" href="esi-return-filings/pramod-kumar-139.html">Read more</a>
-                                        <h4>Deliverables</h4>
-                                        <ul>
-                                            <li>Acknowledgment of ESI Return filings</li>
-                                            <li>Free Consultancy</li>
-                                        </ul>
-                                        <a class="blue-text" href="esi-return-filings/pramod-kumar-139.html">Read more </a>
-                                        <div class="clearfix"></div>
-                                        <a href="javascript:void(0)" rel='242' data-action='addtocart' class="addtocart-btn service-addtocart">Add to cart</a>
-                                        <a class="wishlist " rel="242" data-action='addtowishlist' href="login.html"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                        <div class="tool-tipfooter"> <a href="pramod-kumar/139.html">know more about professional</a> </div>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="clearfix"></div>
-                    
-                            <div class="bottom-wrap">
-                                <div class="price-wrap h5">
-                                    <em>&nbsp;</em>
-                                    <div class="clearfix"></div>
-                                    <span class="price-new">₹5500</span>
-                                    <div class="clearfix"></div>
-                                    <p class="offer-note">&nbsp;</p>
-                    
-                                </div>
-                            </div>
-                    
-                            <div class="bottom-wrap">
-                                <a href="javascript:void(0)" rel='242' data-action='addtocart' class="buynow-btn service-buynow">Buy Now</a>
-                                <a href="javascript:void(0)" class="compare-button service-compare" data-associate-service='242'>Add to Compare</a>
-                            </div>
-                        </div>
-                    </div>
-                      <div class="col-md-4 grid-products" data-price="2500" data-state='Haryana' data-experience='11 to 15 Year' data-rating='5' data-price="2500">
+                      <div class="col-md-4 grid-products" data-price="2500" data-state='Delhi' data-experience='2 to 5 Year' data-rating='5' data-price="5500">
                         <div class="grid-products-list ">
                             <div class="NameHighlights">
                                 <figure class="card-product">
@@ -654,7 +581,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 grid-products" data-price="2500" data-state='Haryana' data-experience='11 to 15 Year' data-rating='5' data-price="2500">
+                      <div class="col-md-4 grid-products" data-price="2500" data-state='Uttar Pradesh' data-experience='11 to 15 Year' data-rating='5' data-price="2500">
                         <div class="grid-products-list ">
                             <div class="NameHighlights">
                                 <figure class="card-product">
@@ -935,7 +862,7 @@
             var count_div = $('div.grid-products:hidden').length;
             var product_div = $("#product_div_count").val();
             if(count_div==product_div){
-                $("#product-hide").html("");
+                $("#product-hide").html("No results found. Kindly modify your search to find best suitable professional.");
                 $("#product-hide").show();
             }else{
                 $("#product-hide").html("");
