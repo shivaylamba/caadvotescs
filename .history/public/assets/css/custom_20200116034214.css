@@ -1,0 +1,8 @@
+.navbar-vertical.navbar-expand-xs .navbar-nav>.nav-item>.nav-link.active {
+    background: #ffa4ff6b !important;
+}
+
+body {
+    font-family: axiforma-semiBold,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+
+}
