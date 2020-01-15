@@ -65,5 +65,5 @@
         </div>
     </div>
     <!-- blog section ends here -->
-   
-   @include('site.includes.footer');
+
+    

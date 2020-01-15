@@ -16,12 +16,12 @@ class MenuController extends Controller
         return view('site.index')->with(compact('category', 'subcategory', 'services'));
     }
 
-    public function ServicePageMenu() 
+    public function ServicePagemenu() 
     {
         $category = DB::select('select * from servisecategories WHERE status = "active"');
         $subcategory = DB::select('select * from subcategories where status = "active"');
         $services = DB::select('select * from services where status = "active"');
-        return view('site.service')->with(compact('category', 'subcategory', 'services'));
+        return view('site.index')->with(compact('category', 'subcategory', 'services'));
     }
 
     

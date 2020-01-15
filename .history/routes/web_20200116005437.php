@@ -15,6 +15,9 @@
 
 Route::get('/', 'Admin\MenuController@menuContent');
 Route::get('/service', 'Admin\MenuController@ServicePageMenu');
+Route::get('/service', function () {
+    return view('site.service');
+});
 
 Route::get('/test', function () {
     return view('site.test');

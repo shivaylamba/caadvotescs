@@ -4373,7 +4373,7 @@ textarea::placeholder {
 
 .header1 h2 {
     font-weight: 700;
-    color: #000;
+    color: #fff;
     font-size: 40px
 }
 
@@ -4382,7 +4382,7 @@ textarea::placeholder {
 }
 
 .header1 p {
-    color: #5d5c5c;
+    color: #ddd;
     font-size: 18px
 }
 
