@@ -42,7 +42,6 @@
                     <tr>
                         <th>ID</th>
                         <th>Services</th>
-                        <th>Category Under</th>
                         <th>Status</th>
                         <th>Created At</th>
                         <th>Edit</th>
@@ -54,7 +53,6 @@
                     <tr>
                         <td> {{ $row->id }} </td> 
                         <td>{{ $row->servicename }}</td>
-                        <td>{{ $row->subcategory }}</td>
                         <td>{{ $row->status }}</td>
                         <td>{{ $row->created_at }}</td>
                         <td>

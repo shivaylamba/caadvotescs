@@ -54,7 +54,6 @@
                     <tr>
                         <td> {{ $row->id }} </td> 
                         <td>{{ $row->servicename }}</td>
-                        <td>{{ $row->subcategory }}</td>
                         <td>{{ $row->status }}</td>
                         <td>{{ $row->created_at }}</td>
                         <td>
