@@ -16,6 +16,81 @@
 <!-- main css files -->
 <link href="../../style/navbar.css" rel="stylesheet">
 <style>
+    body {
+    font-family: Arial;
+    color: #212121;
+}
+
+.input-row {
+    margin-bottom: 20px;
+}
+
+.input-row label {
+    color: #75726c;
+}
+
+.input-field {
+    width: 100%;
+    border-radius: 2px;
+    padding: 10px;
+    border: #e0dfdf 1px solid;
+    box-sizing: border-box;
+    margin-top: 2px;
+}
+
+.btn-submit {
+    padding: 10px 60px;
+    background: #9e9a91;
+    border: #8c8880 1px solid;
+    color: #ffffff;
+    font-size: 0.9em;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.info {
+    font-size: .8em;
+    color: #e66262;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+
+.demo-wrapper {
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 500px;
+    overflow: auto;
+    padding: 10px 20px;
+}
+
+.main-col {
+    float: left;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #fff;
+    width: 60%;
+}
+
+.contact-sidebar {
+    position: sticky;
+    top: 25px;
+    border: #e2ddd2 1px solid;
+    border-radius: 2px;
+    padding: 15px;
+    background-color: #fff;
+    float: right;
+    width: 30%;
+}.successMessage {
+    background-color: #9fd2a1;
+    border: #91bf93 1px solid;
+    padding: 5px 10px;
+    color: #3d503d;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
 /*------------- Form ---------------*/
 
 .nb-form {
@@ -337,104 +412,104 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="sidebar-item">
-                                <div class="make-me-sticky">
-                                    <div class="service-quick-enquiry hidden-xs">
-                                        <div class="call-back-holder">
-                                            <h3>Get the best price for your service</h3>
-                                            <div class="form-holder" id="call-back-msg">
-                                                <form id="service-lead-frm">
-                                                    <input type="hidden" name="lead_type" value="1">
-                                                    <input type="hidden" name="associate_service_id" value="">
-                                                    <input type="hidden" name="associate_id" value="">
-                                                    <input type="hidden" name="lead_subcat" value="14">
-                                                    <input type="hidden" name="action_type" value="lead-enquiry">
-                                                    <div class="input-holder">
-                                                        <input type="text" name="service_lead_name" placeholder="Name">
-                                                        <span><i class="fa fa-user-o" aria-hidden="true"></i></span> </div>
-                                                    <div class="clearfix"></div>
-                                                    <span class="message" id="msgservice_lead_name" style="display:none;">&nbsp;</span>
-                                                    <div class="input-holder">
-                                                        <input type="email" name="service_lead_email" placeholder="Email">
-                                                        <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> </div>
-                                                    <div class="clearfix"></div>
-                                                    <span class="message" id="msgservice_lead_email" style="display:none;">&nbsp;</span>
-                                                    <div class="input-holder">
-                                                        <input type="text" name="service_lead_mobile" placeholder="Mobile">
-                                                        <span><i class="fa fa-phone" aria-hidden="true"></i></span> </div>
-                                                    <div class="clearfix"></div>
-                                                    <span class="message" id="msgservice_lead_mobile" style="display:none;">&nbsp;</span>
-                                                    <div class="input-holder">
-                                                        <select name="service_lead_state" onchange="findCity(this)">
-                                                            <option value="">Select State</option>
-                                                            <option value="1">Andaman and Nicobar Islands</option>
-                                                            <option value="2">Andhra Pradesh</option>
-                                                            <option value="3">Arunachal Pradesh</option>
-                                                            <option value="4">Assam</option>
-                                                            <option value="5">Bihar</option>
-                                                            <option value="6">Chandigarh</option>
-                                                            <option value="7">Chhattisgarh</option>
-                                                            <option value="8">Dadra and Nagar Haveli</option>
-                                                            <option value="9">Daman and Diu</option>
-                                                            <option value="10">Delhi</option>
-                                                            <option value="11">Goa</option>
-                                                            <option value="12">Gujarat</option>
-                                                            <option value="13">Haryana</option>
-                                                            <option value="14">Himachal Pradesh</option>
-                                                            <option value="15">Jammu and Kashmir</option>
-                                                            <option value="16">Jharkhand</option>
-                                                            <option value="17">Karnataka</option>
-                                                            <option value="18">Kenmore</option>
-                                                            <option value="19">Kerala</option>
-                                                            <option value="20">Lakshadweep</option>
-                                                            <option value="21">Madhya Pradesh</option>
-                                                            <option value="22">Maharashtra</option>
-                                                            <option value="23">Manipur</option>
-                                                            <option value="24">Meghalaya</option>
-                                                            <option value="25">Mizoram</option>
-                                                            <option value="26">Nagaland</option>
-                                                            <option value="27">Narora</option>
-                                                            <option value="28">Natwar</option>
-                                                            <option value="29">Odisha</option>
-                                                            <option value="30">Paschim Medinipur</option>
-                                                            <option value="31">Pondicherry</option>
-                                                            <option value="32">Punjab</option>
-                                                            <option value="33">Rajasthan</option>
-                                                            <option value="34">Sikkim</option>
-                                                            <option value="35">Tamil Nadu</option>
-                                                            <option value="36">Telangana</option>
-                                                            <option value="37">Tripura</option>
-                                                            <option value="38">Uttar Pradesh</option>
-                                                            <option value="39">Uttarakhand</option>
-                                                            <option value="40">Vaishali</option>
-                                                            <option value="41">West Bengal</option>
-                        
-                                                        </select>
-                                                        <span><i class="fa fa-location-arrow" aria-hidden="true"></i></span>
-                                                    </div>
-                                                    <div class="clearfix"></div>
-                                                    <span class="message" id="msgservice_lead_state" style="display:none;">&nbsp;</span>
-                                                    <div class="input-holder">
-                                                        <select name="service_lead_city" class="service-city-data">
-                                                            <option value="">Select City</option>
-                                                        </select>
-                                                        <span><i class="fa fa-location-arrow" aria-hidden="true"></i></span>
-                                                    </div>
-                                                    <div class="clearfix"></div>
-                                                    <span class="message" id="msgservice_lead_city" style="display:none;">&nbsp;</span>
-                                                    <button type="button" id="authenticateServiceLeadEnquiry">Know More</button>
-                                                </form>
+                    <div class="sidebar-item">
+                        <div class="make-me-sticky">
+                            <div class="service-quick-enquiry hidden-xs">
+                                <div class="call-back-holder">
+                                    <h3>Get the best price for your service</h3>
+                                    <div class="form-holder" id="call-back-msg">
+                                        <form id="service-lead-frm">
+                                            <input type="hidden" name="lead_type" value="1">
+                                            <input type="hidden" name="associate_service_id" value="">
+                                            <input type="hidden" name="associate_id" value="">
+                                            <input type="hidden" name="lead_subcat" value="14">
+                                            <input type="hidden" name="action_type" value="lead-enquiry">
+                                            <div class="input-holder">
+                                                <input type="text" name="service_lead_name" placeholder="Name">
+                                                <span><i class="fa fa-user-o" aria-hidden="true"></i></span> </div>
+                                            <div class="clearfix"></div>
+                                            <span class="message" id="msgservice_lead_name" style="display:none;">&nbsp;</span>
+                                            <div class="input-holder">
+                                                <input type="email" name="service_lead_email" placeholder="Email">
+                                                <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> </div>
+                                            <div class="clearfix"></div>
+                                            <span class="message" id="msgservice_lead_email" style="display:none;">&nbsp;</span>
+                                            <div class="input-holder">
+                                                <input type="text" name="service_lead_mobile" placeholder="Mobile">
+                                                <span><i class="fa fa-phone" aria-hidden="true"></i></span> </div>
+                                            <div class="clearfix"></div>
+                                            <span class="message" id="msgservice_lead_mobile" style="display:none;">&nbsp;</span>
+                                            <div class="input-holder">
+                                                <select name="service_lead_state" onchange="findCity(this)">
+                                                    <option value="">Select State</option>
+                                                    <option value="1">Andaman and Nicobar Islands</option>
+                                                    <option value="2">Andhra Pradesh</option>
+                                                    <option value="3">Arunachal Pradesh</option>
+                                                    <option value="4">Assam</option>
+                                                    <option value="5">Bihar</option>
+                                                    <option value="6">Chandigarh</option>
+                                                    <option value="7">Chhattisgarh</option>
+                                                    <option value="8">Dadra and Nagar Haveli</option>
+                                                    <option value="9">Daman and Diu</option>
+                                                    <option value="10">Delhi</option>
+                                                    <option value="11">Goa</option>
+                                                    <option value="12">Gujarat</option>
+                                                    <option value="13">Haryana</option>
+                                                    <option value="14">Himachal Pradesh</option>
+                                                    <option value="15">Jammu and Kashmir</option>
+                                                    <option value="16">Jharkhand</option>
+                                                    <option value="17">Karnataka</option>
+                                                    <option value="18">Kenmore</option>
+                                                    <option value="19">Kerala</option>
+                                                    <option value="20">Lakshadweep</option>
+                                                    <option value="21">Madhya Pradesh</option>
+                                                    <option value="22">Maharashtra</option>
+                                                    <option value="23">Manipur</option>
+                                                    <option value="24">Meghalaya</option>
+                                                    <option value="25">Mizoram</option>
+                                                    <option value="26">Nagaland</option>
+                                                    <option value="27">Narora</option>
+                                                    <option value="28">Natwar</option>
+                                                    <option value="29">Odisha</option>
+                                                    <option value="30">Paschim Medinipur</option>
+                                                    <option value="31">Pondicherry</option>
+                                                    <option value="32">Punjab</option>
+                                                    <option value="33">Rajasthan</option>
+                                                    <option value="34">Sikkim</option>
+                                                    <option value="35">Tamil Nadu</option>
+                                                    <option value="36">Telangana</option>
+                                                    <option value="37">Tripura</option>
+                                                    <option value="38">Uttar Pradesh</option>
+                                                    <option value="39">Uttarakhand</option>
+                                                    <option value="40">Vaishali</option>
+                                                    <option value="41">West Bengal</option>
+                
+                                                </select>
+                                                <span><i class="fa fa-location-arrow" aria-hidden="true"></i></span>
                                             </div>
-                                        </div>
+                                            <div class="clearfix"></div>
+                                            <span class="message" id="msgservice_lead_state" style="display:none;">&nbsp;</span>
+                                            <div class="input-holder">
+                                                <select name="service_lead_city" class="service-city-data">
+                                                    <option value="">Select City</option>
+                                                </select>
+                                                <span><i class="fa fa-location-arrow" aria-hidden="true"></i></span>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <span class="message" id="msgservice_lead_city" style="display:none;">&nbsp;</span>
+                                            <button type="button" id="authenticateServiceLeadEnquiry">Know More</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
                         <!-- Form -->
                     <div class="nb-form">
-                    <p class="title">Get Expert Advice</p>
-                    <img src="https://cdn4.iconfinder.com/data/icons/blue-icons-3/1500/message_childhood_paper_plane_airplane_origami_origami-512.png" alt="" class="user-icon">
-                    <p class="message">Get an instant best price for your services</p>
+                    <p class="title">Send a message</p>
+                    <img src="https://lh3.googleusercontent.com/-LvTWzTOL4c0/V2yhfueroyI/AAAAAAAAGZM/Ebwt4EO4YlIc03tw8wVsGrgoOFGgAsu4wCEw/w140-h140-p/43bf8578-86b8-4c1c-86a6-a556af8fba13" alt="" class="user-icon">
+                    <p class="message">This is an awesome example of sticky contact form on right bottom of the page</p>
                 
                     <form>
                       <input type="text" name="cpname" placeholder="Name:" required>

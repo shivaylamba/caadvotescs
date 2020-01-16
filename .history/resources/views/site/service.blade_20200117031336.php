@@ -16,6 +16,81 @@
 <!-- main css files -->
 <link href="../../style/navbar.css" rel="stylesheet">
 <style>
+    body {
+    font-family: Arial;
+    color: #212121;
+}
+
+.input-row {
+    margin-bottom: 20px;
+}
+
+.input-row label {
+    color: #75726c;
+}
+
+.input-field {
+    width: 100%;
+    border-radius: 2px;
+    padding: 10px;
+    border: #e0dfdf 1px solid;
+    box-sizing: border-box;
+    margin-top: 2px;
+}
+
+.btn-submit {
+    padding: 10px 60px;
+    background: #9e9a91;
+    border: #8c8880 1px solid;
+    color: #ffffff;
+    font-size: 0.9em;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.info {
+    font-size: .8em;
+    color: #e66262;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+
+.demo-wrapper {
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 500px;
+    overflow: auto;
+    padding: 10px 20px;
+}
+
+.main-col {
+    float: left;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #fff;
+    width: 60%;
+}
+
+.contact-sidebar {
+    position: sticky;
+    top: 25px;
+    border: #e2ddd2 1px solid;
+    border-radius: 2px;
+    padding: 15px;
+    background-color: #fff;
+    float: right;
+    width: 30%;
+}.successMessage {
+    background-color: #9fd2a1;
+    border: #91bf93 1px solid;
+    padding: 5px 10px;
+    color: #3d503d;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
 /*------------- Form ---------------*/
 
 .nb-form {
@@ -432,8 +507,8 @@
                         </div>
                         <!-- Form -->
                     <div class="nb-form">
-                    <p class="title">Get Expert Advice</p>
-                    <img src="https://cdn4.iconfinder.com/data/icons/blue-icons-3/1500/message_childhood_paper_plane_airplane_origami_origami-512.png" alt="" class="user-icon">
+                    <p class="title">Send a message</p>
+                    <img src="https://lh3.googleusercontent.com/-LvTWzTOL4c0/V2yhfueroyI/AAAAAAAAGZM/Ebwt4EO4YlIc03tw8wVsGrgoOFGgAsu4wCEw/w140-h140-p/43bf8578-86b8-4c1c-86a6-a556af8fba13" alt="" class="user-icon">
                     <p class="message">Get an instant best price for your services</p>
                 
                     <form>

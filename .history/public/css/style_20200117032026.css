@@ -2682,7 +2682,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 .call-back-holder h3:after {
     border-color: rgba(136, 183, 213, 0);
-    border-top-color: #ee5435;
+    border-top-color: #00a1d9;
     border-width: 18px;
     margin-left: -30px;
 }
