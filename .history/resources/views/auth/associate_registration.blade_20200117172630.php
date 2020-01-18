@@ -1,0 +1,1 @@
+<form action="/associateregister"></form>
