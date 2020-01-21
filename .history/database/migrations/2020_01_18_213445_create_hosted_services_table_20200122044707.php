@@ -16,7 +16,6 @@ class CreateHostedServicesTable extends Migration
         Schema::create('hosted_services', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('byAssociate');
-            $table->string('associateslug');
             $table->longText('requirements');
             $table->longText('deliverables');
             $table->string('servicename');

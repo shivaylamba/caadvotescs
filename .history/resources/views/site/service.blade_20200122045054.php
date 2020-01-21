@@ -925,6 +925,18 @@
       </script>
      
       <style>
+        .desktop-bkg
+          {
+            background: url(https://www.support.ezeestartup.com/productImage/service/Banner-LLP-20190829093220-14.jpg) no-repeat  top;
+              }
+          @media screen and (max-width: 580px) {
+            .desktop-bkg
+          {
+            background:url(https://www.support.ezeestartup.com/productImage/service/Banner-LLP-MOB-20190829093220-14.jpg) no-repeat  top;
+            background-repeat: no-repeat;
+            background-size: contain;
+              }  
+          }
           #slider-container
         {
             width:150px;

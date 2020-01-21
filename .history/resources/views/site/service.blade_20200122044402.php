@@ -751,8 +751,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script> 
     <link rel="stylesheet" href="../../css/basic.css">
-    <script type="text/javascript" src="../../js/jquery.simplemodal.js"></script> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
+    <script type="text/javascript" src="../../js/jquery.simplemodal.js"></script> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
     
     
@@ -925,6 +924,18 @@
       </script>
      
       <style>
+        .desktop-bkg
+          {
+            background: url(https://www.support.ezeestartup.com/productImage/service/Banner-LLP-20190829093220-14.jpg) no-repeat  top;
+              }
+          @media screen and (max-width: 580px) {
+            .desktop-bkg
+          {
+            background:url(https://www.support.ezeestartup.com/productImage/service/Banner-LLP-MOB-20190829093220-14.jpg) no-repeat  top;
+            background-repeat: no-repeat;
+            background-size: contain;
+              }  
+          }
           #slider-container
         {
             width:150px;

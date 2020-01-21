@@ -21,14 +21,3 @@ body {
     font-size: 22px;
     border-bottom: 1px solid #e0e0e0;
 }
-
-.professional-profile h1 {
-    font-size: 30px;
-    margin: 0;
-    padding: 10px 0;
-    color: #ef6a37 !important;
-}
-
-#tabs .nav-link.active {
-    border-bottom: 4px solid #ef6a37 !important;
-}

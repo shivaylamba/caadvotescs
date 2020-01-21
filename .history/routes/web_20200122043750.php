@@ -18,7 +18,7 @@ Route::get('/', 'Admin\MenuController@menuContent');
 //Services Page
 Route::get('/public/services/{slug}', 'Service\ServicePageController@ServiceContent');
 
-Route::get('/service/{servicename}/{byAssociate}', 'Service\ServicePageController@AssociateContent');
+Route::get('/service/associate/{byAssociate}', 'Service\ServicePageController@AssociateContent');
 
 //Site View
 

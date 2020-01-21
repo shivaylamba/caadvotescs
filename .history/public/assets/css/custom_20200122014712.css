@@ -28,7 +28,3 @@ body {
     padding: 10px 0;
     color: #ef6a37 !important;
 }
-
-#tabs .nav-link.active {
-    border-bottom: 4px solid #ef6a37 !important;
-}

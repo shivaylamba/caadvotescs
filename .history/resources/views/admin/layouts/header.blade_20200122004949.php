@@ -154,34 +154,17 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link {{'/admin/gove-fees/add' == request()->path() ? 'active' : ''}}{{'/admin/gove-fees/list' == request()->path() ? 'active' : ''}}" href="#navbar-govfees" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
+              <a class="nav-link {{'admin/associates/requests' == request()->path() ? 'active' : ''}}{{'admin/associates/list' == request()->path() ? 'active' : ''}}" href="#navbar-govfees" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
                 <i class="ni ni-money-coins text-red"></i>
                 <span class="nav-link-text">Goverment Fees</span>
               </a>
               <div class="collapse" id="navbar-govfees">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="/admin/gove-fees/add" class="nav-link {{'/admin/gove-fees/add' == request()->path() ? 'active' : ''}}">Add</a>
+                    <a href="/admin/gove-fees/add" class="nav-link {{'admin/associates/requests' == request()->path() ? 'active' : ''}}">Add</a>
                   </li>
                   <li class="nav-item">
-                    <a href="/admin/gove-fees/list" class="nav-link {{'admin/associates/list' == request()->path() ? 'active' : ''}}">List</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link {{'/admin/gove-fees/add' == request()->path() ? 'active' : ''}}{{'/admin/gove-fees/list' == request()->path() ? 'active' : ''}}" href="#navbar-faq" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
-                <i class="ni ni-money-coins text-red"></i>
-                <span class="nav-link-text">FAQ'S</span>
-              </a>
-              <div class="collapse" id="navbar-faq">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="/admin/gove-fees/add" class="nav-link {{'/admin/gove-fees/add' == request()->path() ? 'active' : ''}}">Add</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/admin/gove-fees/list" class="nav-link {{'admin/associates/list' == request()->path() ? 'active' : ''}}">List</a>
+                    <a href="/admin/associates/list" class="nav-link {{'admin/associates/list' == request()->path() ? 'active' : ''}}">List</a>
                   </li>
                 </ul>
               </div>

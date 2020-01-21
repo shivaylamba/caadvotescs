@@ -25,8 +25,8 @@ class ServicePageController extends Controller
         $subcategory = DB::select('select * from subcategories where status = "active"');
         $services = DB::select('select * from services where status = "active"');
         $serviceContent = DB::select('select * from services where status = "active" AND servicename = ?' , [$servicename]);
-        $servicescard = DB::select('select * from hosted_services where status = "approved" and byAssociate = ? and servicename = ?', [$byAssociate, $servicename]);
-        $associate = DB::select('select * from associates where email = ?', [$byAssociate]);
+        $servicescard = DB::select('select * from hosted_services where status = "approved" and byAssociate = "$byAssociate" and servicename = "$servicename"');
+        $associate = DB::select('select * from associates where email = "$byAssociate"');
         return view('site.aboutserviceassociate')->with(compact('serviceContent','subcategory', 'services', 'category', 'servicescard','associate'));
     }
 }

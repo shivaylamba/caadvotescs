@@ -311,220 +311,399 @@
         </div>
     </div>
     <!-- blog section ends here -->
-
-    <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-6">
-            @if(count($servicescard) > 0)
-            <div class="bootstrap">
-                <div class="pro-con-holder">
-                    <div class="row">
-                        <div class="ser-pro-heading">
-                            <h3>Choose your best suitable professional</h3>
-                        </div>
-                        <div class="col-md-3">
-                            <button id="toggle-button"><img src="../../images/filter-results-button.svg"> <span>Refine Results</span></button>
-                            <p class="compare-btn-mob service-compare-btn"></p>
-                            <div class="clearfix"></div>
-                            <div class="side-filter" id='filters'>
-                                <div class="target">
-                                    <h3>Price Range</h3>
-                                    <div class="price-range-box">
-                                        <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;font-size:12px;margin-left:30px;" value='₹1999 - ₹9999' readonly>
-                                        <div id="slider-container"></div>
-            
-                                        <div id="slider-range"></div>
-                                    </div>
-                                    <h3>Location</h3>
-                                    <ul class="sidebar-filter filter-attributes">
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='state' id='Delhi' value='Delhi'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">Delhi</span> </label>
-                                        </li>
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='state' id='Uttar Pradesh' value='Uttar Pradesh'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">Uttar Pradesh</span> </label>
-                                        </li>
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='state' id='Maharashtra' value='Maharashtra'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">Maharashtra</span> </label>
-                                        </li>
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='state' id='Haryana' value='Haryana'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">Haryana</span> </label>
-                                        </li>
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='state' id='Karnataka' value='Karnataka'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">Karnataka</span> </label>
-                                        </li>
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='state' id='Madhya Pradesh' value='Madhya Pradesh'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">Madhya Pradesh</span> </label>
-                                        </li>
-            
-                                    </ul>
-                                    <h3>Rating</h3>
-                                    <ul class="sidebar-filter filter-attributes">
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='rating' id='2' value='2'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">2 Star</span> </label>
-                                        </li>
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='rating' id='3' value='3'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">3 Star</span> </label>
-                                        </li>
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='rating' id='4' value='4'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">4 Star</span> </label>
-                                        </li>
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='rating' id='5' value='5'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">5 Star</span> </label>
-                                        </li>
-                                    </ul>
-                                    <h3>Experience </h3>
-                                    <ul class="sidebar-filter filter-attributes">
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='experience' id='Upto 1 Year' value='Upto 1 Year'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">Upto 1 Year</span> </label>
-                                        </li>
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='experience' id='2 to 5 Year' value='2 to 5 Year'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">2 to 5 Year</span> </label>
-                                        </li>
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='experience' id='6 to 10 Year' value='6 to 10 Year'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">6 to 10 Year</span> </label>
-                                        </li>
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='experience' id='11 to 15 Year' value='11 to 15 Year'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">11 to 15 Year</span> </label>
-                                        </li>
-                                        <li>
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" name='experience' id='More than 15 Year' value='More than 15 Year'>
-                                                <span class="material-control-indicator"></span> <span class="material-control-description">More than 15 Year</span> </label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="row" id="products-div" data-service='14'>
-                                <div class="top-filter">
-                                    <div class="float-left service-compare-btn"></div>
-                                </div>
-                                <div id='product-hide' style="display:none;"></div>
-                                @foreach ($servicescard as $data)
-                                    @if ($serviceContent[0]->servicename == $data->servicename)
-                                    <div class="col-md-4 grid-products" data-price="{{$data->price}}" data-state='Maharashtra' data-experience='2 to 5 Year' data-rating='4' data-price="{{$data->price}}">
-                                        <div class="grid-products-list ">
-                                            <div class="NameHighlights">
-                                                <figure class="card-product">
-                                                    <div class="on-hover-effect">
-                                                        <div class="img-wrap"><img src="https://www.support.ezeestartup.com/productImage/site/Ezee-Associate-Thumbnail-21-20190824034642-38.jpg">
-                                                            <h5 class="hidden-lg">View Details</h5>
-                                                        </div>
-                                                        <figcaption class="info-wrap">
-                                                            @foreach ($associate as $associates)
-                                                            @if ($associates->email == $data->byAssociate)
-                                                            <h4 class="title">{{$data->servicename}}</h4>
-                                                            <p class="desc">{{$associates->name}}&nbsp;&nbsp;<span class='verified-associate'><i class="fa fa-check-square" aria-hidden="true"></i></span></p>
-                                                            <div class="rating-wrap">
-                                                                <ul class="rating-stars">
-                                                                    <li style="width:80%" class="stars-active">
-                                                                        <i class="fa fa-star"></i>
-                                                                        <i class="fa fa-star"></i>
-                                                                        <i class="fa fa-star"></i>
-                                                                        <i class="fa fa-star"></i>
-                                                                        <i class="fa fa-star"></i>
-                                                                    </li>
-                                                                    <li>
-                                                                        <i class="fa fa-star"></i>
-                                                                        <i class="fa fa-star"></i>
-                                                                        <i class="fa fa-star"></i>
-                                                                        <i class="fa fa-star"></i>
-                                                                        <i class="fa fa-star"></i>
-                                                                    </li>
-                                                                </ul>
-                                                                <div class="label-rating">4 <span>(Review 2)</span></div>
-                                                            </div>
-                                                            @endif
-                                                            @endforeach
-                                                        </figcaption>
-                                                        <div class="after-hover"></div>
-                                                    </div>
-                
-                                                    <div class="on-mouse-hover-popup  arrow_box">
-                                                        <h3>Requirements</h3>
-                                                        <span><?php echo substr($data->requirements,0,800) ?></span>
-
-                                                    <a class="pop-orange-text" href="/service/{{$data->servicename}}/{{$data->byAssociate}}">Read more</a>
-                                                        <h4>Deliverables</h4>
-                                                        <span><?php echo substr($data->deliverables,0,800) ?></span>
-
-                                                        <a class="blue-text" href="/service/{{$data->servicename}}/{{$data->byAssociate}}">Read more </a>
-                                                        <div class="clearfix"></div>
-                                                        <a href="javascript:void(0)" rel='406' data-action='addtocart' class="addtocart-btn service-addtocart">Add to cart</a>
-                                                        <a class="wishlist " rel="406" data-action='addtowishlist' href="login.html"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                                        <div class="tool-tipfooter"> <a href="rohit-khandelwal/132.html">know more about professional</a> </div>
-                                                    </div>
-                                                </figure>
+<div class="bootstrap">
+    <div class="servicemain-detail-holder background-gray">
+        <section id="tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav md-pills nav-justified pills-peach-gradient">
+                            <li class="nav-item">
+                                <a class="nav-item nav-link active show" id="nav-home-tab" data-toggle="tab" href="#nav-overview" role="tab" aria-controls="nav-overview" aria-selected="true">Overview </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item nav-link" id="nav-Work-Flow-tab" data-toggle="tab" href="#nav-Work-Flow" role="tab" aria-controls="nav-Work-Flow" aria-selected="false">Work Flow</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item nav-link" id="nav-Terms-conditions-tab" data-toggle="tab" href="#nav-Terms-conditions" role="tab" aria-controls="nav-Terms-conditions" aria-selected="false">Terms &amp; conditions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item nav-link" id="nav-Professional-tab" data-toggle="tab" href="#nav-Professional" role="tab" aria-controls="nav-Professional" aria-selected="false">About Professional </a>
+                            </li>
+                            <li class="nav-item">
+                                <!--a class="nav-item nav-link" id="nav-Reviews-tab" data-toggle="tab" href="#nav-Reviews" role="tab" aria-controls="nav-Reviews" aria-selected="false">Reviews <span class="review-circle">18</span></a-->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item nav-link" id="nav-Recommendation-tab" data-toggle="tab" href="#nav-Recommendation" role="tab" aria-controls="nav-Recommendation" aria-selected="false" style="display:none;">Recommendation</a>
+                            </li>
+                          </ul>
+                        <nav>
+                        </nav>
+                        <div class="clearfix"></div>
+                        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                            <div class="tab-pane fade active show" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
+                                <div class="row">
+                                    <div class="col-md-4 float-left">
+                                        <div class="detials-box-type-1">
+                                            <div class="heading">
+                                                <h2>Requirement</h2>
                                             </div>
-                                            <div class="clearfix"></div>
-                
-                                            <div class="bottom-wrap">
-                                                <div class="price-wrap h5">
-                                                    <em>&nbsp;</em>
-                                                    <div class="clearfix"></div>
-                                                    <span class="price-new">₹{{$data->price}}</span>
-                                                    <div class="clearfix"></div>
-                                                    <p class="offer-note">&nbsp;</p>
-                
-                                                </div>
-                                            </div>
-                
-                                            <div class="bottom-wrap">
-                                                <a href="javascript:void(0)" rel='406' data-action='addtocart' class="buynow-btn service-buynow">Buy Now</a>
-                                                <a href="javascript:void(0)" class="compare-button service-compare" data-associate-service='406'>Add to Compare</a>
-                                            </div>
+                                            <ul class="list-items">
+                                               {!!$servicescard[0]->requirements!!}
+    
+                                            </ul>
                                         </div>
                                     </div>
-                                    @endif
-                                @endforeach
+                                    <div class="col-md-4 float-left">
+                                        <div class="detials-box-type-1">
+                                            <div class="heading">
+                                                <h2>Deliverables</h2>
+                                            </div>
+                                            <ul class="list-items">
+                                                {!!$servicescard[0]->deliverables!!}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 float-left">
+                                        <div class="detials-box-type-1">
+                                            <div class="heading">
+                                                <h2>Service</h2>
+                                            </div>
+                                            <div class="small-cart-holder">
+                                                <h2>{{$servicescard[0]->servicename}}</h2>
+                                                <p>Timeline <strong>{{$servicescard[0]->timeline}}</strong></p>
+    
+                                                <h4>Rs. {{$servicescard[0]->price}}/-</h4>
+                                                <span class="professional-fees">Professional Fees</span>
+                                                <p><strong>Note*</strong> Price may vary on any modifications or changes by Govt. (If any)</p>
+                                                <a class="btn gradient-bg service-buynow" href="javascript:void(0)" rel="95" data-action="addtocart">Buy Now</a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="col-md-8 offset-2"><img src="https://www.ezeestartup.com/images/secure-payment.png" class="img-fluid"></div>
+                                        <img src="https://www.ezeestartup.com/images/secure_payment-small.png" class="img-fluid">
+                                    </div>
+    
+                                </div>
                             </div>
-                            <input type='hidden' value='11' id='product_div_count' />
-                           
+                            <div class="tab-pane fade" id="nav-Professional" role="tabpanel" aria-labelledby="nav-Professional-tab">
+                                <div class="service-tab-panel professional-profile">
+                                    <h1>{{$associate[0]->servicename}}</h1>
+                                    <div class="rating-wrap">
+                                        <ul class="rating-stars">
+                                            <li style="width:80%" class="stars-active"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </li>
+                                            <li> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </li>
+                                        </ul>
+                                        <div class="label-rating">4 <span>(4)</span></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <p>He is a Commerce Graduate and Associate member of the Institute of Company Secretaries of India. He has trained with one of the prominent Law Firm in India and has been in independent circuit for last 2 years.</p>
+                                    <div class="clearfix"></div>
+                                    <h3>Skills</h3>
+                                    <ul>
+                                        <li>Company Registrations</li>
+                                        <li> Compliances</li>
+                                        <li> GST</li>
+                                        <li> IPR</li>
+                                    </ul>
+    
+                                    <p>Location : <i class="fa fa-map-marker" aria-hidden="true"></i> From <span>Allahabad</span></p>
+                                    <p>Experience : <span>Upto 1 Year</span></p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-Terms-conditions" role="tabpanel" aria-labelledby="nav-Terms-conditions-tab">
+                                <div class="service-tab-panel professional-profile">
+                                    <ul class="list-items">
+                                        <li>The client shall pay stamp duty over and above cost of Partnership registration.</li>
+    
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-Work-Flow" role="tabpanel" aria-labelledby="nav-Work-Flow-tab">
+                                <div class="service-tab-panel professional-profile">
+                                    <ul class="list-items">
+                                        <li>Document verification</li>
+                                        <li>Drafting of partnership deed</li>
+                                        <li>Deed sent for signing and notarization(at client end)</li>
+                                        <li>Application of PAN and TAN</li>
+                                        <li>Deliverable</li>
+    
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-Reviews" role="tabpanel" aria-labelledby="nav-Reviews-tab">
+                                <div class="service-tab-panel">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Shabnam </strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class=" fa fa-star"></i></span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>The services are time-specific and handled with utmost sincerety. A professional of high regards.</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Vipul Jaiswal</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class=" fa fa-star"></i></span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>Excellent</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Anukriti Jaiswal</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class=" fa fa-star"></i></span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>Goingreat professional experience, company compliance services are timely completed with zero hassles</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Charul Gupta</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-left"><i class=" fa fa-star"></i></span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>Very much satisfied.Great proffessional experiance.His service is timely completed with zero hassels.</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>khushboo khanna</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Excellent</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>Nice</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Midhun Raj</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Excellent</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>really satisfied, thanks a lot</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Sudeb Roy</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Excellent</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>Very Good Much</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Ashutosh Tiwari</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Very Good</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>good</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Raakesh R</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Excellent</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>Ur service is excellent.but i don't how some bank and other company know my email and home address. They are disturbing</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Mangesh Jagtap</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Excellent</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>Easy interface user friendly application </p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Gokul Pillai</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Excellent</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>Quick assistance.</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>mayank shukla</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Excellent</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>We are under service , Good UI and easy to use.</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>venkatarao vanapalli</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Excellent</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>great user interface</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Jean P Johnson</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Excellent</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>Excellent</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Sreenivaulu G</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Good</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>Good</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Gagandeep singh</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Excellent</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>Very good service</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Koushik Rajan</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Good</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>Good</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-1"> <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"> </div>
+                                                <div class="col-md-11">
+                                                    <p> <a class="float-left" href="javascript:void(0)"><strong>Abhishek gupta</strong>&nbsp;&nbsp;<span class="verified-client"><i class="fa fa-check-square" aria-hidden="true"></i> Verified Buyer</span></a>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                    <span class="ezeestartup-review">Excellent</span>
+                                                    <p></p>
+                                                    <div class="clearfix"></div>
+                                                    <p>excellent</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-                </div>
             </div>
-            @endif
-        </div>
+        </section>
+        <!-- Classic tabs -->
     </div>
-
+</div>
     
     <section class="faq-section" style="margin-top:50px; z-index:20 !important;">
         <div class="container">
             <div class="title padding">
                 <h2>
-                    <span class="red-color">FAQ</span> - Frequently asked questions </h2>
+                    <br><br><span class="red-color">FAQ</span> - Frequently asked questions </h2>
                 <p>Deserunt laboris consequat proident enim eiusmod occaecat pariatur quis pariatur anim et eserunt laboris consequat proident enim eiusmod occaecat pariatur quis pariatur anim et.</p>
             </div>
             <div class="row">
@@ -751,8 +930,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script> 
     <link rel="stylesheet" href="../../css/basic.css">
-    <script type="text/javascript" src="../../js/jquery.simplemodal.js"></script> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
+    <script type="text/javascript" src="../../js/jquery.simplemodal.js"></script> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
     
     
@@ -925,6 +1103,18 @@
       </script>
      
       <style>
+        .desktop-bkg
+          {
+            background: url(https://www.support.ezeestartup.com/productImage/service/Banner-LLP-20190829093220-14.jpg) no-repeat  top;
+              }
+          @media screen and (max-width: 580px) {
+            .desktop-bkg
+          {
+            background:url(https://www.support.ezeestartup.com/productImage/service/Banner-LLP-MOB-20190829093220-14.jpg) no-repeat  top;
+            background-repeat: no-repeat;
+            background-size: contain;
+              }  
+          }
           #slider-container
         {
             width:150px;
