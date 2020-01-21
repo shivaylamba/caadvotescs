@@ -473,11 +473,11 @@
                                                         <h3>Requirements</h3>
                                                         <span><?php echo substr($data->requirements,0,800) ?></span>
 
-                                                        <a class="pop-orange-text" href="/service/associate">Read more</a>
+                                                        <a class="pop-orange-text" href="llpregistration/rohit-khandelwal-132.html">Read more</a>
                                                         <h4>Deliverables</h4>
                                                         <span><?php echo substr($data->deliverables,0,800) ?></span>
 
-                                                        <a class="blue-text" href="/service/associate">Read more </a>
+                                                        <a class="blue-text" href="llpregistration/rohit-khandelwal-132.html">Read more </a>
                                                         <div class="clearfix"></div>
                                                         <a href="javascript:void(0)" rel='406' data-action='addtocart' class="addtocart-btn service-addtocart">Add to cart</a>
                                                         <a class="wishlist " rel="406" data-action='addtowishlist' href="login.html"><i class="fa fa-heart" aria-hidden="true"></i></a>
