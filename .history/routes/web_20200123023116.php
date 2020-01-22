@@ -88,9 +88,6 @@ Route::group(['middleware' => ['auth','admin']], function () {
 
     //gove fees
     Route::get('/admin/gove-fees/add', 'Admin\AssociateController@GovFees'); 
-    Route::post('/admin/gove-fees/post', 'Admin\AssociateController@AddGovFees'); 
-    Route::get('/admin/gove-fees/list', 'Admin\AssociateController@GovFeesList'); 
-
 
 
 

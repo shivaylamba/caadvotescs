@@ -87,10 +87,7 @@ Route::group(['middleware' => ['auth','admin']], function () {
     Route::post('/admin/rate/{id}', 'Admin\AssociateController@postRating'); 
 
     //gove fees
-    Route::get('/admin/gove-fees/add', 'Admin\AssociateController@GovFees'); 
-    Route::post('/admin/gove-fees/post', 'Admin\AssociateController@AddGovFees'); 
-    Route::get('/admin/gove-fees/list', 'Admin\AssociateController@GovFeesList'); 
-
+    Route::get('/admin/select/associate', 'Admin\AssociateController@giveRating'); 
 
 
 

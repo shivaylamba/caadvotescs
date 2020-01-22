@@ -79,7 +79,7 @@ class AssociateController extends Controller
         return view('admin.services.gov-fees')->with(compact('service'));
     }
 
-    public function AddGovFees(Request $request) 
+    public function AddGovFees() 
     {
         $govfees = $request->input('govfees');
         $serviceslug = $request->input('serviceslug');
@@ -87,13 +87,7 @@ class AssociateController extends Controller
         $updated_at = new \DateTime();
         $data=array('govfees'=>$govfees, 'serviceslug'=>$serviceslug,'created_at'=>$created_at, 'updated_at'=>$updated_at);
         DB::table('govfees')->insert($data);
-        return redirect('/admin/gove-fees/add')->with('status', 'Gov Fees Added Successfully');
+        return redirect('/admin/gove-fees/add')->with('status', 'Gov Fees Added Successfully')->with('status', 'Service Image Uploaded Successfully to folder /ServiceImage');
     
-    }
-
-    public function GovFeesList() 
-    {
-        $govfees = DB::select('select * from govfees');
-        return view('admin.services.gov-fees-list')->with(compact('govfees'));
     }
 }

@@ -93,7 +93,7 @@ class AssociateController extends Controller
 
     public function GovFeesList() 
     {
-        $govfees = DB::select('select * from govfees');
-        return view('admin.services.gov-fees-list')->with(compact('govfees'));
+        $service = DB::select('select * from services');
+        return view('admin.services.gov-fees')->with(compact('service'));
     }
 }

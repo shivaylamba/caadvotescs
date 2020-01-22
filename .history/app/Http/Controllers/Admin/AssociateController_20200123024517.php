@@ -90,10 +90,4 @@ class AssociateController extends Controller
         return redirect('/admin/gove-fees/add')->with('status', 'Gov Fees Added Successfully');
     
     }
-
-    public function GovFeesList() 
-    {
-        $govfees = DB::select('select * from govfees');
-        return view('admin.services.gov-fees-list')->with(compact('govfees'));
-    }
 }
