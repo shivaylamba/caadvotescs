@@ -62,12 +62,6 @@ class AssociateDashboardController extends Controller
         $associate_postalcode = $request->input('associate_postalcode');
         $updated_at = new \DateTime();
         DB::update('update associates set phone = ?, associate_address = ?, associate_experience =?, associate_about=?, associate_postalcode=? , updated_at=? where id = ?',[$phone, $associate_address, $associate_experience, $associate_about, $associate_postalcode, $updated_at,$id]);
-        return redirect('/associate/profile')->with('status', 'Your Profile Updated Successfully');
+        return redirect('/associate/profile')->with('status', 'Associated Rated Succesfully');
    }
-
-   public function govfeesList() 
-    {
-        $govfees = DB::select('select * from govfees');
-        return view('associate.dashboard.govfees')->with(compact('govfees'));
-    }
 }

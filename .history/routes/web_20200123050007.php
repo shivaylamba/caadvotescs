@@ -122,7 +122,7 @@ Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logou
     Route::get('/invitations', 'Associate\AssociateDashboardController@invitationList');  
     Route::get('/profile', 'Associate\AssociateDashboardController@profile');  
     Route::post('/update-profile/{id}', 'Associate\AssociateDashboardController@Updateprofile');  
-    Route::get('/govfees', 'Associate\AssociateDashboardController@govfeesList');  
+    Route::get('/govfees', 'Associate\AssociateDashboardController@profile');  
 
 
  }); 

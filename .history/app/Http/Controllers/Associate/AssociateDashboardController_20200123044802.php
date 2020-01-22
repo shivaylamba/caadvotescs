@@ -55,19 +55,14 @@ class AssociateDashboardController extends Controller
 
     public function updateprofile(Request $request, $id) 
     {
-        $phone = $request->input('phone');
-        $associate_address = $request->input('associate_address');
-        $associate_experience = $request->input('associate_experience');
-        $associate_about = $request->input('associate_about');
-        $associate_postalcode = $request->input('associate_postalcode');
+        $phone = $request->input('name');
+        $associate_address = $request->input('name');
+        $associate_experience = $request->input('name');
+        $associate_about = $request->input('name');
+        $associate_postalcode = $request->input('name');
+        $associate_rating = $request->input('associate_rating');
         $updated_at = new \DateTime();
-        DB::update('update associates set phone = ?, associate_address = ?, associate_experience =?, associate_about=?, associate_postalcode=? , updated_at=? where id = ?',[$phone, $associate_address, $associate_experience, $associate_about, $associate_postalcode, $updated_at,$id]);
-        return redirect('/associate/profile')->with('status', 'Your Profile Updated Successfully');
+        DB::update('update associates set name = ?, associate_rating = ?, updated_at=? where id = ?',[$name, $associate_rating, $updated_at,$id]);
+        return redirect('/admin/select/associate')->with('status', 'Associated Rated Succesfully');
    }
-
-   public function govfeesList() 
-    {
-        $govfees = DB::select('select * from govfees');
-        return view('associate.dashboard.govfees')->with(compact('govfees'));
-    }
 }

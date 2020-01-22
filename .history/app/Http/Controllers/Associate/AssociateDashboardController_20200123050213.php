@@ -68,6 +68,6 @@ class AssociateDashboardController extends Controller
    public function govfeesList() 
     {
         $govfees = DB::select('select * from govfees');
-        return view('associate.dashboard.govfees')->with(compact('govfees'));
+        return view('admin.services.gov-fees-list')->with(compact('govfees'));
     }
 }

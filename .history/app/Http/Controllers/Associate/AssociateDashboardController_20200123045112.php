@@ -64,10 +64,4 @@ class AssociateDashboardController extends Controller
         DB::update('update associates set phone = ?, associate_address = ?, associate_experience =?, associate_about=?, associate_postalcode=? , updated_at=? where id = ?',[$phone, $associate_address, $associate_experience, $associate_about, $associate_postalcode, $updated_at,$id]);
         return redirect('/associate/profile')->with('status', 'Your Profile Updated Successfully');
    }
-
-   public function govfeesList() 
-    {
-        $govfees = DB::select('select * from govfees');
-        return view('associate.dashboard.govfees')->with(compact('govfees'));
-    }
 }

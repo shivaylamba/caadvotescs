@@ -53,21 +53,9 @@ class AssociateDashboardController extends Controller
         return view('associate.dashboard.profile',['associates'=>$associates]);
     }
 
-    public function updateprofile(Request $request, $id) 
+    public function updateprofile() 
     {
-        $phone = $request->input('phone');
-        $associate_address = $request->input('associate_address');
-        $associate_experience = $request->input('associate_experience');
-        $associate_about = $request->input('associate_about');
-        $associate_postalcode = $request->input('associate_postalcode');
-        $updated_at = new \DateTime();
-        DB::update('update associates set phone = ?, associate_address = ?, associate_experience =?, associate_about=?, associate_postalcode=? , updated_at=? where id = ?',[$phone, $associate_address, $associate_experience, $associate_about, $associate_postalcode, $updated_at,$id]);
-        return redirect('/associate/profile')->with('status', 'Your Profile Updated Successfully');
-   }
-
-   public function govfeesList() 
-    {
-        $govfees = DB::select('select * from govfees');
-        return view('associate.dashboard.govfees')->with(compact('govfees'));
+        $associates = DB::select('select * from associates where email = ?',[Auth::user()->email]);
+        return view('associate.dashboard.profile',['associates'=>$associates]);
     }
 }

@@ -65,9 +65,9 @@ class AssociateDashboardController extends Controller
         return redirect('/associate/profile')->with('status', 'Your Profile Updated Successfully');
    }
 
-   public function govfeesList() 
+   public function GovFeesList() 
     {
         $govfees = DB::select('select * from govfees');
-        return view('associate.dashboard.govfees')->with(compact('govfees'));
+        return view('admin.services.gov-fees-list')->with(compact('govfees'));
     }
 }

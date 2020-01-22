@@ -25,7 +25,6 @@ class CreateAssociatesTable extends Migration
             $table->string('associate_address');
             $table->string('associate_state');
             $table->string('associate_city');
-            $table->string('associate_postalcode');
             $table->string('accounttype')->nullable();
             $table->string('email')->unique();
             $table->string('password');

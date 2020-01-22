@@ -91,14 +91,14 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link {{'/associate/govfees' == request()->path() ? 'active' : ''}}" href="#navbar-govfees" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
+              <a class="nav-link {{'admin/associates/requests' == request()->path() ? 'active' : ''}}{{'admin/associates/list' == request()->path() ? 'active' : ''}}" href="#navbar-govfees" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
                 <i class="ni ni-money-coins text-red"></i>
                 <span class="nav-link-text">Goverment Fees</span>
               </a>
               <div class="collapse" id="navbar-govfees">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="/associate/govfees" class="nav-link {{'/associate/govfees' == request()->path() ? 'active' : ''}}">List</a>
+                    <a href="/associate/govefees" class="nav-link {{'admin/associates/requests' == request()->path() ? 'active' : ''}}">List</a>
                   </li>
                 </ul>
               </div>

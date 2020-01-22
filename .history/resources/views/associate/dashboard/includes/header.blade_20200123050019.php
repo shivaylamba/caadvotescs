@@ -98,7 +98,7 @@
               <div class="collapse" id="navbar-govfees">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="/associate/govfees" class="nav-link {{'/associate/govfees' == request()->path() ? 'active' : ''}}">List</a>
+                    <a href="/associate/govfees" class="nav-link {{'/associate/govefees' == request()->path() ? 'active' : ''}}">List</a>
                   </li>
                 </ul>
               </div>
