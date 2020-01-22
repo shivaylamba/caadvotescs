@@ -106,7 +106,7 @@
 
             <li class="nav-item">
               <a class="nav-link {{'/associate/invitations' == request()->path() ? 'active' : ''}}" href="#navbar-invitations" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
-                <i class="ni ni-app text-purple"></i>
+                <i class="ni ni-app text-red"></i>
                 <span class="nav-link-text">Invitations</span>
               </a>
               <div class="collapse" id="navbar-invitations">
