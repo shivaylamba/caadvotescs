@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Associate;
 use DB;
-use Auth;
 
 class RegisterController extends Controller
 {
@@ -43,7 +42,7 @@ class RegisterController extends Controller
         $associate = Associate::create(request(['name', 'phone', 'associate_category', 'associate_profession', 'associate_state', 'associate_city',   'email', 'password']));
         
         auth()->login($associate);
-        Auth::guard('associate')->logout();
+        
         return redirect()->to(route('associate.dashboard'));
     }
 }

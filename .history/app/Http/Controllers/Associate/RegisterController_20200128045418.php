@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Associate;
 use DB;
-use Auth;
 
 class RegisterController extends Controller
 {

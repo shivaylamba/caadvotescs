@@ -50,15 +50,12 @@ class ServicePageController extends Controller
 
     public function categoryPage(Request $request, $categoryname) 
     {
-        $category = DB::select('select * from servisecategories WHERE status = "active"');
-        $subcategory = DB::select('select * from subcategories where status = "active"');
-        $services = DB::select('select * from services where status = "active"');
-        $pcategory = DB::select('select * from servisecategories WHERE status = "active" AND categoryname=?', [$categoryname]);
-        $psubcategory = DB::select('select * from subcategories where status = "active" AND ParentCategory = ?', [$categoryname]);
-        $pservices = DB::select('select * from services where status = "active"');
+        $category = DB::select('select * from servisecategories WHERE status = "active" AND categoryname=?', [$categoryname]);
+        $subcategory = DB::select('select * from subcategories where status = "active" AND ParentCategory = ?', [$categoryname]);
+        $services = DB::select('select * from services where status = "active" And servicename=?', [$subcategory[0]->subcategoryname]);
         $popularservices = DB::select('select * from services where status = "active" and popular="yes" LIMIT 3');
         $footerps = DB::select('select * from services where status = "active" and popular="yes" LIMIT 6');
         $footercategory = DB::select('select * from servisecategories WHERE status = "active" LIMIT 6');
-        return view('site.category_page')->with(compact('subcategory', 'services', 'category', 'psubcategory', 'pservices', 'pcategory', 'popularservices', 'footerps', 'footercategory'));
+        return view('site.category_page')->with(compact('subcategory', 'services', 'category', 'popularservices', 'footerps', 'footercategory'));
     }
 }

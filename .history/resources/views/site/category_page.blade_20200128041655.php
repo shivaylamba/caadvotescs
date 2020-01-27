@@ -8,8 +8,8 @@
             <div class="col-sm-8">
                 <div class="text-container text-left">
                     <a href="index.html">Home / </a>
-                    <a href="blog-post.html#"> Join</a>
-                    <h2 style="color:#fff !important;">Associate Registration Update</h2>
+                    <a href="blog-post.html#"> Services</a>
+                    <h2 style="color:#fff !important;">All Services</h2>
                     <p style="color:#fff !important;">In a professional context it often happens that private or corporate clients.</p>
                 </div>
             </div>
@@ -18,24 +18,38 @@
 </div>
 <!-- header 1 end -->
 
-<section class="section9 contact-form">
-  <div class="container">
-      <div class="row">
-          <div class="col-sm-12">
-              <div class="title text-left">
-                  <h2>Thank you for Registrating as a Professional at<span class="red-color"> caadvotescs.com</span></h2>
-                  <p>Your Request have Succesfully sent to Admin's, We will contact you as soon as Possible in order to Verify your Associate Account.</p>
-                  <p>After your Account is verified by Admins you will recieve a mail with the details.</p>
-                  <p>Once your Account is verified you can easily login to your Associate Account.</p>
-                  <br>
-                  <h4>For Any Queries you cant contact on a given Details.</h4>
-                  <h5><i class="fa fa-envelope fa-xs"></i> E-mail: support@caadvotescs.com</h5>
-                  <h5><i class="fa fa-phone fa-xs"></i> Tel: +1 989 6594 66</h5>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+ <!-- service 6 -->
+ <div class="services6">
+    <div class="container">
+        <div class="row">
+            <div class="title padding">
+            <h2>Under <span class="red-color">{{$pcategory[0]->categoryname}}</span> we have</h2>
+                <p>Ex nisi amet commodo exercitation ea laborum tempor. Aute veniam sit nostrud voluptate culpa aute x nisi amet commodo exercitation ea laborum tempor. Aute veniam sit nostrud voluptate culpa aute.</p>
+                <br>
+                <div class="line-thin"></div>
+                <div class="line-thicken"></div>
+            </div>
+             <!-- text with 3 column -->
+            <section class="two-col-text text-columns">
+                <div class="container">
+                    <div class="row">
+                        @foreach($psubcategory as $sub)
+                        <div class="col-sm-3 col-xs-12">
+                            <h4>{{$sub->subcategoryname}}</h4>
+                            @foreach($pservices as $s)
+                            @if($sub->subcategoryname == $s->subcategory)
+                            <ul><a href="/public/services/{{$s->slug}}">{{$s->servicename}}</a></ul>
+                            @endif
+                            @endforeach
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<!-- service 6 -->
 <!-- blog section ends here -->
 
 <!-- Custom Page Java Script Files -->

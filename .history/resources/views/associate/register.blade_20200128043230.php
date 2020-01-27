@@ -22,8 +22,8 @@
   <div class="container">
       <div class="row">
           <div class="col-sm-6">
-            <form method="POST" action="{{ route('associate.register.submit') }}">
-                @csrf
+            <form role="form" method="POST" action="/user/register">
+              @csrf
                   <div class="messages"></div>
                  <div class="form-group" data-aos="fade-up">
                       <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your Full Name*" required="required" data-error="Email is required.">
@@ -35,69 +35,71 @@
                     <input id="form_name" type="email" name="email" class="form-control" placeholder="Please enter your Email*" required="required" data-error="Email is required.">
                 </div>
                 <div class="form-group" data-aos="fade-up">
-                    <select id="form_name" type="text" name="associate_category" class="form-control" placeholder="Select Category*" required="required" data-error="Category is required.">
-                        <option value="Legals">Legals</option>
-                        <option value="Marketing">Marketing</option>
-                        <option value="Consultancy">Consultancy</option>
+                    <select id="form_name" type="text" name="email" class="form-control" placeholder="Select Category*" required="required" data-error="Category is required.">
+                        <option>Legals</option>
+                        <option>Marketing</option>
+                        <option>Consultancy</option>
                     </select>
                 </div>
                 <div class="form-group" data-aos="fade-up">
-                    <select id="form_name" type="text" name="associate_profession" class="form-control" placeholder="Select Profession*" required="required" data-error="Profession is required.">
-                        <option value="Lawyer">Lawyer</option>
-                        <option value="CA">CA</option>
-                        <option value="Tax Practitioner">Tax Practitioner</option>
-                        <option value="Multimedia Experts">Multimedia Experts</option>
-                        <option value="Content Writer">Content Writer</option>
-                        <option value="Marketers">Marketers</option>
-                        <option value="CS">CS</option>
-                        <option value="CMA">CMA</option>
-                        <option value="Management Consultant">Management Consultant</option>
-                        <option value="Accountant">Accountant</option>
-                        <option value="Software Developer">Software Developer</option>
+                    <select id="form_name" type="email" name="email" class="form-control" placeholder="Select Profession*" required="required" data-error="Email is required.">
+                        <option>Lawyer</option>
+                        <option>CA</option>
+                        <option>Tax Practitioner</option>
+                        <option>Multimedia Experts</option>
+                        <option>Content Writer</option>
+                        <option>Marketers</option>
+                        <option>CS</option>
+                        <option>CMA</option>
+                        <option>Management Consultant</option>
+                        <option>Accountant</option>
+                        <option>Software Developer</option>
                     </select>
                 </div>
                 <div class="form-group" data-aos="fade-up">
-                    <select id="form_name" type="text" name="associate_state" class="form-control" placeholder="Select State*" required="required" data-error="State is required.">
+                    <select id="form_name" type="email" name="email" class="form-control" placeholder="Select State*" required="required" data-error="Email is required.">
                         <option value="Andhra Pradesh">Andhra Pradesh</option>
-                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                        <option value="Assam">Assam</option>
-                        <option value="Bihar">Bihar</option>
-                        <option value="Chandigarh">Chandigarh</option>
-                        <option value="Chhattisgarh">Chhattisgarh</option>
-                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
-                        <option value="Daman and Diu">Daman and Diu</option>
-                        <option value="Delhi">Delhi</option>
-                        <option value="Lakshadweep">Lakshadweep</option>
-                        <option value="Puducherry">Puducherry</option>
-                        <option value="Goa">Goa</option>
-                        <option value="Gujarat">Gujarat</option>
-                        <option value="Haryana">Haryana</option>
-                        <option value="Himachal Pradesh">Himachal Pradesh</option>
-                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-                        <option value="Jharkhand">Jharkhand</option>
-                        <option value="Karnataka">Karnataka</option>
-                        <option value="Kerala">Kerala</option>
-                        <option value="Madhya Pradesh">Madhya Pradesh</option>
-                        <option value="Maharashtra">Maharashtra</option>
-                        <option value="Manipur">Manipur</option>
-                        <option value="Meghalaya">Meghalaya</option>
-                        <option value="Mizoram">Mizoram</option>
-                        <option value="Nagaland">Nagaland</option>
-                        <option value="Odisha">Odisha</option>
-                        <option value="Punjab">Punjab</option>
-                        <option value="Rajasthan">Rajasthan</option>
-                        <option value="Sikkim">Sikkim</option>
-                        <option value="Tamil Nadu">Tamil Nadu</option>
-                        <option value="Telangana">Telangana</option>
-                        <option value="Tripura">Tripura</option>
-                        <option value="Uttar Pradesh">Uttar Pradesh</option>
-                        <option value="Uttarakhand">Uttarakhand</option>
-                        <option value="West Bengal">West Bengal</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Puducherry">Puducherry</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="West Bengal">West Bengal</option>
                     </select>
                 </div>
                 <div class="form-group" data-aos="fade-up">
-                    <input id="form_name" type="associate_city" name="associate_city" class="form-control" placeholder="Please Enter Your City*" required="required" data-error="City is required.">
+                    <select id="form_name" type="email" name="email" class="form-control" placeholder="Select State*" required="required" data-error="Email is required.">
+                        <option>1</option>
+                    </select>
                 </div>
 
                  <div class="form-group form_left" data-aos="fade-up" data-aos-delay="100">
@@ -118,7 +120,7 @@
           </div>
           <div class="col-sm-6">
               <div class="title text-left">
-                  <h2><span class="red-color">Create</span> your Professional account at caadvotescs.com</h2>
+                  <h2><span class="red-color">Create</span> your account at caadvotescs.com</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit unde, quae tenetur nam a, explicabo quisquam illo itaque recusandae distinctio.</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque itaque dolorem, laudantium vitae ad aliquid dolore corporis maiores unde nisi minima nobis aliquam harum quasi dicta voluptatibus illo placeat neque!</p>
                   <br>

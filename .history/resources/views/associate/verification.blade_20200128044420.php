@@ -9,7 +9,7 @@
                 <div class="text-container text-left">
                     <a href="index.html">Home / </a>
                     <a href="blog-post.html#"> Join</a>
-                    <h2 style="color:#fff !important;">Associate Registration Update</h2>
+                    <h2 style="color:#fff !important;">Associate Login/Register</h2>
                     <p style="color:#fff !important;">In a professional context it often happens that private or corporate clients.</p>
                 </div>
             </div>
@@ -21,14 +21,31 @@
 <section class="section9 contact-form">
   <div class="container">
       <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-6">
+            <form role="form" method="POST" action="{{route('associate.login.submit')}}">
+              @csrf
+                  <div class="messages"></div>
+                 <div class="form-group" data-aos="fade-up">
+                      <input id="form_name" type="email" name="email" class="form-control" placeholder="Please enter your Email*" required="required" data-error="Email is required.">
+                 </div>
+
+                 <div class="form-group form_left" data-aos="fade-up" data-aos-delay="100">
+    
+                    <input id="form_email" type="password" name="password" class="form-control" placeholder="Please enter your Password*" required="required" data-error="Valid password is required.">
+                    <div class="help-block with-errors"></div>
+                 </div>
+                 <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                     <br>
+                      <button class="btn btn-red btn-sm radius25"> <span class="fa fa-envelope"></span> Login </button>
+                 </div>
+             </form>
+          </div>
+          <div class="col-sm-6">
               <div class="title text-left">
-                  <h2>Thank you for Registrating as a Professional at<span class="red-color"> caadvotescs.com</span></h2>
-                  <p>Your Request have Succesfully sent to Admin's, We will contact you as soon as Possible in order to Verify your Associate Account.</p>
-                  <p>After your Account is verified by Admins you will recieve a mail with the details.</p>
-                  <p>Once your Account is verified you can easily login to your Associate Account.</p>
+                  <h2><span class="red-color">Login</span> to caadvotescs.com</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit unde, quae tenetur nam a, explicabo quisquam illo itaque recusandae distinctio.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque itaque dolorem, laudantium vitae ad aliquid dolore corporis maiores unde nisi minima nobis aliquam harum quasi dicta voluptatibus illo placeat neque!</p>
                   <br>
-                  <h4>For Any Queries you cant contact on a given Details.</h4>
                   <h5><i class="fa fa-envelope fa-xs"></i> E-mail: support@caadvotescs.com</h5>
                   <h5><i class="fa fa-phone fa-xs"></i> Tel: +1 989 6594 66</h5>
               </div>

@@ -24,11 +24,9 @@
           <div class="col-sm-12">
               <div class="title text-left">
                   <h2>Thank you for Registrating as a Professional at<span class="red-color"> caadvotescs.com</span></h2>
-                  <p>Your Request have Succesfully sent to Admin's, We will contact you as soon as Possible in order to Verify your Associate Account.</p>
-                  <p>After your Account is verified by Admins you will recieve a mail with the details.</p>
-                  <p>Once your Account is verified you can easily login to your Associate Account.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit unde, quae tenetur nam a, explicabo quisquam illo itaque recusandae distinctio.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque itaque dolorem, laudantium vitae ad aliquid dolore corporis maiores unde nisi minima nobis aliquam harum quasi dicta voluptatibus illo placeat neque!</p>
                   <br>
-                  <h4>For Any Queries you cant contact on a given Details.</h4>
                   <h5><i class="fa fa-envelope fa-xs"></i> E-mail: support@caadvotescs.com</h5>
                   <h5><i class="fa fa-phone fa-xs"></i> Tel: +1 989 6594 66</h5>
               </div>

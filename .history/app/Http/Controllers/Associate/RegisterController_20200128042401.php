@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Associate;
 use DB;
-use Auth;
 
 class RegisterController extends Controller
 {
@@ -23,7 +22,7 @@ class RegisterController extends Controller
         $popularservices = DB::select('select * from services where status = "active" and popular="yes" LIMIT 3');
         $footerps = DB::select('select * from services where status = "active" and popular="yes" LIMIT 6');
         $footercategory = DB::select('select * from servisecategories WHERE status = "active" LIMIT 6');
-        return view('associate.register')->with(compact('category', 'subcategory', 'services', 'popularservices', 'footerps', 'footercategory'));
+        return view('associate.associateregister')->with(compact('category', 'subcategory', 'services', 'popularservices', 'footerps', 'footercategory'));
     
     }
 
@@ -43,7 +42,7 @@ class RegisterController extends Controller
         $associate = Associate::create(request(['name', 'phone', 'associate_category', 'associate_profession', 'associate_state', 'associate_city',   'email', 'password']));
         
         auth()->login($associate);
-        Auth::guard('associate')->logout();
+        
         return redirect()->to(route('associate.dashboard'));
     }
 }

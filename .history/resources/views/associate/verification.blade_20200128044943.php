@@ -28,7 +28,6 @@
                   <p>After your Account is verified by Admins you will recieve a mail with the details.</p>
                   <p>Once your Account is verified you can easily login to your Associate Account.</p>
                   <br>
-                  <h4>For Any Queries you cant contact on a given Details.</h4>
                   <h5><i class="fa fa-envelope fa-xs"></i> E-mail: support@caadvotescs.com</h5>
                   <h5><i class="fa fa-phone fa-xs"></i> Tel: +1 989 6594 66</h5>
               </div>

@@ -180,7 +180,7 @@
         <br>
         <br>
         <div class="buttons">
-            <center><a href="/services/all" class="button btn btn-sm btn-default btn-red radius25 btn-shadow btn-margin-right">View All</a></center>
+            <center><a href="" class="button btn btn-sm btn-default btn-red radius25 btn-shadow btn-margin-right">View All</a></center>
         </div>
     </section>
     <!-- section 7 end -->

@@ -59,6 +59,6 @@ class ServicePageController extends Controller
         $popularservices = DB::select('select * from services where status = "active" and popular="yes" LIMIT 3');
         $footerps = DB::select('select * from services where status = "active" and popular="yes" LIMIT 6');
         $footercategory = DB::select('select * from servisecategories WHERE status = "active" LIMIT 6');
-        return view('site.category_page')->with(compact('subcategory', 'services', 'category', 'psubcategory', 'pservices', 'pcategory', 'popularservices', 'footerps', 'footercategory'));
+        return view('site.category_page')->with(compact('subcategory', 'services', 'category', 'popularservices', 'footerps', 'footercategory'));
     }
 }

@@ -22,8 +22,8 @@
   <div class="container">
       <div class="row">
           <div class="col-sm-6">
-            <form method="POST" action="{{ route('associate.register.submit') }}">
-                @csrf
+            <form role="form" method="POST" action="/user/register">
+              @csrf
                   <div class="messages"></div>
                  <div class="form-group" data-aos="fade-up">
                       <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your Full Name*" required="required" data-error="Email is required.">
@@ -36,24 +36,24 @@
                 </div>
                 <div class="form-group" data-aos="fade-up">
                     <select id="form_name" type="text" name="associate_category" class="form-control" placeholder="Select Category*" required="required" data-error="Category is required.">
-                        <option value="Legals">Legals</option>
-                        <option value="Marketing">Marketing</option>
-                        <option value="Consultancy">Consultancy</option>
+                        <option>Legals</option>
+                        <option>Marketing</option>
+                        <option>Consultancy</option>
                     </select>
                 </div>
                 <div class="form-group" data-aos="fade-up">
                     <select id="form_name" type="text" name="associate_profession" class="form-control" placeholder="Select Profession*" required="required" data-error="Profession is required.">
-                        <option value="Lawyer">Lawyer</option>
-                        <option value="CA">CA</option>
-                        <option value="Tax Practitioner">Tax Practitioner</option>
-                        <option value="Multimedia Experts">Multimedia Experts</option>
-                        <option value="Content Writer">Content Writer</option>
-                        <option value="Marketers">Marketers</option>
-                        <option value="CS">CS</option>
-                        <option value="CMA">CMA</option>
-                        <option value="Management Consultant">Management Consultant</option>
-                        <option value="Accountant">Accountant</option>
-                        <option value="Software Developer">Software Developer</option>
+                        <option>Lawyer</option>
+                        <option>CA</option>
+                        <option>Tax Practitioner</option>
+                        <option>Multimedia Experts</option>
+                        <option>Content Writer</option>
+                        <option>Marketers</option>
+                        <option>CS</option>
+                        <option>CMA</option>
+                        <option>Management Consultant</option>
+                        <option>Accountant</option>
+                        <option>Software Developer</option>
                     </select>
                 </div>
                 <div class="form-group" data-aos="fade-up">
@@ -97,7 +97,7 @@
                     </select>
                 </div>
                 <div class="form-group" data-aos="fade-up">
-                    <input id="form_name" type="associate_city" name="associate_city" class="form-control" placeholder="Please Enter Your City*" required="required" data-error="City is required.">
+                    <input id="form_name" type="associate_city" name="email" class="form-control" placeholder="Please Enter Your City*" required="required" data-error="City is required.">
                 </div>
 
                  <div class="form-group form_left" data-aos="fade-up" data-aos-delay="100">

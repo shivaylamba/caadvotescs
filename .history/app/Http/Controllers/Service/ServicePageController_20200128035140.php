@@ -48,17 +48,18 @@ class ServicePageController extends Controller
         return view('site.totalservices')->with(compact('subcategory', 'services', 'category', 'popularservices', 'footerps', 'footercategory'));
     }
 
-    public function categoryPage(Request $request, $categoryname) 
+    public function ServiceContent(Request $request, $categoryname) 
     {
         $category = DB::select('select * from servisecategories WHERE status = "active"');
         $subcategory = DB::select('select * from subcategories where status = "active"');
         $services = DB::select('select * from services where status = "active"');
-        $pcategory = DB::select('select * from servisecategories WHERE status = "active" AND categoryname=?', [$categoryname]);
-        $psubcategory = DB::select('select * from subcategories where status = "active" AND ParentCategory = ?', [$categoryname]);
-        $pservices = DB::select('select * from services where status = "active"');
+        $serviceContent = DB::select('select * from services where status = "active" and slug = ?',[$slug]);
+        $servicescard = DB::select('select * from hosted_services where status = "approved"');
+        $faq = DB::select('select * from faqs where serviceslug = ?',[$slug]);
+        $associate = DB::select('select * from associates');
         $popularservices = DB::select('select * from services where status = "active" and popular="yes" LIMIT 3');
         $footerps = DB::select('select * from services where status = "active" and popular="yes" LIMIT 6');
         $footercategory = DB::select('select * from servisecategories WHERE status = "active" LIMIT 6');
-        return view('site.category_page')->with(compact('subcategory', 'services', 'category', 'psubcategory', 'pservices', 'pcategory', 'popularservices', 'footerps', 'footercategory'));
+        return view('site.service')->with(compact('serviceContent','subcategory', 'services', 'category', 'servicescard','associate', 'faq', 'popularservices', 'footerps', 'footercategory'));
     }
 }
