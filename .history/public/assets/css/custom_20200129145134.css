@@ -309,38 +309,6 @@ nav.navbar.navbar-inverse.bootsnav.navbar-transparent.dark, nav.navbar.bootsnav.
 
 @media (max-width: 992px){
 nav.bootsnav .megamenu-content .content {
-  display: contents !important;
-}
-}
-
-@media only screen and (max-width: 992px){
-nav.navbar.bootsnav .dropdown .megamenu-content .col-menu .title::before {
-   content: "" !important;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 9px;
-    color: #fe5623;
-    padding-right: 5px;
-}
-}
-
-@media (max-width: 992px){
-nav.navbar.bootsnav .dropdown .megamenu-content .col-menu .title {
-    padding: 10px 15px 10px 0;
-    line-height: 24px;
-    text-transform: none;
-    font-weight: 400;
-    letter-spacing: 0px;
-    margin-bottom: 0;
-    cursor: pointer;
-    border-bottom: solid 1px #e0e0e0;
-    color: #000000 !important;
-}
-}
-
-@media only screen and (max-width: 1200px){
-nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
-    color: #37383a !important;
-    padding: 5px 0;
+    /* display: none; */
 }
 }

@@ -81,7 +81,7 @@
                                     @if ($submenu->ParentCategory == $menu->categoryname)
                                     <!-- end col-3 -->
                                     <div class="col-menu col-md-3">
-                                        <h6 class="title">{{$submenu->subcategoryname}}</h6><hr>
+                                        <h6 class="title2">{{$submenu->subcategoryname}}</h6>
                                         <div class="content">
                                             <ul class="menu-col">
                                                 <li>

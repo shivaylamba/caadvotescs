@@ -337,10 +337,3 @@ nav.navbar.bootsnav .dropdown .megamenu-content .col-menu .title {
     color: #000000 !important;
 }
 }
-
-@media only screen and (max-width: 1200px){
-nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
-    color: #37383a !important;
-    padding: 5px 0;
-}
-}

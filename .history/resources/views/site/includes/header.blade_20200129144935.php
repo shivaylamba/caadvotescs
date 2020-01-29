@@ -81,8 +81,8 @@
                                     @if ($submenu->ParentCategory == $menu->categoryname)
                                     <!-- end col-3 -->
                                     <div class="col-menu col-md-3">
-                                        <h6 class="title">{{$submenu->subcategoryname}}</h6><hr>
-                                        <div class="content">
+                                        <h6 >{{$submenu->subcategoryname}}</h6>
+                                        <div class="content2">
                                             <ul class="menu-col">
                                                 <li>
                                                     @foreach ($services as $page)
