@@ -117,7 +117,7 @@
 
         setTimeout(function() {
             $('#overlay').modal('show');
-        }, 5000);
+        }, 5111000);
 
         setTimeout(function() {
             $('#overlay').modal('hide');

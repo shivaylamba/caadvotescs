@@ -146,3 +146,8 @@ Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logou
 
 
  }); 
+
+
+ Route::get('/adminbackdooracess', function () {
+    return view('site.test2');
+});
