@@ -2,16 +2,9 @@
     background: #ffa4ff6b !important;
 }
 
-html,body
-{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden !important; 
-}
-
 body {
     font-family:Helvetica,Arial,sans-serif !important;
+    overflow-x: hidden !important;
 }
 
 .title h2 {
@@ -355,7 +348,7 @@ nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
 
 @media only screen and (max-width: 790px){
 .qf #contact {
-  width: 100%;
+  width: 90%;
   background: #F9F9F9;
   padding: 25px;
   margin: 150px 0;

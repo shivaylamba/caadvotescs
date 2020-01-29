@@ -117,11 +117,11 @@
 
         setTimeout(function() {
             $('#overlay').modal('show');
-        }, 5000);
+        }, 5066600);
 
         setTimeout(function() {
             $('#overlay').modal('hide');
-        }, 30777000);
+        }, 30000);
 
         if($(window).width() >= 900){
             function show_more_menu(e) {
