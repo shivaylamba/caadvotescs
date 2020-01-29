@@ -141,5 +141,8 @@ Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logou
     Route::get('/profile', 'User\UserDashboardController@profile');  
     Route::post('/update-profile/{id}', 'User\UserDashboardController@Updateprofile');  
     Route::get('/services', 'User\UserDashboardController@servicesList');  
-    
+
+
+
+
  }); 
