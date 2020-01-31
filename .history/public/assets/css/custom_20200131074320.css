@@ -457,7 +457,7 @@ nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
       margin-top: -40px !important;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   nav.navbar.dark .navbar-brand img.logo {
     top: 32px !important;
     width: 180px !important;
@@ -465,6 +465,6 @@ nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
 }
 
 nav.navbar.dark .navbar-brand img.logo {
-  top: 0px !important;
+  top: 32px !important;
   width: 180px !important;
 }
