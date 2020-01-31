@@ -459,14 +459,12 @@ nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
 }
 @media only screen and (max-width: 600px) {
   nav.navbar.dark .navbar-brand img.logo {
-    top: 0px !important;
+    top: 32px !important;
     width: 180px !important;
   }
 }
 
-@media (min-width: 768px) {
-  nav.navbar.dark .navbar-brand img.logo {
-    top: 32px !important;
-    width: 180px !important;
-  }
+nav.navbar.dark .navbar-brand img.logo {
+  top: 32px !important;
+  width: 180px !important;
 }

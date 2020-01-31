@@ -464,9 +464,7 @@ nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
   }
 }
 
-@media (min-width: 768px) {
-  nav.navbar.dark .navbar-brand img.logo {
-    top: 32px !important;
-    width: 180px !important;
-  }
+nav.navbar.dark .navbar-brand img.logo {
+  top: 32px !important;
+  width: 180px !important;
 }
