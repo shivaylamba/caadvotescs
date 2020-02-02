@@ -1,5 +1,5 @@
 <?php
-use App\Mail\TestAmazonSes;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +13,8 @@ use App\Mail\TestAmazonSes;
 
 //Route::get('/post', 'Admin\PageController@pageContent');
 Route::get('test', function () {
-   Mail::to('aakashsingh1999@gmail.com')->send(new TestAmazonSes('It works!'));
+   Mail::to('email@doe.com)->send(new TestAmazonSes('It works!'));
 });
-
 Route::get('/', 'Admin\MenuController@menuContent');
 Route::get('/services/all', 'Service\ServicePageController@DisplayAllServices');
 

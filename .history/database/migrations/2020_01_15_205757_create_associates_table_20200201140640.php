@@ -16,7 +16,7 @@ class CreateAssociatesTable extends Migration
         Schema::create('associates', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('phone')->nullable();
+            $table->string('phone')->nullable();;
             $table->string('associate_category');
             $table->string('associate_profession');
             $table->string('associate_about')->nullable();
