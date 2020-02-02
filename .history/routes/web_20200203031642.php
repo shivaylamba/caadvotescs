@@ -13,9 +13,8 @@ use App\Mail\TestAmazonSes;
 
 //Route::get('/post', 'Admin\PageController@pageContent');
 Route::get('test', function () {
-   $data = array('name'=>'CAADVCS SUPPORT', 'subject'=>'Thank You for filling up the quotation' ,'body' => 'A test mail');
-   Mail::send('emails.test.created', $data, function ($message) {
-      $message->from('contact@develophowto.com', 'Caadvocatescs Support');
+   Mail::send('emails.tpl', 'test', function ($message) {
+      $message->from('contact@develophowto.com', 'CAADVCS SUPPORT');
   
       $message->to('aakashsingh1999@gmail.com');
   });
