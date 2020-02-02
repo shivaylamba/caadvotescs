@@ -13,8 +13,8 @@ use App\Mail\TestMail;
 
 //Route::get('/post', 'Admin\PageController@pageContent');
 Route::get('test', function () {
-   $data = array('name'=>'Ogbonna Vitalis(sender_name)', 'body' => 'A test mail');
-   Mail::send('emails.tpl',$data, function ($message) {
+
+   Mail::send('emails.contact',$data, function ($message) {
 			$message->from('singhtanwarajay412@gmail.com','CaAdvCs');
 			$message->to('aakashsingh1999@gmail.com');
 			$message->subject('Contact form submitted on caadvcs.com ');
