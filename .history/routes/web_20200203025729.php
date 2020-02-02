@@ -1,5 +1,5 @@
 <?php
-use App\Mail\TestAmazonSes;
+use App\Mail\TestMail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes

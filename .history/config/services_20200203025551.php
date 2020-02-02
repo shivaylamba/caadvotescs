@@ -27,7 +27,7 @@ return [
     'ses' => [
         'key' => env('AKIAQZTX2SVABV3IKWVY'),
         'secret' => env('BFtw7MOhjiEkSstEedjsjBFaY+UPBxCY8ef14L9jUG9i'),
-        'region' => env('ap-south-1', 'ap-south-1'),
+        'region' => env('AWS_DEFAULT_REGION', 'ap-south-1'),
     ],
 
     'sparkpost' => [
