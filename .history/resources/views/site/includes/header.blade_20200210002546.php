@@ -114,7 +114,7 @@
                     @endif
                     @if (Auth::guest())
                     <li class="dropdown">
-                        <a href="#" class="submenu dropdown-toggle" data-toggle="dropdown">Join Us</a>
+                        <a href="index.html#" class="submenu dropdown-toggle" data-toggle="dropdown">Join Us</a>
                         <ul class="dropdown-menu">
                             <li>
                             <a href="{{route('user.login')}}">Login</a>
@@ -123,7 +123,7 @@
                                 <a href="{{route('user.register')}}">Register</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="submenu dropdown-toggle" data-toggle="dropdown">Associates</a>
+                                <a href="index.html#" class="submenu dropdown-toggle" data-toggle="dropdown">Associates</a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="/associate/login">Login</a>

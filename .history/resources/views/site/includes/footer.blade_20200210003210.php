@@ -22,7 +22,6 @@
                             </div-->
                             <br>
                             <div class="text-container">
-                              <img src="../../images/logos/logo-white.png"  class="logo logo-display" style="width:250px" alt=""><br><br><hr>
                                 <p>Caadvocatescs.com is owned by Caadvocatecs Pvt. Ltd. Its a group of professionals having diverse knowledge and experience, who have come together to start this venture to provide a wide range of value-added services to startups for their new ventures and for existing clients.</p>
                             </div>
                         </div>
