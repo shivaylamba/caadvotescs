@@ -31,7 +31,7 @@
 
                      <div class="form-group form_left" data-aos="fade-up" data-aos-delay="100">
         
-                        <input id="form_email" type="password"  style="color:#fff" name="password" class="form-control" placeholder="Please enter your Password*" required="required" data-error="Valid password is required.">
+                        <input id="form_email" type="password" name="password" class="form-control" placeholder="Please enter your Password*" required="required" data-error="Valid password is required.">
                         <div class="help-block with-errors"></div>
                      </div>
                      <div class="form-group" data-aos="fade-up" data-aos-delay="300">

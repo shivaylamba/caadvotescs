@@ -26,23 +26,23 @@
               @csrf
                   <div class="messages"></div>
                  <div class="form-group" data-aos="fade-up">
-                      <input id="form_name" style="color:#fff" type="text" name="name" class="form-control" placeholder="Please enter your Full Name*" required="required" data-error="Email is required.">
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your Full Name*" required="required" data-error="Email is required.">
                  </div>
                  <div class="form-group" data-aos="fade-up">
-                    <input id="form_name"  style="color:#fff" type="integer" name="phone" class="form-control" placeholder="Please enter your Phone No*" required="required" data-error="Email is required.">
+                    <input id="form_name" type="integer" name="phone" class="form-control" placeholder="Please enter your Phone No*" required="required" data-error="Email is required.">
                  </div>
                 <div class="form-group" data-aos="fade-up">
-                    <input id="form_name"  style="color:#fff" type="email" name="email" class="form-control" placeholder="Please enter your Email*" required="required" data-error="Email is required.">
+                    <input id="form_name" type="email" name="email" class="form-control" placeholder="Please enter your Email*" required="required" data-error="Email is required.">
                 </div>
 
                  <div class="form-group form_left" data-aos="fade-up" data-aos-delay="100">
     
-                    <input id="form_email"  style="color:#fff" type="password" name="password" class="form-control" placeholder="Please enter your Password*" required="required" data-error="Valid password is required.">
+                    <input id="form_email" type="password" name="password" class="form-control" placeholder="Please enter your Password*" required="required" data-error="Valid password is required.">
                     <div class="help-block with-errors"></div>
                  </div>
                  <div class="form-group form_left" data-aos="fade-up" data-aos-delay="100">
     
-                    <input id="form_email"  style="color:#fff" type="password" name="password_confirmation" class="form-control" placeholder="Please Confirm your Password*" required="required" data-error="Valid password is required.">
+                    <input id="form_email" type="password" name="password_confirmation" class="form-control" placeholder="Please Confirm your Password*" required="required" data-error="Valid password is required.">
                     <div class="help-block with-errors"></div>
                  </div>
                  <div class="form-group" data-aos="fade-up" data-aos-delay="300">

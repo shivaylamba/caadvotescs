@@ -98,17 +98,17 @@
                     </select>
                 </div>
                 <div class="form-group" data-aos="fade-up">
-                    <input id="form_name"  style="color:#fff" type="associate_city" name="associate_city" class="form-control" placeholder="Please Enter Your City*" required="required" data-error="City is required.">
+                    <input id="form_name" type="associate_city" name="associate_city" class="form-control" placeholder="Please Enter Your City*" required="required" data-error="City is required.">
                 </div>
 
                  <div class="form-group form_left" data-aos="fade-up" data-aos-delay="100">
     
-                    <input id="form_email"  style="color:#fff" type="password" name="password" class="form-control" placeholder="Please enter your Password*" required="required" data-error="Valid password is required.">
+                    <input id="form_email" type="password" name="password" class="form-control" placeholder="Please enter your Password*" required="required" data-error="Valid password is required.">
                     <div class="help-block with-errors"></div>
                  </div>
                  <div class="form-group form_left" data-aos="fade-up" data-aos-delay="100">
     
-                    <input id="form_email"  style="color:#fff" type="password" name="password_confirmation" class="form-control" placeholder="Please Confirm your Password*" required="required" data-error="Valid password is required.">
+                    <input id="form_email" type="password" name="password_confirmation" class="form-control" placeholder="Please Confirm your Password*" required="required" data-error="Valid password is required.">
                     <div class="help-block with-errors"></div>
                  </div>
                  <div class="form-group" data-aos="fade-up" data-aos-delay="300">
