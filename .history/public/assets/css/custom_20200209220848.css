@@ -503,7 +503,7 @@ nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
   transition: .5s ease;
 }
 
-/*.text a {
+.text a {
   color: white;
   padding: 5px 10px;
   font-size: 11px;
@@ -516,7 +516,7 @@ nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}*/
+}
 
 .owl-dots {
   width: 100%;

@@ -503,7 +503,7 @@ nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
   transition: .5s ease;
 }
 
-/*.text a {
+.text a {
   color: white;
   padding: 5px 10px;
   font-size: 11px;
@@ -516,7 +516,7 @@ nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}*/
+}
 
 .owl-dots {
   width: 100%;
@@ -651,10 +651,6 @@ nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
   background-attachment: fixed;
 }
 
-.contact-form .form-control {
-  background: #3e4c66 !important;
-  box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.01);
-}
 
 ::placeholder {
   color: red !important;

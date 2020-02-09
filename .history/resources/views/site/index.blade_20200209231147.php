@@ -850,6 +850,32 @@
     
         
          <!-- section 9 Join Us As Associate-->
+         <section class="short-info style2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-container aos-init aos-animate" data-aos="fade-up">
+                            <h2>Let’s Partner Up!</h2>
+                            <div class="long-line"></div>
+                            <div class="padding-text">
+                                <h3>We’re known for</h3>
+                                <li>Offering 300+ legal solutions across different verticals</li>
+                                <li>Reliable team of expert lawyers, Chartered Accountants & Company Secretaries</li>
+                                <li>Delivering highest quality of services to more than 1 lakh partner referrals</li><br>
+                                <p>We’re always on the lookout for partnership opportunities with businesses across different sectors. We offer customized packages of legal services that best fit your business’ and your customers' requirements at discounted prices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="text-container aos-init aos-animate" data-aos="fade-up">
+                            <div class="buttons">
+                                <a href="/associate/register" class="button btn btn-lg btn-red radius25">Become a Partner</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="text-image creative">
             <div class="container">
                 <div class="row">
@@ -869,9 +895,10 @@
                                     <li>Reliable team of expert lawyers, Chartered Accountants & Company Secretaries</li>
                                     <li>Delivering highest quality of services to more than 1 lakh partner referrals</li><br>
                                     <p>We’re always on the lookout for partnership opportunities with businesses across different sectors. We offer customized packages of legal services that best fit your business’ and your customers' requirements at discounted prices.</p></p>
-                                    <div class="buttons">
-                                        <a href="/associate/register" class="button btn btn-lg btn-red radius25">Become a Partner</a>
-                                    </div>
+                                <div class="buttons">
+                                    <a href="index-business.html#" class="button btn btn-lg btn-default btn-red radius5 btn-margin-right">Get Started Now </a>
+                                    <a href="index-business.html#" class="button btn btn-lg btn-default btn-outline-dark radius5 btn-margin-right">Get Started Now </a>
+                                </div>
                             </div>
                         </div>
                     </div>

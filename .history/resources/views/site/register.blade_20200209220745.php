@@ -47,7 +47,7 @@
                  </div>
                  <div class="form-group" data-aos="fade-up" data-aos-delay="300">
                      <br>
-                      <button class="btn btn-red btn-sm radius25"> <span class="fa fa-envelope"></span> Register </button>
+                      <button class="btn btn-red btn-sm radius25"> <span class="fa fa-envelope"></span> Login </button>
                  </div>
              </form>
           </div>
