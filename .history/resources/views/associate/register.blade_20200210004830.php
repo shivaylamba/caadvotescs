@@ -29,7 +29,7 @@
                       <input id="form_name"  style="color:#fff" type="text" name="name" class="form-control" placeholder="Please enter your Full Name*" required="required" data-error="Email is required.">
                  </div>
                  <div class="form-group" data-aos="fade-up">
-                    <input id="form_name"  style="color:#fff" type="number" name="phone" class="form-control @error('phone') is-invalid @enderror" placeholder="Please enter your Phone No*" value="{{ old('phone') }}" required autocomplete="phone" autofocus data-error="Enter a Valid Phone No.">
+                    <input id="form_name"  style="color:#fff" type="integer" name="phone" class="form-control @error('phone') is-invalid @enderror" placeholder="Please enter your Phone No*" required="required" data-error="Email is required.">
                     @error('phone')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>

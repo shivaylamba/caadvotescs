@@ -23,6 +23,9 @@
       <div class="row">
           <div class="col-sm-6">
             <form role="form" method="POST" action="{{route('associate.login.submit')}}">
+                @foreach ($errors->all() as $error)
+                <div class="alert alert-danger" role="alert">{{ $error }}</div>
+                @endforeach
                 @if($errors->any())
                 <div class="alert alert-danger" role="alert">{{$errors->first()}}</div>
                 @endif

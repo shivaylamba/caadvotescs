@@ -52,7 +52,7 @@ class LoginController extends Controller
       }
 
       // if unsuccessful, then redirect back to the login with the form data
-      return redirect()->back()->withInput($request->only('email', 'remember'))->withErrors(['Email/Password is Incorrect']);
+      return redirect()->back()->withInput($request->only('email', 'remember'))->withErrors(['msg', 'Email Id or Password is Incorrect']);
     }
 
     public function logout()
