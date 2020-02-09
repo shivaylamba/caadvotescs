@@ -58,7 +58,6 @@
                 </div>
                 <div class="form-group" data-aos="fade-up">
                     <select id="form_name" type="text" style="color:#fff" name="associate_state" class="form-control" placeholder="Select State*" required="required" data-error="State is required.">
-                        <option value="#">Select State</option>
                         <option value="Andhra Pradesh">Andhra Pradesh</option>
                         <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                         <option value="Arunachal Pradesh">Arunachal Pradesh</option>

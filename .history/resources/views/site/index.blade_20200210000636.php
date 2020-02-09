@@ -110,7 +110,7 @@
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
                                 <i class="fa  fa-envelope fa-2x"></i>
-                                <h4>Annual Filings 2020 <br>@Rs.2999/-</h4>
+                                <h4>Anual Filings 2020 <br>@Rs.2999/-</h4>
                           </div>
                           <div class="flip-card-back">
                             <i class="fa fa-envelope fa-2x"></i>
@@ -233,7 +233,7 @@
 
     
     <!-- section 7 Popular Services  -->
-    <!--section class="section7">
+    <section class="section7">
         <div class="container">
             <div class="modern-title">
                 <div class="col-sm-6">
@@ -373,7 +373,7 @@
         <div class="buttons">
             <center><a href="/services/all" class="button btn btn-sm btn-default btn-red radius25 btn-shadow btn-margin-right">View All</a></center>
         </div>
-    </section-->
+    </section>
     <!-- section 7 Popular Services end -->
         
     <!-- Instant Best Price -->

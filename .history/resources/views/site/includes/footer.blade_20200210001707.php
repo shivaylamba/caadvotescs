@@ -48,7 +48,7 @@
                             <ul>
                                 @foreach($footercategory as $fc)
                                 <li>
-                                    <a href="/category/{{$fc->categoryname}}">{{$fc->categoryname}}</a>
+                                    <a href="index.html#">{{$fc->categoryname}}</a>
                                 </li>
                                 @endforeach
                             </ul>

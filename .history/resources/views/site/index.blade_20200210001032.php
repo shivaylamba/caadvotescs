@@ -110,7 +110,7 @@
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
                                 <i class="fa  fa-envelope fa-2x"></i>
-                                <h4>Annual Filings 2020 <br>@Rs.2999/-</h4>
+                                <h4>Anual Filings 2020 <br>@Rs.2999/-</h4>
                           </div>
                           <div class="flip-card-back">
                             <i class="fa fa-envelope fa-2x"></i>

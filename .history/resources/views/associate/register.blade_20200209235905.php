@@ -35,14 +35,14 @@
                     <input id="form_name" type="email" name="email" class="form-control" placeholder="Please enter your Email*" required="required" data-error="Email is required.">
                 </div>
                 <div class="form-group" data-aos="fade-up">
-                    <select id="form_name" type="text" style="color:#fff" name="associate_category" class="form-control" placeholder="Select Category*" required="required" data-error="Category is required.">
+                    <select id="form_name" type="text" name="associate_category" class="form-control" placeholder="Select Category*" required="required" data-error="Category is required.">
                         <option value="Legals">Legals</option>
                         <option value="Marketing">Marketing</option>
                         <option value="Consultancy">Consultancy</option>
                     </select>
                 </div>
                 <div class="form-group" data-aos="fade-up">
-                    <select id="form_name" type="text" style="color:#fff" name="associate_profession" class="form-control"  required="required" data-error="Profession is required.">
+                    <select id="form_name" type="text" name="associate_profession" class="form-control" style="::placeholder { color: red !important opacity: 1; /* Firefox */}" placeholder="Select Profession*" required="required" data-error="Profession is required.">
                         <option value="Lawyer">Lawyer</option>
                         <option value="CA">CA</option>
                         <option value="Tax Practitioner">Tax Practitioner</option>
@@ -57,8 +57,7 @@
                     </select>
                 </div>
                 <div class="form-group" data-aos="fade-up">
-                    <select id="form_name" type="text" style="color:#fff" name="associate_state" class="form-control" placeholder="Select State*" required="required" data-error="State is required.">
-                        <option value="#">Select State</option>
+                    <select id="form_name" type="text" name="associate_state" class="form-control" placeholder="Select State*" required="required" data-error="State is required.">
                         <option value="Andhra Pradesh">Andhra Pradesh</option>
                         <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                         <option value="Arunachal Pradesh">Arunachal Pradesh</option>

@@ -44,7 +44,7 @@ body {
 
 @media (min-width: 1024px) {
 nav.navbar.navbar-inverse.bootsnav.navbar-transparent.dark, nav.navbar.bootsnav.navbar-transparent.dark {
-    background-color: rgba(4, 15, 31, 0.82) !important;
+    background-color: rgba(25, 25, 25, 0) !important;
     border-bottom: solid 0 rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -671,9 +671,4 @@ nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: pink;
-}
-
-.blog .post-text p {
-  font-size: 16px;
-  color: #284048 !important;
 }
