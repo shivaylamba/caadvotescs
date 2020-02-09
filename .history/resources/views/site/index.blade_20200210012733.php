@@ -89,7 +89,7 @@
             </div>
             <center>
             <div class="row row-marketplace" style="padding-bottom:10px">
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-3">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -105,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-3">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-3">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -137,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-3">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -153,7 +153,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-3">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -169,7 +169,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-3">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -185,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-3">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -201,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-3">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">

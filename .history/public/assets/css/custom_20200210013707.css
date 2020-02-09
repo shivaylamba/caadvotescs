@@ -244,7 +244,8 @@ nav.navbar.navbar-inverse.bootsnav.navbar-transparent.dark, nav.navbar.bootsnav.
 }
 
 .row-marketplace {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -359,20 +360,6 @@ nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
     margin: 150px 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }
-
-  .flip-card {
-    background-color: #fff;
-    width: 150px;
-    padding: 10px;
-    height: 150px;
-    perspective: 1000px;
-}
-
-body p, body li {
-  font-family: 'Hind', sans-serif;
-  font-size: small;
-  color: #7d828e;
-}
 }
 
 .circlebutton.circle {
