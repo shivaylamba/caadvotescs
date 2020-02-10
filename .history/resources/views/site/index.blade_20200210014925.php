@@ -59,7 +59,7 @@
                                     <p>Easily Compare the best prives amoung various services.</p>
                                 </div>
                                 <div class="col-sm-3 boxes p-left">
-                                    <i class="fa fa-clock fa-2x"></i>
+                                    <i class="fa fa-watch fa-2x"></i>
                                     <h4>Predefine time and delivery</h4>
                                     <p>Get your product delived at time.</p>
                                 </div>
@@ -189,11 +189,11 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                                <i class="fa fa-gavel fa-2x"></i>
+                                <i class="fa fa-paint-brush fa-2x"></i>
                                 <h4>Incom Tax</h4>
                           </div>
                           <div class="flip-card-back">
-                            <i class="fa fa-gavel fa-2x"></i>
+                            <i class="fa fa-paint-brush fa-2x"></i>
                             <li><a href="/public/services/private-limited-company">Pitch-Deck Design</a></li>
                             <li><a href="/public/services/private-limited-company">Presentation Design</a></li>
                             <li><a href="/public/services/private-limited-company">Corporate Profile Design</a></li>

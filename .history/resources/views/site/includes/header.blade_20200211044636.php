@@ -736,7 +736,7 @@
                                 </ul>
                             </li>
                             <li> </li>
-                            <li><a href="whatsapp://send?text=Hello CA-ADVOCATE-CS!&amp;phone=+917836943694" class="green-color" style="color: #1bb74e !important;"><i class="fa fa-whatsapp"></i> +91  7836 943 694</a></li>
+                            <li><a href="whatsapp://send?text=Hello Vakilsearch!&amp;phone=+917200365365" class="green-color" style="color: #1bb74e !important;"><i class="fa fa-whatsapp"></i> +91 7200 365 365</a></li>
                         </ul>
                     </div>
                 </div>
@@ -16410,8 +16410,7 @@
     
                 .navbar-default .navbar-collapse,
                 .navbar-default .navbar-form {
-                    border-color: #e7e7e7;
-                    background-color:#fff;
+                    border-color: #e7e7e7
                 }
     
                 .navbar-default .navbar-nav>.open>a,
@@ -20732,7 +20731,7 @@
                 .webViewMenuShow {
                     /*box-shadow: 0px 0 0 2px rgba(0, 0, 0, 0.05);*/
                     height: 100%;
-                    background-color: #fff0;
+                    background-color: #fff;
                 }
     
                 .cd-dropdown-wrapper {
@@ -22989,7 +22988,7 @@
                     }
     
                     .navbar-fixed-top .has-children a {
-                        color: #000 ;
+                        color: #fbfbfbfa !important;
                     }
     
                     .navbar-fixed-top.scrolled .has-children a {
@@ -23003,7 +23002,7 @@
     
                     .rightmenu li,
                     .rightmenu li>a {
-                        color: #fff !important;
+                        color: #000 !important;
                     }
     
                     .navbar-fixed-top.scrolled .has-children li .webClick,
@@ -23061,7 +23060,7 @@
                     }
     
                     .navbar-fixed-top .has-children a {
-                        color: #fff ;
+                        color: #000 !important;
                     }
     
                     .cd-dropdown-content>li:last-of-type a {
@@ -23098,7 +23097,7 @@
                     }
     
                     .navbar-default .navbar-toggle .icon-bar {
-                        background-color: #fff;
+                        background-color: #000;
                     }
     
                     @media (min-width: 1023px) {

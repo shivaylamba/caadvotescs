@@ -108,7 +108,7 @@
     <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:500,700">
     <script src="https://a.vakilsearch.com/live-js/website_revamp_innerpages_new_design.js"></script>
-    <script type="text/javascript" src="../../js/style.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
     <script src="https://cdn.rawgit.com/thomaspark/scoper/5de04619/scoper.min.js"></script>
     <script src="../../javascript/jquery.js"></script>
     <script src="../../javascript/validator.js"></script>
@@ -124,9 +124,7 @@
     <script src="../../js/productfilter.js"></script>
     <script src="../../assets/vendor/nouislider/distribute/nouislider.min.js"></script>
     <script src="../../js/prism.js"></script>
-    <script type="text/javascript">
-      var jQuery_3_3_1 = $.noConflict(true);
-      </script>
+    
     <script>
 
     var doc = document,

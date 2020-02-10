@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 
 class ServicePageController extends Controller
 {
-    public function ServiceContent(Request $request, $slug)
+    public function ServiceContent(Request $request, $slug) 
     {
         $category = DB::select('select * from servisecategories WHERE status = "active"');
         $subcategory = DB::select('select * from subcategories where status = "active"');

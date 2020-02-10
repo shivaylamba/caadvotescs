@@ -43,8 +43,8 @@
 
 <body>
     <!-- Preloader -->
-    <div id="preloader"  style="z-index:120 !important;">
-        <div id="status" style="z-index:120 !important;"></div>
+    <div id="preloader">
+        <div id="status"></div>
     </div>
     <!-- Preloader -->
 
@@ -53,70 +53,12 @@
         <div class="homepageBG" style="width: 100%; position: fixed; z-index: 99; top: 45px;">
             <nav class="navbar navbar-custom navbar-default navbar-fixed-top" role="navigation">
                 <div class="container-fluid service_page_navbar">
-                    <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand page-scroll white-navbar" href="https://vakilsearch.com" style="display: none;"><img alt="Official logo of VakilSearch" width="151" height="28" src="../../images/logos/logo-black.png"></a> <a class="navbar-brand page-scroll blue-navbar" href="https://vakilsearch.com" style="display: block;"><img alt="Official logo of caadvocatecs" width="151" height="28" src=" ../../images/logos/logo-black.png"></a> </div>
+                    <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand page-scroll white-navbar" href="https://vakilsearch.com" style="display: none;"><img alt="Official logo of VakilSearch" width="151" height="28" src="https://a.vakilsearch.com/live-images/website_revamp/brandlogo.svg"></a> <a class="navbar-brand page-scroll blue-navbar" href="https://vakilsearch.com" style="display: block;"><img alt="Official logo of VakilSearch" width="151" height="28" src="https://a.vakilsearch.com/live-images/website_revamp/brandlogo.svg"></a> </div>
                     <div class="webViewMenuShow">
-                        <ul class="nav navbar-nav navbar-right rightmenu" style="margin-top:-2px !important;">
+                        <ul class="nav navbar-nav navbar-right rightmenu">
                             <li>
                                 <ul class="cd-dropdown-content">
                                     <li class="has-children"> <a href="#" class="webClick" onclick="window.open('/start-a-business','_self');">Start Your Business</a> <a class="mobileViewClick" href="#">Start a Business</a>
-                                        <ul class="cd-dropdown-icons is-hidden fade-out">
-                                            <li class="go-back"><a href="#0"><strong>Menu</strong></a></li>
-                                            <div class="col-md-4 col-12" style="padding-bottom: 50px">
-                                                <li>
-                                                    <h5>Business Registration</h5>
-                                                </li>
-                                                <li><a class="cd-dropdown-item item-1" href="/online-company-registration">Private Limited Company</a></li>
-                                                <li><a class="cd-dropdown-item item-1" href="/llp-registration-india">Limited Liability Partnership</a></li>
-                                                <li><a class="cd-dropdown-item item-1" href="/one-person-company-opc-in-india">One Person Company</a></li>
-                                                <li><a class="cd-dropdown-item item-1" href="/nidhi-company">Nidhi Company</a></li>
-                                                <li><a class="cd-dropdown-item item-1" href="/producer-company">Producer Company</a></li>
-                                                <li><a class="cd-dropdown-item item-1" href="/partnership-firm">Partnership Firm</a></li>
-                                                <li><a class="cd-dropdown-item item-1" href="/proprietorship-registration-india-sole-proprietorship">Sole Proprietorship</a></li>
-                                                <li>
-                                                    <h5>Licenses</h5>
-                                                </li>
-                                                <li><a class="cd-dropdown-item item-1" href="/online-food-license-fssai-registration" style="line-height: 19px;">FSSAI [Food License]</a></li>
-                                                <li><a class="cd-dropdown-item item-1" href="/import-export-code">IEC [Import/Export Code]</a></li>
-                                                <li><a class="cd-dropdown-item item-1" href="/apeda-registration">APEDA-RCMC Registration </a></li>
-                                                <li><a class="cd-dropdown-item item-1" href="/online-udyog-aadhaar-registration">MSME/SSI Registration</a></li>
-                                                <li><a class="cd-dropdown-item item-1" href="/iso-certification">ISO Certification </a></li>
-                                                <li><a class="cd-dropdown-item item-1" href="/digital-signature">Digital Signature Certificate </a></li>
-                                                <li><a class="cd-dropdown-item item-1 more" id="more2" onclick="clickMore('panel2')">[More]</a>
-                                                    <ul id="panel2">
-                                                        <li><a class="cd-dropdown-item item-1" href="/psara-license">PSARA Licence</a></li>
-                                                        <li><a class="cd-dropdown-item item-1" href="/osp-license">OSP Licence</a></li>
-                                                        <li><a class="cd-dropdown-item item-1" href="/trade-license">Trade Licence</a></li>
-                                                    </ul>
-                                                </li>
-                                            </div>
-                                            <div class="col-md-4 col-12">
-                                                <li>
-                                                    <h5>Company Name Search</h5>
-                                                </li>
-                                                <li><a class="cd-dropdown-item item-1" href="/company-name-search">Company Name Search</a></li>
-                                                <li>
-                                                    <h5>International Business Setup</h5>
-                                                </li>
-                                                <li><a class="cd-dropdown-item item-1" href="/usa-incorporation">US Incorporation</a></li>
-                                                <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-singapore">Singapore Incorporation</a></li>
-                                                <li><a class="cd-dropdown-item item-1 more" id="more1" onclick="clickMore('panel1')">[More]</a>
-                                                    <ul id="panel1">
-                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-united-kingdom">UK Incorporation</a></li>
-                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-netherlands">Netherlands Incorporation</a></li>
-                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-hong-kong">Hong Kong Incorporation</a></li>
-                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-malaysia">Malaysia Incorporation</a></li>
-                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-china">China Incorporation</a></li>
-                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-dubai">Dubai Incorporation</a></li>
-                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-australia">Australia Incorporation</a></li>
-                                                    </ul>
-                                                </li>
-                                            </div>
-                                            <div class="col-md-4 col-12">
-                                                <div class="shapes-bg pull-right"> <img data-src="https://a.vakilsearch.com/live-images/website_revamp/google-and-smile.png" alt="google review" class="google" src="https://a.vakilsearch.com/live-images/website_revamp/google-and-smile.png"> <img data-src="https://a.vakilsearch.com/live-images/website_revamp/shapes-bg.png" alt="" class="smile" src="https://a.vakilsearch.com/live-images/website_revamp/shapes-bg.png"> </div>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="has-children"> <a href="#" class="webClick" onclick="window.open('/start-a-business','_self');">Startup</a> <a class="mobileViewClick" href="#">Startup</a>
                                         <ul class="cd-dropdown-icons is-hidden fade-out">
                                             <li class="go-back"><a href="#0"><strong>Menu</strong></a></li>
                                             <div class="col-md-4 col-12" style="padding-bottom: 50px">
@@ -736,7 +678,7 @@
                                 </ul>
                             </li>
                             <li> </li>
-                            <li><a href="whatsapp://send?text=Hello CA-ADVOCATE-CS!&amp;phone=+917836943694" class="green-color" style="color: #1bb74e !important;"><i class="fa fa-whatsapp"></i> +91  7836 943 694</a></li>
+                            <li><a href="whatsapp://send?text=Hello Vakilsearch!&amp;phone=+917200365365" class="green-color" style="color: #1bb74e !important;"><i class="fa fa-whatsapp"></i> +91 7200 365 365</a></li>
                         </ul>
                     </div>
                 </div>
@@ -16410,8 +16352,7 @@
     
                 .navbar-default .navbar-collapse,
                 .navbar-default .navbar-form {
-                    border-color: #e7e7e7;
-                    background-color:#fff;
+                    border-color: #e7e7e7
                 }
     
                 .navbar-default .navbar-nav>.open>a,
@@ -20610,7 +20551,7 @@
                 .webViewMenuShow1 {
                     display: none;
                     height: 100%;
-                    background-color: #fff0;
+                    background-color: #fff;
                 }
     
                 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -20732,7 +20673,7 @@
                 .webViewMenuShow {
                     /*box-shadow: 0px 0 0 2px rgba(0, 0, 0, 0.05);*/
                     height: 100%;
-                    background-color: #fff0;
+                    background-color: #fff;
                 }
     
                 .cd-dropdown-wrapper {
@@ -22949,7 +22890,7 @@
                     }
     
                     .navbar-fixed-top {
-                        background: #ffffff05!important;
+                        background: transparent !important;
                         border: none;
                     }
     
@@ -22989,7 +22930,7 @@
                     }
     
                     .navbar-fixed-top .has-children a {
-                        color: #000 ;
+                        color: #fff !important;
                     }
     
                     .navbar-fixed-top.scrolled .has-children a {
@@ -23003,7 +22944,7 @@
     
                     .rightmenu li,
                     .rightmenu li>a {
-                        color: #fff !important;
+                        color: #000 !important;
                     }
     
                     .navbar-fixed-top.scrolled .has-children li .webClick,
@@ -23061,7 +23002,7 @@
                     }
     
                     .navbar-fixed-top .has-children a {
-                        color: #fff ;
+                        color: #000 !important;
                     }
     
                     .cd-dropdown-content>li:last-of-type a {
@@ -23098,7 +23039,7 @@
                     }
     
                     .navbar-default .navbar-toggle .icon-bar {
-                        background-color: #fff;
+                        background-color: #000;
                     }
     
                     @media (min-width: 1023px) {

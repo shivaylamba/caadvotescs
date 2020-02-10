@@ -43,8 +43,8 @@
 
 <body>
     <!-- Preloader -->
-    <div id="preloader"  style="z-index:120 !important;">
-        <div id="status" style="z-index:120 !important;"></div>
+    <div id="preloader">
+        <div id="status"></div>
     </div>
     <!-- Preloader -->
 
@@ -53,9 +53,9 @@
         <div class="homepageBG" style="width: 100%; position: fixed; z-index: 99; top: 45px;">
             <nav class="navbar navbar-custom navbar-default navbar-fixed-top" role="navigation">
                 <div class="container-fluid service_page_navbar">
-                    <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand page-scroll white-navbar" href="https://vakilsearch.com" style="display: none;"><img alt="Official logo of VakilSearch" width="151" height="28" src="../../images/logos/logo-black.png"></a> <a class="navbar-brand page-scroll blue-navbar" href="https://vakilsearch.com" style="display: block;"><img alt="Official logo of caadvocatecs" width="151" height="28" src=" ../../images/logos/logo-black.png"></a> </div>
+                    <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand page-scroll white-navbar" href="https://vakilsearch.com" style="display: none;"><img alt="Official logo of VakilSearch" width="151" height="28" src="https://a.vakilsearch.com/live-images/website_revamp/brandlogo.svg"></a> <a class="navbar-brand page-scroll blue-navbar" href="https://vakilsearch.com" style="display: block;"><img alt="Official logo of VakilSearch" width="151" height="28" src="https://a.vakilsearch.com/live-images/website_revamp/brandlogo.svg"></a> </div>
                     <div class="webViewMenuShow">
-                        <ul class="nav navbar-nav navbar-right rightmenu" style="margin-top:-2px !important;">
+                        <ul class="nav navbar-nav navbar-right rightmenu" style="margin-top:1px !important;">
                             <li>
                                 <ul class="cd-dropdown-content">
                                     <li class="has-children"> <a href="#" class="webClick" onclick="window.open('/start-a-business','_self');">Start Your Business</a> <a class="mobileViewClick" href="#">Start a Business</a>
@@ -736,7 +736,7 @@
                                 </ul>
                             </li>
                             <li> </li>
-                            <li><a href="whatsapp://send?text=Hello CA-ADVOCATE-CS!&amp;phone=+917836943694" class="green-color" style="color: #1bb74e !important;"><i class="fa fa-whatsapp"></i> +91  7836 943 694</a></li>
+                            <li><a href="whatsapp://send?text=Hello Vakilsearch!&amp;phone=+917200365365" class="green-color" style="color: #1bb74e !important;"><i class="fa fa-whatsapp"></i> +91 7200 365 365</a></li>
                         </ul>
                     </div>
                 </div>
@@ -16410,8 +16410,7 @@
     
                 .navbar-default .navbar-collapse,
                 .navbar-default .navbar-form {
-                    border-color: #e7e7e7;
-                    background-color:#fff;
+                    border-color: #e7e7e7
                 }
     
                 .navbar-default .navbar-nav>.open>a,
@@ -20610,7 +20609,7 @@
                 .webViewMenuShow1 {
                     display: none;
                     height: 100%;
-                    background-color: #fff0;
+                    background-color: #fff;
                 }
     
                 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -20732,7 +20731,7 @@
                 .webViewMenuShow {
                     /*box-shadow: 0px 0 0 2px rgba(0, 0, 0, 0.05);*/
                     height: 100%;
-                    background-color: #fff0;
+                    background-color: #fff;
                 }
     
                 .cd-dropdown-wrapper {
@@ -22949,7 +22948,7 @@
                     }
     
                     .navbar-fixed-top {
-                        background: #ffffff05!important;
+                        background: #fff !important;
                         border: none;
                     }
     
@@ -22989,7 +22988,7 @@
                     }
     
                     .navbar-fixed-top .has-children a {
-                        color: #000 ;
+                        color: #fff !important;
                     }
     
                     .navbar-fixed-top.scrolled .has-children a {
@@ -23003,7 +23002,7 @@
     
                     .rightmenu li,
                     .rightmenu li>a {
-                        color: #fff !important;
+                        color: #000 !important;
                     }
     
                     .navbar-fixed-top.scrolled .has-children li .webClick,
@@ -23061,7 +23060,7 @@
                     }
     
                     .navbar-fixed-top .has-children a {
-                        color: #fff ;
+                        color: #000 !important;
                     }
     
                     .cd-dropdown-content>li:last-of-type a {
@@ -23098,7 +23097,7 @@
                     }
     
                     .navbar-default .navbar-toggle .icon-bar {
-                        background-color: #fff;
+                        background-color: #000;
                     }
     
                     @media (min-width: 1023px) {

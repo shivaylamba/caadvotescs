@@ -124,9 +124,9 @@
     <script src="../../js/productfilter.js"></script>
     <script src="../../assets/vendor/nouislider/distribute/nouislider.min.js"></script>
     <script src="../../js/prism.js"></script>
-    <script type="text/javascript">
-      var jQuery_3_3_1 = $.noConflict(true);
-      </script>
+    <script>
+      var $y = jQuery.noConflict();
+   </script>
     <script>
 
     var doc = document,

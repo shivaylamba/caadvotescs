@@ -736,7 +736,7 @@
                                 </ul>
                             </li>
                             <li> </li>
-                            <li><a href="whatsapp://send?text=Hello CA-ADVOCATE-CS!&amp;phone=+917836943694" class="green-color" style="color: #1bb74e !important;"><i class="fa fa-whatsapp"></i> +91  7836 943 694</a></li>
+                            <li><a href="whatsapp://send?text=Hello Vakilsearch!&amp;phone=+917200365365" class="green-color" style="color: #1bb74e !important;"><i class="fa fa-whatsapp"></i> +91 7200 365 365</a></li>
                         </ul>
                     </div>
                 </div>
@@ -16410,7 +16410,7 @@
     
                 .navbar-default .navbar-collapse,
                 .navbar-default .navbar-form {
-                    border-color: #e7e7e7;
+                    border-color: #e7e7e7
                     background-color:#fff;
                 }
     
