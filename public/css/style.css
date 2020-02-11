@@ -6371,7 +6371,7 @@ font-size:13px;
 }
 .collapse.show {
     display: block;
-    float: left;
+    /*float: left;*/
     background: #fff;
     margin-left: -5px;
 }

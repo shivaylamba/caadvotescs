@@ -49,7 +49,7 @@
     <!-- Preloader -->
 
     <!-- Start Navigation -->
-    <section style="padding:0px;">
+    <section>
         <div class="homepageBG" style="width: 100%; position: fixed; z-index: 99; top: 45px;">
             <nav class="navbar navbar-custom navbar-default navbar-fixed-top" role="navigation">
                 <div class="container-fluid service_page_navbar">
@@ -58,36 +58,64 @@
                         <ul class="nav navbar-nav navbar-right rightmenu" style="margin-top:-2px !important;">
                             <li>
                                 <ul class="cd-dropdown-content">
-                                    @if(count($category) > 0)
-                                    @foreach ($category as $menu)
-                                    <li class="has-children"> <a href="#" class="webClick" onclick="window.open('/category/{{$menu->categoryname}}','_self');">{{$menu->categoryname}}</a> <a class="mobileViewClick" href="#">{{$menu->categoryname}}</a>
+                                    <li class="has-children"> <a href="#" class="webClick" onclick="window.open('/start-a-business','_self');">Start Your Business</a> <a class="mobileViewClick" href="#">Start a Business</a>
                                         <ul class="cd-dropdown-icons is-hidden fade-out">
                                             <li class="go-back"><a href="#0"><strong>Menu</strong></a></li>
-                                                @if (count($subcategory) > 0)
-                                                @foreach ($subcategory as $submenu)
-                                                @if ($submenu->ParentCategory == $menu->categoryname)
                                             <div class="col-md-4 col-12" style="padding-bottom: 50px">
                                                 <li>
-                                                    <h5>{{$submenu->subcategoryname}}</h5>
+                                                    <h5>Business Registration</h5>
                                                 </li>
-                                                    <li>
-                                                         @foreach ($services as $page)
-                                                         @if ($page->subcategory == $submenu->subcategoryname)
-                                                        <a class="cd-dropdown-item item-1" href="/public/services/{{$page->slug}}">{{$page->servicename}}</a>
-                                                         @endif
-                                                        @endforeach
-                                                    </li>
+                                                <li><a class="cd-dropdown-item item-1" href="/online-company-registration">Private Limited Company</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/llp-registration-india">Limited Liability Partnership</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/one-person-company-opc-in-india">One Person Company</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/nidhi-company">Nidhi Company</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/producer-company">Producer Company</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/partnership-firm">Partnership Firm</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/proprietorship-registration-india-sole-proprietorship">Sole Proprietorship</a></li>
+                                                <li>
+                                                    <h5>Licenses</h5>
+                                                </li>
+                                                <li><a class="cd-dropdown-item item-1" href="/online-food-license-fssai-registration" style="line-height: 19px;">FSSAI [Food License]</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/import-export-code">IEC [Import/Export Code]</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/apeda-registration">APEDA-RCMC Registration </a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/online-udyog-aadhaar-registration">MSME/SSI Registration</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/iso-certification">ISO Certification </a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/digital-signature">Digital Signature Certificate </a></li>
+                                                <li><a class="cd-dropdown-item item-1 more" id="more2" onclick="clickMore('panel2')">[More]</a>
+                                                    <ul id="panel2">
+                                                        <li><a class="cd-dropdown-item item-1" href="/psara-license">PSARA Licence</a></li>
+                                                        <li><a class="cd-dropdown-item item-1" href="/osp-license">OSP Licence</a></li>
+                                                        <li><a class="cd-dropdown-item item-1" href="/trade-license">Trade Licence</a></li>
+                                                    </ul>
+                                                </li>
                                             </div>
-                                                @endif
-                                                @endforeach
-                                                @endif
+                                            <div class="col-md-4 col-12">
+                                                <li>
+                                                    <h5>Company Name Search</h5>
+                                                </li>
+                                                <li><a class="cd-dropdown-item item-1" href="/company-name-search">Company Name Search</a></li>
+                                                <li>
+                                                    <h5>International Business Setup</h5>
+                                                </li>
+                                                <li><a class="cd-dropdown-item item-1" href="/usa-incorporation">US Incorporation</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-singapore">Singapore Incorporation</a></li>
+                                                <li><a class="cd-dropdown-item item-1 more" id="more1" onclick="clickMore('panel1')">[More]</a>
+                                                    <ul id="panel1">
+                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-united-kingdom">UK Incorporation</a></li>
+                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-netherlands">Netherlands Incorporation</a></li>
+                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-hong-kong">Hong Kong Incorporation</a></li>
+                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-malaysia">Malaysia Incorporation</a></li>
+                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-china">China Incorporation</a></li>
+                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-dubai">Dubai Incorporation</a></li>
+                                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-australia">Australia Incorporation</a></li>
+                                                    </ul>
+                                                </li>
+                                            </div>
                                             <div class="col-md-4 col-12">
                                                 <div class="shapes-bg pull-right"> <img data-src="https://a.vakilsearch.com/live-images/website_revamp/google-and-smile.png" alt="google review" class="google" src="https://a.vakilsearch.com/live-images/website_revamp/google-and-smile.png"> <img data-src="https://a.vakilsearch.com/live-images/website_revamp/shapes-bg.png" alt="" class="smile" src="https://a.vakilsearch.com/live-images/website_revamp/shapes-bg.png"> </div>
                                             </div>
                                         </ul>
                                     </li>
-                                    @endforeach
-                                    @endif
                                     <li class="whatsapp-menu" style="width: auto; float: left;"> <a href="#" class="webClick" onclick="window.open('https://web.whatsapp.com/send?phone=917836943694&amp;text=Hello CaAdvocateCs!','_blank');"> <img data-src="https://a.vakilsearch.com/live-images/website_revamp/whatsapp.png" alt="whatsapp icon" class="img-responsive" style="display: inline;" src="https://a.vakilsearch.com/live-images/website_revamp/whatsapp.png"> &nbsp;+91 7836 943 694</a> </li>
                                 </ul>
                             </li>
@@ -99,35 +127,60 @@
                         <ul class="cd-dropdown-content" style="height: 360px; background: #fff; padding: 0 12px; position: relative; top: 0px;">
                             @if(count($category) > 0)
                             @foreach ($category as $menu)         
-                            <li class="has-children"> <a href="#" class="webClick" onclick="window.open('/category/{{$menu->categoryname}}','_self');">{{$menu->categoryname}}</a> <a class="mobileViewClick" href="#">{{$menu->categoryname}}</a>
+                            <li class="has-children"> <a href="#" class="webClick" onclick="window.open('/start-a-business','_self');">{{$menu->categoryname}}</a> <a class="mobileViewClick" href="#">{{$menu->categoryname}}</a>
                                 <ul class="cd-dropdown-icons is-hidden">
                                     
                                     <li class="go-back"><a href="#0"><strong>Menu</strong></a></li>
-                                                @if (count($subcategory) > 0)
-                                                @foreach ($subcategory as $submenu)
-                                                @if ($submenu->ParentCategory == $menu->categoryname)
                                     <div class="col-md-6 col-12">
                                         <li>
-                                            <h5>{{$submenu->subcategoryname}}</h5>
+                                            <h5>Business Registration</h5>
                                         </li>
+                                        <li><a class="cd-dropdown-item item-1" href="/online-company-registration">Private Limited Company</a></li>
+                                        <li><a class="cd-dropdown-item item-1" href="/llp-registration-india">Limited Liability Partnership</a></li>
+                                        <li><a class="cd-dropdown-item item-1" href="/one-person-company-opc-in-india">One Person Company</a></li>
+                                        <li><a class="cd-dropdown-item item-1" href="/nidhi-company">Nidhi Company</a></li>
+                                        <li><a class="cd-dropdown-item item-1" href="/producer-company">Producer Company</a></li>
+                                        <li><a class="cd-dropdown-item item-1" href="/partnership-firm">Partnership Firm</a></li>
+                                        <li><a class="cd-dropdown-item item-1" href="/convert-your-sole-proprietorship-into-a-private-limited-company">Sole Proprietorship</a></li>
                                         <li>
-                                             @foreach ($services as $page)
-                                             @if ($page->subcategory == $submenu->subcategoryname)
-                                            <a class="cd-dropdown-item item-1" href="/public/services/{{$page->slug}}">{{$page->servicename}}</a>
-                                             @endif
-                                             @endforeach
+                                            <h5>Licenses</h5>
                                         </li>
-                                        <!--li><a class="cd-dropdown-item item-1 more" id="mobile-more2" onclick="clickMore('mobile-panel2')">[More]</a>
+                                        <li><a class="cd-dropdown-item item-1" href="/online-food-license-fssai-registration" style="line-height: 19px;">FSSAI [Food License]</a></li>
+                                        <li><a class="cd-dropdown-item item-1" href="/import-export-code">IEC [Import/Export Code]</a></li>
+                                        <li><a class="cd-dropdown-item item-1" href="/apeda-registration">APEDA-RCMC Registration </a></li>
+                                        <li><a class="cd-dropdown-item item-1" href="/online-udyog-aadhaar-registration">MSME/SSI Registration</a></li>
+                                        <li><a class="cd-dropdown-item item-1" href="/iso-certification">ISO Certification </a></li>
+                                        <li><a class="cd-dropdown-item item-1" href="/digital-signature">Digital Signature Certificate </a></li>
+                                        <li><a class="cd-dropdown-item item-1 more" id="mobile-more2" onclick="clickMore('mobile-panel2')">[More]</a>
                                             <ul id="mobile-panel2">
                                                 <li><a class="cd-dropdown-item item-1" href="/psara-license">PSARA Licence</a></li>
                                                 <li><a class="cd-dropdown-item item-1" href="/osp-license">OSP Licence</a></li>
                                                 <li><a class="cd-dropdown-item item-1" href="/trade-license">Trade Licence</a></li>
                                             </ul>
-                                        </li-->
+                                        </li>
                                     </div>
-                                                @endif
-                                                @endforeach
-                                                @endif
+                                    <div class="col-md-6 col-12">
+                                        <li>
+                                            <h5>Company Name Search</h5>
+                                        </li>
+                                        <li><a class="cd-dropdown-item item-1" href="/company-name-search">Company Name Search</a></li>
+                                        <li>
+                                            <h5>International Business Setup</h5>
+                                        </li>
+                                        <li><a class="cd-dropdown-item item-1" href="/usa-incorporation">US Incorporation</a></li>
+                                        <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-singapore">Singapore Incorporation</a></li>
+                                        <li><a class="cd-dropdown-item item-1 more" id="mobile-more1" onclick="clickMore('mobile-panel1')">[More]</a>
+                                            <ul id="mobile-panel1">
+                                                <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-united-kingdom">UK Incorporation</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-netherlands">Netherlands Incorporation</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-hong-kong">Hong Kong Incorporation</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-malaysia">Malaysia Incorporation</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-china">China Incorporation</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-dubai">Dubai Incorporation</a></li>
+                                                <li><a class="cd-dropdown-item item-1" href="/incorporating-a-company-in-australia">Australia Incorporation</a></li>
+                                            </ul>
+                                        </li>
+                                    </div>
                                 </ul>
                             </li>
                             @endforeach
@@ -22346,7 +22399,7 @@
                     }
     
                     .navbar-fixed-top {
-                        background: #030e1e !important;
+                        background: #ffffff05!important;
                         border: none;
                     }
     
