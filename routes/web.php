@@ -31,7 +31,7 @@ Route::get('/', 'Admin\MenuController@menuContent');
 Route::get('/services/all', 'Service\ServicePageController@DisplayAllServices');
 
 //Services Page
-Route::get('/public/services/{slug}', 'Service\ServicePageController@ServiceContent');
+Route::get('/services/{slug}', 'Service\ServicePageController@ServiceContent');
 Route::get('/category/{categoryname}', 'Service\ServicePageController@categoryPage');
 
 Route::get('/service/{servicename}/{byAssociate}', 'Service\ServicePageController@AssociateContent');

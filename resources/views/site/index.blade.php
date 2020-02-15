@@ -29,6 +29,7 @@
     
     
    
+   
 
     <!-- home-image -->
     <div class="home-image white-text">
@@ -600,69 +601,7 @@
 </section>
 <!--  About Us End -->
  <!-- Section why choose us -->
- <section style="background:#ffffffd1; ">
-    <div class="marketplace">
-        <div class="container">
-            <div class="title padding">
-                <h2><span class="red-color">Why</span> Choose Us?</h2>
-                <br>
-                <div class="line-thin"></div>
-                <div class="line-thicken"></div>
-            </div>
-            <section class="about-1">
-                <div class="container">
-                    <div class="row">
-                        <div class="text-container">
-                            <div class="col-sm-4">
-                                <div class="text aos-init aos-animate" data-aos="fade-right">
-                                    <h2 class="bg-text">ONE</h2>
-                                    <h3><span>01.</span>Indias First Marketplace Hub</h3>
-                                    <p>We ensure startups focus on their project and leave all the legalities and documentations to us. That's why Startups love us.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="text aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
-                                    <h2 class="bg-text">TWO</h2>
-                                    <h3><span>02.</span>Technology Driven Platform</h3>
-                                    <p>100% Technology driven platform to speed up your service process and make your life ezee.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="text aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
-                                    <h2 class="bg-text">THREE</h2>
-                                    <h3><span>03.</span>Compared Best Price</h3>
-                                    <p>We understand the value of money for startups. We offer complete transparency and affordable cost to startups.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><br><br><br>
-                    <div class="row">
-                        <div class="text-container">
-                            <div class="col-sm-4">
-                                <div class="text aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
-                                    <h2 class="bg-text">FOUR</h2>
-                                    <h3><span>04.</span>Predefined Documents And Time</h3>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="text aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
-                                    <h2 class="bg-text">FIVE</h2>
-                                    <h3><span>05.</span>No Follow Up, Real Time Update</h3>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="text aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
-                                    <h2 class="bg-text">SIX</h2>
-                                    <h3><span>06.</span>24X7 Support</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
- </section>
+ 
     <!-- Section why choose us end -->
     
 
@@ -891,7 +830,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="text-container aos-init aos-animate" data-aos="zoom-in">
-                    <a href="call-action.html#" class="button btn btn-lg btn-outline-white radius25">Yes I'M Intrested</a>
+                    <a href="/user/register" class="button btn btn-lg btn-outline-white radius25">Yes I'M Intrested</a>
                 </div>
             </div>
         </div>
@@ -1008,10 +947,10 @@
                         </ol>
                         <!-- Carousel Buttons Next/Prev -->
                         <a data-slide="prev" href="index.html#quote-carousel" class="left carousel-control">
-                            <i class="fa fa-long-arrow-alt-left"></i>
+                            <!--i class="fa fa-long-arrow-alt-left"></i-->
                         </a>
                         <a data-slide="next" href="index.html#quote-carousel" class="right carousel-control">
-                            <i class="fa fa-long-arrow-alt-right"></i>
+                            <!--i class="fa fa-long-arrow-alt-right"></i-->
                         </a>
                         <!-- Carousel Slides / Quotes -->
                         <div class="carousel-inner text-center">

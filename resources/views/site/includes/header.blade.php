@@ -60,9 +60,9 @@
                                 <ul class="cd-dropdown-content">
                                     @if(count($category) > 0)
                                     @foreach ($category as $menu)
-                                    <li class="has-children"> <a href="#" class="webClick" onclick="window.open('/category/{{$menu->categoryname}}','_self');">{{$menu->categoryname}}</a> <a class="mobileViewClick" href="#">{{$menu->categoryname}}</a>
+                                    <li class="has-children"> <a href="#" class="webClick" onclick="window.open('/category/{{$menu->categoryname}}','_self');">{{ucfirst($menu->categoryname)}}</a> <a class="mobileViewClick" href="#">{{ucfirst($menu->categoryname)}}</a>
                                         <ul class="cd-dropdown-icons is-hidden fade-out">
-                                            <li class="go-back"><a href="#0"><strong>Menu</strong></a></li>
+                                            <li class="go-back"><a href=""><strong>Menu</strong></a></li>
                                                 @if (count($subcategory) > 0)
                                                 @foreach ($subcategory as $submenu)
                                                 @if ($submenu->ParentCategory == $menu->categoryname)
@@ -71,12 +71,24 @@
                                                     <h5>{{$submenu->subcategoryname}}</h5>
                                                 </li>
                                                     <li>
+                                                        <?php $count = 0; ?>
                                                          @foreach ($services as $page)
                                                          @if ($page->subcategory == $submenu->subcategoryname)
-                                                        <a class="cd-dropdown-item item-1" href="/public/services/{{$page->slug}}">{{$page->servicename}}</a>
+                                                         <?php if($count == 6) break; ?>
+                                                        <a class="cd-dropdown-item item-1" href="/services/{{$page->slug}}">{{strtoupper($page->servicename)}}</a>
+                                                        <?php $count++; ?>
                                                          @endif
                                                         @endforeach
                                                     </li>
+                                                     <!--li><a class="cd-dropdown-item item-1 more" id="more2" onclick="clickMore('panel{{$submenu->id}}')">[More]</a>
+                                                        <ul id="panel{{$submenu->id}}">
+                                                            @foreach ($services as $page)
+                                                            @if ($page->subcategory == $submenu->subcategoryname)
+                                                                <li><a class="cd-dropdown-item item-1" href="/public/services/{{$page->slug}}">{{$page->servicename}}</a></li>
+                                                            @endif
+                                                            @endforeach
+                                                        </ul>
+                                                     </li-->
                                             </div>
                                                 @endif
                                                 @endforeach
@@ -88,6 +100,35 @@
                                     </li>
                                     @endforeach
                                     @endif
+                                    <li class="has-children"> <a href="#" class="webClick" onclick="window.open('/user/login');">Login/Register</a> <a class="mobileViewClick" href="#">Login/Register</a>
+                                        <ul class="cd-dropdown-icons is-hidden fade-out">
+                                            <li class="go-back"><a href=""><strong>Menu</strong></a></li>
+                                               
+                                            <div class="col-md-4 col-4" style="padding-bottom: 50px">
+                                                <li>
+                                                    <h5>User</h5>
+                                                </li>
+                                                    <li>
+                                                    <a class="cd-dropdown-item item-1" href="/user/login">Login</a>
+                                                    </li>
+                                                    <li>
+                                                    <a class="cd-dropdown-item item-1" href="/user/Register">Register</a>
+                                                    </li>
+                                            </div>
+                                            <div class="col-md-4 col-4" style="padding-bottom: 50px">
+                                                <li>
+                                                    <h5>Associate</h5>
+                                                </li>
+                                                    <li>
+                                                    <a class="cd-dropdown-item item-1" href="/associate/login">Login</a>
+                                                    </li>
+                                                    <li>
+                                                    <a class="cd-dropdown-item item-1" href="/associate/Register">Register</a>
+                                                    </li>
+                                            </div>
+                                        </ul>
+                                    </li>
+
                                     <li class="whatsapp-menu" style="width: auto; float: left;"> <a href="#" class="webClick" onclick="window.open('https://web.whatsapp.com/send?phone=917836943694&amp;text=Hello CaAdvocateCs!','_blank');"> <img data-src="https://a.vakilsearch.com/live-images/website_revamp/whatsapp.png" alt="whatsapp icon" class="img-responsive" style="display: inline;" src="https://a.vakilsearch.com/live-images/website_revamp/whatsapp.png"> &nbsp;+91 7836 943 694</a> </li>
                                 </ul>
                             </li>
@@ -111,9 +152,12 @@
                                             <h5>{{$submenu->subcategoryname}}</h5>
                                         </li>
                                         <li>
+                                            
                                              @foreach ($services as $page)
                                              @if ($page->subcategory == $submenu->subcategoryname)
-                                            <a class="cd-dropdown-item item-1" href="/public/services/{{$page->slug}}">{{$page->servicename}}</a>
+                                                                                                      
+                                                <a class="cd-dropdown-item item-1" href="/services/{{$page->slug}}">{{strtoupper($page->servicename)}}</a>
+
                                              @endif
                                              @endforeach
                                         </li>
@@ -133,6 +177,37 @@
                             @endforeach
                             @endif
                             <li> </li>
+                            <li class="has-children"> <a href="#" class="webClick" onclick="window.open('/user/login');">Login/Register</a> <a class="mobileViewClick" href="#">Login/Register</a>
+                                        <ul class="cd-dropdown-icons is-hidden">
+                                            <li class="go-back"><a href="#0"><strong>Menu</strong></a></li>
+                                               
+                                            <div class="col-md-6 col-12" style="padding-bottom: 50px">
+                                                <li>
+                                                    <h5>User</h5>
+                                                </li>
+                                                    <li>
+                                                    <a class="cd-dropdown-item item-1" href="/user/login">Login</a>
+                                                    </li>
+                                                    <li>
+                                                    <a class="cd-dropdown-item item-1" href="/user/Register">Register</a>
+                                                    </li>
+                                            </div>
+                                            <div class="col-md-6 col-12" style="padding-bottom: 50px">
+                                                <li>
+                                                    <h5>Associate</h5>
+                                                </li>
+                                                    <li>
+                                                    <a class="cd-dropdown-item item-1" href="/associate/login">Login</a>
+                                                    </li>
+                                                    <li>
+                                                    <a class="cd-dropdown-item item-1" href="/associate/Register">Register</a>
+                                                    </li>
+                                            </div>
+                                            <div class="col-md-4 col-12">
+                                                <div class="shapes-bg pull-right"> <img data-src="https://a.vakilsearch.com/live-images/website_revamp/google-and-smile.png" alt="google review" class="google" src="https://a.vakilsearch.com/live-images/website_revamp/google-and-smile.png"> <img data-src="https://a.vakilsearch.com/live-images/website_revamp/shapes-bg.png" alt="" class="smile" src="https://a.vakilsearch.com/live-images/website_revamp/shapes-bg.png"> </div>
+                                            </div>
+                                        </ul>
+                                    </li>
                             <li><a href="whatsapp://send?text=Hello CaAdvocateCs!&amp;phone=+917836943694" class="green-color" style="color: #1bb74e !important;"><i class="fa fa-whatsapp"></i> +91  7836 943 694</a></li>
                         </ul>
                     </div>
