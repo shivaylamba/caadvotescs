@@ -11,6 +11,7 @@ use App\Mail\TestAmazonSes;
 |
 */
 
+//Route::get('/post', 'Admin\PageController@pageContent');
 
 Route::get('send-mail','MailControl@sendMail')->name('mail');
 

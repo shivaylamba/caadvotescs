@@ -57,7 +57,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'support@caadvocatecs.com'),
-        'name' => env('MAIL_FROM_NAME', 'Support | Ca-Advocate-Cs'),
+        'name' => env('MAIL_FROM_NAME', 'CA-ADVOCATE-CS'),
     ],
 
     /*

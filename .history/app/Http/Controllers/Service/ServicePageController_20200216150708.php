@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Service;
 use DB;
+use Mail;
 use App\Http\Controllers\Controller;
-use App\Mail\Quotation;
+use App\Mail\SendgridMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Sichikawa\LaravelSendgridDriver\SendGrid;
@@ -85,7 +86,7 @@ class ServicePageController extends Controller
         $popularservices = DB::select('select * from services where status = "active" and popular="yes" LIMIT 6');
         $footerps = DB::select('select * from services where status = "active" and popular="yes" LIMIT 6');
         $footercategory = DB::select('select * from servisecategories WHERE status = "active" LIMIT 6');
-        Mail::to($email)->send(new Quotation());
+
         return view('site.respond')->with(compact('category', 'subcategory', 'services', 'popularservices', 'footerps', 'footercategory'));
     }
 }
