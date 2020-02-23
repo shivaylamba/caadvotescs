@@ -126,6 +126,15 @@
                                                     <a class="cd-dropdown-item item-1" href="/associate/Register">Register</a>
                                                     </li>
                                             </div>
+                                            <div class="col-md-4 col-4" style="padding-bottom: 50px">
+                                                <li>
+                                                    <h5>Employee</h5>
+                                                </li>
+                                                    <li>
+                                                    <a class="cd-dropdown-item item-1" href="/employee/loginForm">Login</a>
+                                                    </li>
+                                                    <li>
+                                            </div>
                                         </ul>
                                     </li>
 
