@@ -106,7 +106,7 @@ class UserDashboardController extends Controller
         return view('user.dashboard.upload');
     }
 
-    public function saveupload(Request $request) 
+    public function savesupload(Request $request) 
     {
        
         $this->validate($request, [
@@ -123,7 +123,7 @@ class UserDashboardController extends Controller
         
         //$data=array('popular'=>$popular,  'serviceimage'=>$name, 'servicename'=>$servicename,'status'=>$status, 'created_at'=>$created_at, 'updated_at'=>$updated_at, 'subcategory'=>$subcategory, 'content'=>$content, 'slug'=>$slug);
         //DB::table('services')->insert($data);
-        return redirect('/user/upload')->with('status', 'Data Added to Digital Library Successfully');
+        return redirect('/create-services')->with('status', 'Data Added to Digital Library Successfully');
     }
     
 }

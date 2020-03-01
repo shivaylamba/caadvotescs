@@ -15,9 +15,9 @@
            <div class="card">
              <!-- Card header -->
              <div class="card-header">
-               <h3 class="mb-0">Category List</h3>
+               <h3 class="mb-0">Work Enquiry List</h3>
                <p class="text-sm mb-0">
-                All the Services Created by Admin
+                All the Enquired by Customer
                </p>
                <br>
                 @if (session('status'))
@@ -31,25 +31,23 @@
                  <thead class="thead-light">
                    <tr>
                     <th>ID</th>
-                    <th>Services</th>
-                    <th>Category Under</th>
-                    <th>View</th>
+                    <th>Ticket No</th>
+                    <th>Service Name</th>
                    </tr>
                  </thead>
                  <tfoot>
                     <tr>
                         <th>ID</th>
-                    <th>Services</th>
-                    <th>Category Under</th>
-                    <th>View</th>
+                        <th>Ticket No</th>
+                        <th>Service Name</th>
                        </tr>
                  </tfoot>
                  <tbody>
-                     @foreach ($services as $row)
+                     @foreach ($leads as $l)
                     <tr>
-                        <td> {{ $row->id }} </td> 
-                        <td>{{ $row->servicename }}</td>
-                        <td>{{ $row->subcategory }}</td>
+                        <td> {{ $l->id }} </td> 
+                        <td>{{ $l->cust_id }}</td>
+                        <td>{{ $l->service }}</td>
                         <td>
                         <a  target="_blank" href="/services/{{$row->slug}}" type="button" class="btn btn-slack btn-icon-only rounded-circle">
                                 <span class="btn-inner--icon"><i class="ni ni-settings-gear-65"></i></span>

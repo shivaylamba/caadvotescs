@@ -98,32 +98,7 @@ class UserDashboardController extends Controller
     {
         $email = Auth::user()->email;
         $leads = DB::select('select * from leads where email = ?',[$email]);
-        return view('user.dashboard.worksprog')->with(compact('leads'));
-    }
-
-    public function upload() 
-    {
-        return view('user.dashboard.upload');
-    }
-
-    public function saveupload(Request $request) 
-    {
-       
-        $this->validate($request, [
-            'input_img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        ]);
-    
-        if ($request->hasFile('input_img')) {
-            $image = $request->file('input_img');
-            $name = time().'-service-img'.'.'.$image->getClientOriginalExtension();
-            $destinationPath = public_path('/DigitalLibrary');
-            $image->move($destinationPath, $name);
-        }
-
-        
-        //$data=array('popular'=>$popular,  'serviceimage'=>$name, 'servicename'=>$servicename,'status'=>$status, 'created_at'=>$created_at, 'updated_at'=>$updated_at, 'subcategory'=>$subcategory, 'content'=>$content, 'slug'=>$slug);
-        //DB::table('services')->insert($data);
-        return redirect('/user/upload')->with('status', 'Data Added to Digital Library Successfully');
+        return view('user.dashboard.workprog')->with(compact('leads'));
     }
     
 }

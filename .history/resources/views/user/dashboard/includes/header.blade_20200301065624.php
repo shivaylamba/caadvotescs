@@ -86,19 +86,6 @@
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link {{'/user/upload' == request()->path() ? 'active' : ''}}" href="#navbar-library" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
-                <i class="ni ni-archive-2 text-yellow"></i>
-                <span class="nav-link-text">Digital Library</span>
-              </a>
-              <div class="collapse" id="navbar-library">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="/user/upload" class="nav-link {{'/user/upload' == request()->path() ? 'active' : ''}}">Upload</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
 
             <li class="nav-item">
               <a class="nav-link {{'/user/profile' == request()->path() ? 'active' : ''}}" href="/user/profile" role="button" aria-expanded="false" aria-controls="navbar-tables">
@@ -119,7 +106,6 @@
                 <span class="nav-link-text">Check Works</span>
               </a>
             </li>
-            
             <li class="nav-item">
               <a class="nav-link {{'/user/feedback' == request()->path() ? 'active' : ''}}" href="/user/feedback" role="button" aria-expanded="false" aria-controls="navbar-tables">
                 <i class="ni ni-send text-purple"></i>

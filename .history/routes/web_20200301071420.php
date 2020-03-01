@@ -206,7 +206,7 @@ Route::prefix('operation')->group(function() {
     Route::post('/logout', 'User\LoginController@logout')->name('user.logout');
     Route::get('/works', 'User\UserDashboardController@worksList');  
     Route::get('/upload', 'User\UserDashboardController@upload');  
-    Route::post('/save-upload', 'User\UserDashboardController@saveupload'); 
+    Route::post('/save-services', 'Admin\ServicesController@saveservices'); 
 
 
     

@@ -125,9 +125,7 @@
               <h3 class="mb-0">Work Status for Ticket No: {{$leads[0]->cust_id}}</h3>
               </div>
               <!-- Card body -->
-              <div class="card-body">
-              <li>Work Completed (to be added by Associate once the oder is complete)</li>
-              </div>
+              
             </div>
           </div>
         </div>

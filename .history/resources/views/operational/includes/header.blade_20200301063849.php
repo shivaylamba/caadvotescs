@@ -68,63 +68,49 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link {{'/user/dashboard' == request()->path() ? 'active' : ''}}" href="/user/dashboard"  role="button" aria-expanded="true" aria-controls="navbar-dashboards">
+            <a class="nav-link {{'admin' == request()->path() ? 'active' : ''}}" href="/employee/dashboard"  role="button" aria-expanded="true" aria-controls="navbar-dashboards">
                 <i class="ni ni-shop text-primary"></i>
                 <span class="nav-link-text">Home</span>
               </a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link {{'/user/services' == request()->path() ? 'active' : ''}}" href="#navbar-services" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
-                <i class="ni ni-archive-2 text-green"></i>
-                <span class="nav-link-text">Services</span>
+              <a class="nav-link {{'/operation/leads' == request()->path() ? 'active' : ''}}{{'/operation/success-leads' == request()->path() ? 'active' : ''}}{{'/operation/bill' == request()->path() ? 'active' : ''}}" href="#navbar-invitations" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
+                <i class="ni ni-app text-purple"></i>
+                <span class="nav-link-text">Leads</span>
               </a>
-              <div class="collapse" id="navbar-services">
+              <div class="collapse" id="navbar-invitations">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="/user/services" class="nav-link {{'/user/services' == request()->path() ? 'active' : ''}}">View</a>
+                    <a href="/operation/leads" class="nav-link {{'/operation/leads' == request()->path() ? 'active' : ''}}">All Leads</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/operation/success-leads" class="nav-link {{'/operation/success-leads' == request()->path() ? 'active' : ''}}">Success Leads</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/operation/bill" class="nav-link {{'/operation/bill' == request()->path() ? 'active' : ''}}">Generate Bill</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{'/user/upload' == request()->path() ? 'active' : ''}}" href="#navbar-library" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
-                <i class="ni ni-archive-2 text-yellow"></i>
-                <span class="nav-link-text">Digital Library</span>
+              <a class="nav-link {{'/operation/leads' == request()->path() ? 'active' : ''}}{{'/operation/success-leads' == request()->path() ? 'active' : ''}}{{'/operation/bill' == request()->path() ? 'active' : ''}}" href="#navbar-invitations" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
+                <i class="ni ni-app text-purple"></i>
+                <span class="nav-link-text">Work Ststua</span>
               </a>
-              <div class="collapse" id="navbar-library">
+              <div class="collapse" id="navbar-invitations">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="/user/upload" class="nav-link {{'/user/upload' == request()->path() ? 'active' : ''}}">Upload</a>
+                    <a href="/operation/leads" class="nav-link {{'/operation/leads' == request()->path() ? 'active' : ''}}">All Leads</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/operation/success-leads" class="nav-link {{'/operation/success-leads' == request()->path() ? 'active' : ''}}">Success Leads</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/operation/bill" class="nav-link {{'/operation/bill' == request()->path() ? 'active' : ''}}">Generate Bill</a>
                   </li>
                 </ul>
               </div>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link {{'/user/profile' == request()->path() ? 'active' : ''}}" href="/user/profile" role="button" aria-expanded="false" aria-controls="navbar-tables">
-                <i class="ni ni-circle-08 text-blue"></i>
-                <span class="nav-link-text">Profile</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link {{'/user/compare' == request()->path() ? 'active' : ''}}" href="/user/compare" role="button" aria-expanded="false" aria-controls="navbar-tables">
-                <i class="ni ni-world text-pink"></i>
-                <span class="nav-link-text">Compare Professionals</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {{'/user/works' == request()->path() ? 'active' : ''}}" href="/user/works" role="button" aria-expanded="false" aria-controls="navbar-tables">
-                <i class="ni ni-send text-red"></i>
-                <span class="nav-link-text">Check Works</span>
-              </a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link {{'/user/feedback' == request()->path() ? 'active' : ''}}" href="/user/feedback" role="button" aria-expanded="false" aria-controls="navbar-tables">
-                <i class="ni ni-send text-purple"></i>
-                <span class="nav-link-text">Give Feedback</span>
-              </a>
             </li>
             
           </ul>

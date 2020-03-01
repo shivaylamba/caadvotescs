@@ -126,7 +126,7 @@
               </div>
               <!-- Card body -->
               <div class="card-body">
-              <li>Work Completed (to be added by Associate once the oder is complete)</li>
+              <li>Work Completed</li>
               </div>
             </div>
           </div>

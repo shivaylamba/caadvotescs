@@ -106,7 +106,7 @@ class UserDashboardController extends Controller
         return view('user.dashboard.upload');
     }
 
-    public function saveupload(Request $request) 
+    public function savesupload(Request $request) 
     {
        
         $this->validate($request, [

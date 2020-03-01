@@ -204,10 +204,5 @@ Route::prefix('operation')->group(function() {
     Route::post('/save-feedback', 'User\UserDashboardController@feedbacksubmit');  
     Route::post('/quote', 'Service\ServicePageController@userLeads');  
     Route::post('/logout', 'User\LoginController@logout')->name('user.logout');
-    Route::get('/works', 'User\UserDashboardController@worksList');  
-    Route::get('/upload', 'User\UserDashboardController@upload');  
-    Route::post('/save-upload', 'User\UserDashboardController@saveupload'); 
-
-
     
  }); 

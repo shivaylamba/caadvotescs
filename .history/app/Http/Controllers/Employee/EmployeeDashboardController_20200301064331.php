@@ -147,7 +147,7 @@ class EmployeeDashboardController extends Controller
         $emp_email = Auth::user()->emp_email;
         $emp = DB::select('select * from employees where emp_email = ?',[$emp_email]);
         $leads = DB::select('select * from leads where category = ? AND status="Successfull"',[$emp[0]->emp_category]);
-        return view('operational.successleads')->with(compact('leads'));
+        return view('employee.successleads')->with(compact('leads'));
     }
    
     

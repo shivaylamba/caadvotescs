@@ -15,7 +15,7 @@
            <div class="card">
              <!-- Card header -->
              <div class="card-header">
-               <h3 class="mb-0">Category List</h3>
+               <h3 class="mb-0">Work Enquiry List</h3>
                <p class="text-sm mb-0">
                 All the Services Created by Admin
                </p>

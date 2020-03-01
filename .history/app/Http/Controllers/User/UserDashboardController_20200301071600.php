@@ -106,7 +106,7 @@ class UserDashboardController extends Controller
         return view('user.dashboard.upload');
     }
 
-    public function saveupload(Request $request) 
+    public function savesupload(Request $request) 
     {
        
         $this->validate($request, [
@@ -116,14 +116,21 @@ class UserDashboardController extends Controller
         if ($request->hasFile('input_img')) {
             $image = $request->file('input_img');
             $name = time().'-service-img'.'.'.$image->getClientOriginalExtension();
-            $destinationPath = public_path('/DigitalLibrary');
+            $destinationPath = public_path('/ServiceImages');
             $image->move($destinationPath, $name);
         }
 
-        
-        //$data=array('popular'=>$popular,  'serviceimage'=>$name, 'servicename'=>$servicename,'status'=>$status, 'created_at'=>$created_at, 'updated_at'=>$updated_at, 'subcategory'=>$subcategory, 'content'=>$content, 'slug'=>$slug);
-        //DB::table('services')->insert($data);
-        return redirect('/user/upload')->with('status', 'Data Added to Digital Library Successfully');
+        $servicename = $request->input('servicename');
+        $subcategory = $request->input('subcategory');
+        $content= $request->input('content');
+        $status = $request->input('status');
+        $slug = str_slug($servicename, '-');
+        $popular = $request->input('popular');
+        $created_at = new \DateTime();
+        $updated_at = new \DateTime();
+        $data=array('popular'=>$popular,  'serviceimage'=>$name, 'servicename'=>$servicename,'status'=>$status, 'created_at'=>$created_at, 'updated_at'=>$updated_at, 'subcategory'=>$subcategory, 'content'=>$content, 'slug'=>$slug);
+        DB::table('services')->insert($data);
+        return redirect('/create-services')->with('status', 'Service Created Successfully');
     }
     
 }
