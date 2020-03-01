@@ -130,8 +130,8 @@ class UserDashboardController extends Controller
     public function library() 
     {
         $email = Auth::user()->email;
-        $library = DB::select('select * from digitalibrary where user_email = ?',[$email]);
-        return view('user.dashboard.library')->with(compact('library'));
+        $leads = DB::select('select * from leads where email = ?',[$email]);
+        return view('user.dashboard.worksprog')->with(compact('leads'));
     }
     
 }

@@ -87,7 +87,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{'/user/upload' == request()->path() ? 'active' : ''}}{{'/user/library' == request()->path() ? 'active' : ''}}" href="#navbar-library" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
+              <a class="nav-link {{'/user/upload' == request()->path() ? 'active' : ''}}" href="#navbar-library" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-tables">
                 <i class="ni ni-archive-2 text-yellow"></i>
                 <span class="nav-link-text">Digital Library</span>
               </a>

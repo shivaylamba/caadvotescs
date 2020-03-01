@@ -126,12 +126,5 @@ class UserDashboardController extends Controller
         DB::table('digitalibrary')->insert($data);
         return redirect('/user/upload')->with('status', 'Data Added to Digital Library Successfully');
     }
-
-    public function library() 
-    {
-        $email = Auth::user()->email;
-        $library = DB::select('select * from digitalibrary where user_email = ?',[$email]);
-        return view('user.dashboard.library')->with(compact('library'));
-    }
     
 }

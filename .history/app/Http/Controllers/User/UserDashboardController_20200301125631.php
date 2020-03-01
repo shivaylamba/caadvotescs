@@ -120,18 +120,10 @@ class UserDashboardController extends Controller
             $image->move($destinationPath, $name);
         }
         $email = Auth::user()->email;
-        $created_at = new \DateTime();
-        $updated_at = new \DateTime();
+        
         $data=array('user_email'=>$email,  'images'=>$name,'created_at'=>$created_at, 'updated_at'=>$updated_at);
         DB::table('digitalibrary')->insert($data);
         return redirect('/user/upload')->with('status', 'Data Added to Digital Library Successfully');
-    }
-
-    public function library() 
-    {
-        $email = Auth::user()->email;
-        $library = DB::select('select * from digitalibrary where user_email = ?',[$email]);
-        return view('user.dashboard.library')->with(compact('library'));
     }
     
 }
