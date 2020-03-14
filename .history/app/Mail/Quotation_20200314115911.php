@@ -33,6 +33,6 @@ class Quotation extends Mailable
         $email = $request->input('email');
         $category = $request->input('category');
         $service = $request->input('service');
-        return $this->view('emails.quotations.q2')->with(compact('category', 'service', 'name', 'email'));
+        return $this->view('emails.quotations.q2')->with(compact('category', 'service', 'name', 'email',));
     }
 }
