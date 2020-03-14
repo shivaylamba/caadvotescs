@@ -49,25 +49,30 @@
                         </div>
                         <div class="home-bottom">
                             <div class="container-fluid">
-                                <div class="col-sm-3 boxes">
+                                <div class="col-md-2 col-md-offset-1 boxes">
                                     <i class="fa fa-handshake fa-2x"></i>
                                     <h4>No Physical Visit</h4>
-                                    <p>Sit back and releax in your home we will handle the work for you.</p>
+                                    <p>Sit back and relax in your home while we handle the work for you.</p>
                                 </div>
-                                <div class="col-sm-3 boxes p-left">
+                                <div class="col-md-2 boxes">
                                     <i class="fa fa-bullhorn fa-2x"></i>
-                                    <h4>Compare best Prices</h4>
-                                    <p>Easily Compare the best prives amoung various services.</p>
+                                    <h4>Compare best prices</h4>
+                                    <p>Easily compare the best prices amoung various services.</p>
                                 </div>
-                                <div class="col-sm-3 boxes p-left">
+                                <div class="col-md-2 boxes">
                                     <i class="fa fa-clock fa-2x"></i>
                                     <h4>Predefine time and delivery</h4>
-                                    <p>Get your product delived at time.</p>
+                                    <p>Get your product delived in time.</p>
                                 </div>
-                                <div class="col-sm-3 p-left">
+                                <div class="col-md-2 boxes">
                                     <i class="fa fa-chart-line fa-2x"></i>
-                                    <h4>Hashlefree refund policies</h4>
-                                    <p>If your Service is notupto mark we will refund you your money back.</p>
+                                    <h4>Hasslefree refund policies</h4>
+                                    <p>If our service is not upto mark, we will refund your money back.</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <i class="fa fa-server fa-2x"></i>
+                                    <h4>Technology driven</h4>
+                                    <p>All services are technologically driven.</p>
                                 </div>
                             </div>
                         </div>
